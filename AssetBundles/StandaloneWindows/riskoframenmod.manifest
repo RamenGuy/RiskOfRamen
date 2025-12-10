@@ -1,0 +1,34 @@
+ManifestFileVersion: 0
+CRC: 619306258
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 68474998205147859453516c56ace6c9
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: a7a21288fe2bd6ae3724c7054e7a1302
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/RiskOfRamen/Assets/WaxIdol_icon/belt_icon.png
+- Assets/RiskOfRamen/Assets/WaxIdol/WaxIdol.prefab
+Dependencies: []

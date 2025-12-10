@@ -1,0 +1,53 @@
+{
+	strings:
+	{
+		"EXPANSION_RAMEN_NAME": "Risk of Ramen",
+		"EXPANSION_RAMEN_DESC": "Adds content from the Risk of Ramen mod into the game.",
+		"ITEM_WAXIDOL_NAME": "Wax Idol",
+		"ITEM_WAXIDOL_PICKUP": "Take less damage when you're ignited.",
+		"ITEM_WAXIDOL_DESC": "Gain <style=cIsHealing>50</style> <style=cStack>(+10 per stack)</style> <style=cIsHealing>armor</style> when <style=cIsDamage>on fire</style>. Summon a <style=cIsUtility>chud Wisp</style> to do <style=cIsHealing>nothing</style>.",
+		"ITEM_WAXIDOL_DESC_OLD": "Gain <style=cIsHealing>50</style> <style=cStack>(+10 per stack)</style> <style=cIsHealing>armor</style> when <style=cIsDamage>on fire</style>. Recruit a <style=cIsUtility>friendly Wisp</style>.",
+		"ITEM_WAXIDOL_LORE": "HELLO, LITTLE ONE.\n\n
+OH?\n\n
+YOU HAVE FOUND SOMETHING.\n\n
+HAND IT TO ME, LITTLE ONE.\n\n
+OH\n\n
+A FASCINATING TALISMAN.\n\n
+TAKE IT WITH YOU. IT WILL STRENGTHEN YOU, BRING YOU GOOD FORTUNE.\n\n
+I AM PROUD OF YOU, LITTLE ONE.",
+		"ITEM_OBSIDIANCARD_NAME": "Obsidian Card",
+		"ITEM_OBSIDIANCARD_PICKUP": "Barrier decreases slower.",
+		"ITEM_OBSIDIANCARD_DESC": "Your <style=cIsHealing>barrier</style> decreases <style=cisHealing>10%</style> <style=cStack>(+10% per stack)</style> slower.",
+		"ITEM_OBSIDIANCARD_LORE": "<style=cMono>Lab Dissection Analysis File</style>\n\n
+Subject: Obsidian Card\n
+Technician: Ren Kellin\n
+Table Spec: Mineral Analysis with Mass Spectrometer (see addendum)\n
+Notes:\n\n
+> Subject is a curved, thin piece of obsidian, about the size of a standard playing card\n
+> Conchoidal fractures indicate the use of knapping techniques\n
+> Inspecting surface with high powered microscope\n
+> Very few visible impurities, even for obsidian\n
+> MS analysis reveals an unusually even distribution of oxides typically found in obsidian aside from silica\n
+> Despite this, fractures and structural irregularities suggest that the glass itself was indeed naturally formed\n
+> Further samples requested, this is cool stuff\n\n
+
+Addendum: Yes, Trapp, I know obsidian isn't a mineral, but we don't have a volcanic glass analysis table.",
+                "ITEM_DENKUROPE_NAME": "Denku Rope Coil",
+		"ITEM_DENKUROPE_PICKUP": "Your 'Critical Strikes' deal an additional 10% damage.",
+		"ITEM_DENKUROPE_DESC": "<style=cIsDamage>Critical Strikes</style> deal an <style=cIsDamage>additional 10% damage</style> <style=cStack>(+10% per stack)</style>.",
+		"ITEM_DENKUROPE_LORE": "<style=cMono>Lab Dissection Analysis File</style>\n\n
+Subject: Denku Rope Coil\n
+Technician: Ren Kellin\n
+Table Spec: Manufactured Material with autoloom\n
+Notes:\n\n
+
+> Initial microscopy analysis of individual rope strands reveals the fibers are biological in origin, but very durable despite their apparent thinness\n
+> Ends of the strands are cleanly cut at the micro scale, suggesting they were cut with a very sophisticated impleme\n
+> I appear to be bleeding from a small laceration on my left index finger\n
+> Pausing to disinfect and treat\n
+> Resuming analysis\n
+> Bandage lacerated from contact with the strand, closer examination and testing reveals that it cuts very easily when under tension\n
+> Ending analysis, protective equipment needed for further testing",
+		"WAXWISP_BODY_NAME": "Willow",
+	}
+}

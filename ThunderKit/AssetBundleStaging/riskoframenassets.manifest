@@ -1,0 +1,246 @@
+ManifestFileVersion: 0
+CRC: 3753549726
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: c20ac9617f2c2c7c7d691caae8726de6
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 497c887262e9a56633e46eea75f98b7c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 54
+  Script: {instanceID: 0}
+- Class: 95
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 1143142494, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1297580292, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1052602003, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: f8258ea15b8f74c4889ce485d21cbbb1, type: 3}
+- Class: 114
+  Script: {fileID: -448437679, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -2005973111, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1811796171, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1229136950, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1357070253, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1067940895, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -197296741, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1277448904, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -2096938146, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 161585894, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -380008858, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -226763392, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -578974823, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 662316482, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -265070313, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1144835783, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 802575700, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 298587437, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -365436499, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -202159943, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1792105662, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1549848242, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -359660931, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1512185436, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 682687671, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1284244208, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1479993534, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1578512655, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1699741063, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1864444436, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1533710874, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1918207524, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 80205854, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -2053006600, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1954827382, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -600610627, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1218053310, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -789927658, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 952828898, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 2054123791, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 306635731, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1231560309, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -315171339, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 52559370, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -664124617, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1752031980, guid: 2b6c926553287666f24ffd5af5ba21cb, type: 3}
+- Class: 114
+  Script: {fileID: -130519023, guid: 2b6c926553287666f24ffd5af5ba21cb, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 135
+  Script: {instanceID: 0}
+- Class: 136
+  Script: {instanceID: 0}
+- Class: 137
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: AK.Wwise.Unity.API.WwiseTypes
+  ClassName: AK.Wwise.Event
+- AssemblyName: AK.Wwise.Unity.MonoBehaviour
+  ClassName: AkGameObjListenerList
+- AssemblyName: AK.Wwise.Unity.MonoBehaviour
+  ClassName: AkGameObjPositionOffsetData
+- AssemblyName: RoR2
+  ClassName: ChildLocator/NameTransformPair
+- AssemblyName: RoR2
+  ClassName: EntityStates.SerializableEntityStateType
+- AssemblyName: RoR2
+  ClassName: RoR2.CharacterAI.BaseAI/FollowPattern
+- AssemblyName: RoR2
+  ClassName: RoR2.CharacterModel/LightInfo
+- AssemblyName: RoR2
+  ClassName: RoR2.CharacterModel/RendererInfo
+- AssemblyName: RoR2
+  ClassName: RoR2.DamageTypeCombo
+- AssemblyName: RoR2
+  ClassName: RoR2.ModelSkinController/AsyncPrefabInstantiationData
+- AssemblyName: RoR2
+  ClassName: RoR2.Run/FixedTimeStamp
+- AssemblyName: RoR2
+  ClassName: RoR2.SerializableLoadout
+- AssemblyName: RoR2
+  ClassName: RoR2.SerializablePickupIndex
+- AssemblyName: RoR2
+  ClassName: RoR2.SimpleSpriteAnimation/Frame
+- AssemblyName: RoR2
+  ClassName: RoR2.SkillLocator/PassiveSkill
+- AssemblyName: Unity.Addressables
+  ClassName: UnityEngine.AddressableAssets.AssetReferenceGameObject
+- AssemblyName: Unity.Addressables
+  ClassName: UnityEngine.AddressableAssets.AssetReferenceT`1[UnityEngine.Avatar]
+- AssemblyName: Unity.Addressables
+  ClassName: UnityEngine.AddressableAssets.AssetReferenceT`1[UnityEngine.GameObject]
+- AssemblyName: Unity.Addressables
+  ClassName: UnityEngine.AddressableAssets.AssetReferenceT`1[UnityEngine.Material]
+- AssemblyName: Unity.Addressables
+  ClassName: UnityEngine.AddressableAssets.AssetReferenceT`1[UnityEngine.RuntimeAnimatorController]
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.ArgumentCache
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentListenerMode
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.UnityEvent
+- AssemblyName: com.unity.multiplayer-hlapi.Runtime
+  ClassName: UnityEngine.Networking.NetworkHash128
+- AssemblyName: com.unity.multiplayer-hlapi.Runtime
+  ClassName: UnityEngine.Networking.NetworkSceneId
+Assets:
+- Assets/RiskOfRamen/Assets/shaders/StubbedHGCloudRemap.shader
+- Assets/RiskOfRamen/Assets/materials/matWaxWispMask.mat
+- Assets/RiskOfRamen/Assets/DenkuRope/denkurope_icon.png
+- Assets/RiskOfRamen/Assets/materials/wax.mat
+- Assets/RiskOfRamen/Assets/WaxWisp/WaxWispMaster.prefab
+- Assets/RiskOfRamen/Assets/WaxWisp/DevotedLemurianMaster.prefab
+- Assets/RiskOfRamen/Assets/WaxWisp/WispMaster.prefab
+- Assets/RiskOfRamen/Assets/shaders/FXShaders.asset
+- Assets/RiskOfRamen/Assets/textures/rope.png
+- Assets/RiskOfRamen/Assets/ObsidianCard/meshes/CurvedPlane.fbx
+- Assets/RiskOfRamen/RiskOfRamenExpansion.asset
+- Assets/RiskOfRamen/Assets/Icon.png
+- Assets/RiskOfRamen/Assets/materials/obsidian.mat
+- Assets/RiskOfRamen/Assets/textures/texGlowPaintMask.png
+- Assets/RiskOfRamen/Assets/textures/obsidian.jpg
+- Assets/RiskOfRamen/DenkuRope.asset
+- Assets/RiskOfRamen/Assets/DenkuRope/meshes/knotrp.fbx
+- Assets/RiskOfRamen/Assets/ObsidianCard/obsidiancard_icon.png
+- Assets/RiskOfRamen/Assets/WaxWisp/mdlWaxWisp.prefab
+- Assets/RiskOfRamen/Assets/ObsidianCard/ObsidianCard.prefab
+- Assets/RiskOfRamen/Assets/DenkuRope/DenkuRope.prefab
+- Assets/RiskOfRamen/Assets/WaxWisp/meshes/WispMask.fbx
+- Assets/RiskOfRamen/Assets/textures/ropenormal.png
+- Assets/RiskOfRamen/ssaWaxWisp.asset
+- Assets/RiskOfRamen/Assets/textures/texCloudDifferenceBW2.png
+- Assets/RiskOfRamen/Assets/WaxIdol/WaxIdol.prefab
+- Assets/RiskOfRamen/Assets/materials/matWaxWispFire.mat
+- Assets/RiskOfRamen/Assets/textures/texRampWisp.png
+- Assets/RiskOfRamen/cscWaxWisp.asset
+- Assets/RiskOfRamen/Assets/materials/rope.mat
+- Assets/RiskOfRamen/ObsidianCard.asset
+- Assets/RiskOfRamen/Assets/WaxIdol/meshes/WaxIdolModel.fbx
+- Assets/RiskOfRamen/Assets/WaxWisp/WaxWispBody.prefab
+- Assets/RiskOfRamen/Assets/WaxWisp/WaxWispIcon.png
+- Assets/RiskOfRamen/Assets/WaxWisp/WispBody.prefab
+- Assets/RiskOfRamen/Assets/textures/wax_idol_base.jpg
+- Assets/RiskOfRamen/Assets/shaders/HGStandard.shader
+- Assets/RiskOfRamen/Assets/textures/obsidiannormal.jpg
+- Assets/RiskOfRamen/Assets/WaxIdol/wax_icon.png
+- Assets/RiskOfRamen/WaxIdol.asset
+- Assets/RiskOfRamen/Assets/loadingicon/waxWisp_strip1.png
+- Assets/RiskOfRamen/Assets/WaxWisp/Drone1Master.prefab
+Dependencies: []

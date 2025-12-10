@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9af1c6015733a42be940cc462aa7ed, type: 3}
+  m_Name: Log 53
+  m_EditorClassIdentifier: 
+  pipeline: {fileID: 11400000, guid: 1cd69e79a95a5d44cb323bf460fb78a5, type: 2}
+  creationDate:
+    ticks: 639008092673963046
+  entries:
+  - logLevel: 2
+    internalTime:
+      ticks: 639008092717182223
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      StageAssemblies terminated'
+    context:
+    - "Stacktrace\r\nStageAssemblies terminated\r\n\r\n  at ThunderKit.Core.Pipelines.Jobs.StageAssemblies.Build
+      (ThunderKit.Core.Pipelines.Pipeline pipeline, System.String resolvedArtifactPath,
+      System.ValueTuple`4[UnityEditor.Compilation.Assembly,UnityEditorInternal.AssemblyDefinitionAsset,ThunderKit.Core.Pipelines.Jobs.StageAssemblies+AsmDef,ThunderKit.Core.Manifests.Datums.AssemblyDefinitions][]
+      definitions, System.Int32 definitionIndex) [0x003bf] in [C:\\Users\\nickh\\Downloads\\ThunderKit-9.1.4\\ThunderKit-9.1.4\\Editor\\Core\\Pipelines\\Jobs\\StageAssemblies.cs:192](exceptionsource://C:\\Users\\nickh\\Downloads\\ThunderKit-9.1.4\\ThunderKit-9.1.4\\Editor\\Core\\Pipelines\\Jobs\\StageAssemblies.cs#192)
+      \r\n\r\n  at ThunderKit.Core.Pipelines.Jobs.StageAssemblies.Execute (ThunderKit.Core.Pipelines.Pipeline
+      pipeline) [0x00194] in [C:\\Users\\nickh\\Downloads\\ThunderKit-9.1.4\\ThunderKit-9.1.4\\Editor\\Core\\Pipelines\\Jobs\\StageAssemblies.cs:126](exceptionsource://C:\\Users\\nickh\\Downloads\\ThunderKit-9.1.4\\ThunderKit-9.1.4\\Editor\\Core\\Pipelines\\Jobs\\StageAssemblies.cs#126)
+      \r\n\r\n  at ThunderKit.Core.Pipelines.Jobs.StageAssemblies.Execute (ThunderKit.Core.Pipelines.Pipeline
+      pipeline) [0x0025c] in [C:\\Users\\nickh\\Downloads\\ThunderKit-9.1.4\\ThunderKit-9.1.4\\Editor\\Core\\Pipelines\\Jobs\\StageAssemblies.cs:130](exceptionsource://C:\\Users\\nickh\\Downloads\\ThunderKit-9.1.4\\ThunderKit-9.1.4\\Editor\\Core\\Pipelines\\Jobs\\StageAssemblies.cs#130)
+      \r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline.ExecuteJob () [0x00023] in
+      [C:\\Users\\nickh\\Downloads\\ThunderKit-9.1.4\\ThunderKit-9.1.4\\Editor\\Core\\Pipelines\\Pipeline.cs:281](exceptionsource://C:\\Users\\nickh\\Downloads\\ThunderKit-9.1.4\\ThunderKit-9.1.4\\Editor\\Core\\Pipelines\\Pipeline.cs#281)
+      \r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline.ExecuteManifestLoop () [0x0005b]
+      in [C:\\Users\\nickh\\Downloads\\ThunderKit-9.1.4\\ThunderKit-9.1.4\\Editor\\Core\\Pipelines\\Pipeline.cs:295](exceptionsource://C:\\Users\\nickh\\Downloads\\ThunderKit-9.1.4\\ThunderKit-9.1.4\\Editor\\Core\\Pipelines\\Pipeline.cs#295)
+      \r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline.Execute () [0x00289] in [C:\\Users\\nickh\\Downloads\\ThunderKit-9.1.4\\ThunderKit-9.1.4\\Editor\\Core\\Pipelines\\Pipeline.cs:225](exceptionsource://C:\\Users\\nickh\\Downloads\\ThunderKit-9.1.4\\ThunderKit-9.1.4\\Editor\\Core\\Pipelines\\Pipeline.cs#225) "
+  - logLevel: 2
+    internalTime:
+      ticks: 639008092717062120
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      Build Failed: ``` ThunderKit/Libraries/RiskOfRamen.dll ``` with 1 errors.'
+    context:
+    - 'Assets\RiskOfRamen\RiskOfRamenMain.cs (16:22)
+
+      [Assets\RiskOfRamen\RiskOfRamenMain.cs(16,22):
+      error CS0103: The name ''LoadingScreenFix'' does not exist in the current context](exceptionsource://C:\Users\nickh\RiskOfRamen\Assets\RiskOfRamen\RiskOfRamenMain.cs#16)'
+  - logLevel: 0
+    internalTime:
+      ticks: 639008092680347023
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      Building : ThunderKit/Libraries/RiskOfRamen.dll'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639008092678405267
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[BepInExPack](assetlink://Packages%2fbbepis-bepinexpack%2fBepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639008092678034919
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MiscFixes](assetlink://Packages%2fscore-miscfixes%2fMiscFixes.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639008092677734656
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[SeekersPatcher](assetlink://Packages%2fpseudopulse-seekerspatcher%2fSeekersPatcher.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639008092677044030
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639008092676713721
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[FixPluginTypesSerialization](assetlink://Packages%2friskofthunder-fixplugintypesserialization%2fFixPluginTypesSerialization.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639008092676443477
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 639008092675682790
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 639008092675672776
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 639008092675652760
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      Execute Pipeline'
+    context: []
