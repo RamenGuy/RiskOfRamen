@@ -16,6 +16,91 @@ MonoBehaviour:
   creationDate:
     ticks: 639009699201660534
   entries:
+  - logLevel: 3
+    internalTime:
+      ticks: 639009699471383444
+    message: '[Pipeline](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset) Finished
+      execution'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 639009699471117488
+    message: '[Pipeline(4 - Copy)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      ``` <ManifestPluginStaging> ``` to ``` <DeploymentFolder> ```
+
+      
+
+      Copied
+      ``` ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen ``` to ``` C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen
+      ```'
+    context:
+    - "Copied Files\r\n\r\n 1. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\CHANGELOG.md\r\n\r\n
+      2. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\icon.png\r\n\r\n
+      3. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\manifest.json\r\n\r\n
+      4. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\ModLanguage.language\r\n\r\n
+      5. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\README.md\r\n\r\n
+      6. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\RiskOfRamen.dll\r\n\r\n
+      7. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\RiskOfRamen.manifest\r\n\r\n
+      8. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\RiskOfRamen.pdb\r\n\r\n
+      9. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\riskoframenassets\r\n\r\n
+      10. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\riskoframenassets.manifest"
+  - logLevel: 3
+    internalTime:
+      ticks: 639009699470520794
+    message: '[Pipeline(4 - Copy)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 639009699470230548
+    message: '[Pipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      Creating Thunderstore manifest.json'
+    context:
+    - "Manifest.json\r\n```js\r\n{\n    \"name\": \"RiskOfRamen\",\n    \"author\":
+      \"Ramen\",\n    \"version_number\": \"1.0.0\",\n    \"website_url\": \"\",\n   
+      \"description\": \"contemnt\",\n    \"dependencies\": [\n        \"bbepis-BepInExPack-5.4.2121\",\n       
+      \"TeamMoonstorm-MoonstormSharedUtils-2.4.3\",\n        \"Nebby-LoadingScreenSpriteFix-2.0.1\"\n   
+      ]\n}\r\n```"
+  - logLevel: 3
+    internalTime:
+      ticks: 639009699469770126
+    message: '[Pipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 639009699469509891
+    message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      staged ``` Assets/RiskOfRamen/ModLanguage.language ``` in ``` ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen/ModLanguage.language
+      ```'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 639009699469219630
+    message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      staged ``` Assets/RiskOfRamen/icon.png ``` in ``` ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen/icon.png
+      ```'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 639009699468839279
+    message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      staged ``` Assets/RiskOfRamen/CHANGELOG.md ``` in ``` ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen/CHANGELOG.md
+      ```'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 639009699468343733
+    message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      staged ``` Assets/RiskOfRamen/README.md ``` in ``` ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen/README.md
+      ```'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 639009699468043463
+    message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)
+      Execute Job'
+    context: []
   - logLevel: 0
     internalTime:
       ticks: 639009699295178312
