@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -313363001, guid: 2bb1bc5a220059041c098c7c1d3d5464, type: 3}
+  m_Name: idrsObsidianCard
+  m_EditorClassIdentifier: 
+  keyAsset: {fileID: 11400000, guid: c96033c8b9fb5bc4db548cd90342173e, type: 2}
+  displayPrefabs:
+  - {fileID: 8454340409770522292, guid: 4e88d3e200d235f4da2b7f929d54d445, type: 3}
+  displayDictionaryEntries:
+  - idrsName: mdlCommandoDualies
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: CalfR
+      localPos: {x: -0.08452, y: 0.2241, z: 0.02499}
+      localAngles: {x: 338.3474, y: 98.51011, z: 0.91329}
+      localScale: {x: 0.3, y: 0.3, z: 0.3}
+      limbMask: 0
+  - idrsName: mdlHuntress
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: UpperArmL
+      localPos: {x: 0.08723, y: 0.09964, z: -0.01873}
+      localAngles: {x: 27.84832, y: 281.4216, z: 174.5701}
+      localScale: {x: 0.3, y: 0.3, z: 0.3}
+      limbMask: 0

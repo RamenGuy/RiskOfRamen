@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 2054123791, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: ssaWaxWisp
+  m_EditorClassIdentifier: 
+  frameRate: 15
+  frames:
+  - sprite: {fileID: -1600651456, guid: 08b18e1c511e8b14b80267e7c09f2519, type: 3}
+    duration: 1
+  - sprite: {fileID: 594800656, guid: 08b18e1c511e8b14b80267e7c09f2519, type: 3}
+    duration: 1
+  - sprite: {fileID: -1144064931, guid: 08b18e1c511e8b14b80267e7c09f2519, type: 3}
+    duration: 1
+  - sprite: {fileID: 1948682561, guid: 08b18e1c511e8b14b80267e7c09f2519, type: 3}
+    duration: 1
+  - sprite: {fileID: 1466918964, guid: 08b18e1c511e8b14b80267e7c09f2519, type: 3}
+    duration: 1
+  - sprite: {fileID: 1650903654, guid: 08b18e1c511e8b14b80267e7c09f2519, type: 3}
+    duration: 1
