@@ -22,6 +22,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}
   - {fileID: 11400000, guid: a8ac6a3e325999651bd53f63760e6ff0, type: 2}
   - {fileID: 11400000, guid: f36042a759878ca23fab51eb17dc0ec2, type: 2}
+  - {fileID: 11400000, guid: 48f050b3512173aba0a952f846a557fa, type: 2}
 --- !u!114 &-5403490828950784648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45,7 +46,9 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c96033c8b9fb5bc4db548cd90342173e, type: 2}
     - {fileID: 11400000, guid: 5009131624fbfd045b1926177890a45e, type: 2}
     - {fileID: 11400000, guid: a81eb87c1950a844b90fbcf654d27cad, type: 2}
-    - {fileID: 11400000, guid: 388789a1d67080440a2b54eac61dd029, type: 2}
+  - assetBundleName: RiskOfRamenSSA
+    assets:
+    - {fileID: 102900000, guid: 4ae9b7419eb85784fae4f4a0742281b8, type: 3}
 --- !u!114 &-5263405602381860277
 MonoBehaviour:
   m_ObjectHideFlags: 0

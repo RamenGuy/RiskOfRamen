@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3753549726
+CRC: 419294902
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: c20ac9617f2c2c7c7d691caae8726de6
+    Hash: cfc0227c4777007e16a7bc0778ff6dd2
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 497c887262e9a56633e46eea75f98b7c
+    Hash: bcadc872b883f49ec84e7df5c57e804d
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -45,8 +45,6 @@ ClassTypes:
   Script: {fileID: -2005973111, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -1811796171, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-- Class: 114
-  Script: {fileID: 1229136950, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1357070253, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -118,8 +116,6 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 952828898, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
-  Script: {fileID: 2054123791, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-- Class: 114
   Script: {fileID: 306635731, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -1231560309, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
@@ -175,8 +171,6 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: RoR2
   ClassName: RoR2.SerializablePickupIndex
 - AssemblyName: RoR2
-  ClassName: RoR2.SimpleSpriteAnimation/Frame
-- AssemblyName: RoR2
   ClassName: RoR2.SkillLocator/PassiveSkill
 - AssemblyName: Unity.Addressables
   ClassName: UnityEngine.AddressableAssets.AssetReferenceGameObject
@@ -201,46 +195,43 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: com.unity.multiplayer-hlapi.Runtime
   ClassName: UnityEngine.Networking.NetworkSceneId
 Assets:
-- Assets/RiskOfRamen/Assets/shaders/StubbedHGCloudRemap.shader
 - Assets/RiskOfRamen/Assets/materials/matWaxWispMask.mat
 - Assets/RiskOfRamen/Assets/DenkuRope/denkurope_icon.png
-- Assets/RiskOfRamen/Assets/materials/wax.mat
+- Assets/RiskOfRamen/Assets/materials/matWax.mat
 - Assets/RiskOfRamen/Assets/WaxWisp/WaxWispMaster.prefab
 - Assets/RiskOfRamen/Assets/WaxWisp/DevotedLemurianMaster.prefab
-- Assets/RiskOfRamen/Assets/WaxWisp/WispMaster.prefab
-- Assets/RiskOfRamen/Assets/shaders/FXShaders.asset
+- Assets/RiskOfRamen/Assets/textures/obsidian.jpg
 - Assets/RiskOfRamen/Assets/textures/rope.png
 - Assets/RiskOfRamen/Assets/ObsidianCard/meshes/CurvedPlane.fbx
+- Assets/RiskOfRamen/Assets/WaxWisp/WispMaster.prefab
 - Assets/RiskOfRamen/RiskOfRamenExpansion.asset
 - Assets/RiskOfRamen/Assets/Icon.png
-- Assets/RiskOfRamen/Assets/materials/obsidian.mat
+- Assets/RiskOfRamen/Assets/materials/matObsidian.mat
 - Assets/RiskOfRamen/Assets/textures/texGlowPaintMask.png
-- Assets/RiskOfRamen/Assets/textures/obsidian.jpg
-- Assets/RiskOfRamen/DenkuRope.asset
 - Assets/RiskOfRamen/Assets/DenkuRope/meshes/knotrp.fbx
+- Assets/RiskOfRamen/DenkuRope.asset
+- Assets/RiskOfRamen/shaders/FX/HGCloudRemap.shader
 - Assets/RiskOfRamen/Assets/ObsidianCard/obsidiancard_icon.png
 - Assets/RiskOfRamen/Assets/WaxWisp/mdlWaxWisp.prefab
 - Assets/RiskOfRamen/Assets/ObsidianCard/ObsidianCard.prefab
 - Assets/RiskOfRamen/Assets/DenkuRope/DenkuRope.prefab
 - Assets/RiskOfRamen/Assets/WaxWisp/meshes/WispMask.fbx
 - Assets/RiskOfRamen/Assets/textures/ropenormal.png
-- Assets/RiskOfRamen/ssaWaxWisp.asset
 - Assets/RiskOfRamen/Assets/textures/texCloudDifferenceBW2.png
 - Assets/RiskOfRamen/Assets/WaxIdol/WaxIdol.prefab
 - Assets/RiskOfRamen/Assets/materials/matWaxWispFire.mat
 - Assets/RiskOfRamen/Assets/textures/texRampWisp.png
 - Assets/RiskOfRamen/cscWaxWisp.asset
-- Assets/RiskOfRamen/Assets/materials/rope.mat
+- Assets/RiskOfRamen/Assets/materials/matRope.mat
 - Assets/RiskOfRamen/ObsidianCard.asset
 - Assets/RiskOfRamen/Assets/WaxIdol/meshes/WaxIdolModel.fbx
 - Assets/RiskOfRamen/Assets/WaxWisp/WaxWispBody.prefab
 - Assets/RiskOfRamen/Assets/WaxWisp/WaxWispIcon.png
 - Assets/RiskOfRamen/Assets/WaxWisp/WispBody.prefab
 - Assets/RiskOfRamen/Assets/textures/wax_idol_base.jpg
-- Assets/RiskOfRamen/Assets/shaders/HGStandard.shader
-- Assets/RiskOfRamen/Assets/textures/obsidiannormal.jpg
 - Assets/RiskOfRamen/Assets/WaxIdol/wax_icon.png
+- Assets/RiskOfRamen/Assets/textures/obsidiannormal.jpg
+- Assets/RiskOfRamen/shaders/Deferred/HGStandard.shader
 - Assets/RiskOfRamen/WaxIdol.asset
-- Assets/RiskOfRamen/Assets/loadingicon/waxWisp_strip1.png
 - Assets/RiskOfRamen/Assets/WaxWisp/Drone1Master.prefab
 Dependencies: []

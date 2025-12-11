@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: matWaxWispFire
-  m_Shader: {fileID: 4800000, guid: a587f7ffd8cc73140820719ade246bf6, type: 3}
+  m_Shader: {fileID: 4800000, guid: ba19ea6c18a718249955ad7806893883, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
   - USE_CLOUDS

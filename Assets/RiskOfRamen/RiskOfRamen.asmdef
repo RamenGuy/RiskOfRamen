@@ -33,7 +33,8 @@
         "R2API.Core.dll",
         "R2API.Deployable.dll",
         "LoadingScreenFix.dll",
-        "MSU.Runtime.dll"
+        "MSU.Runtime.dll",
+        "ShaderSwapper.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],

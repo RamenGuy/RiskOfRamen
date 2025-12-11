@@ -17,6 +17,7 @@ namespace RiskOfRamen
     [BepInDependency(RecalculateStatsAPI.PluginGUID)]
     [BepInDependency("Nebby1999.LoadingScreenFix", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("com.TeamMoonstorm.MSU", BepInDependency.DependencyFlags.HardDependency)]
+
     #endregion
     [BepInPlugin(GUID, MODNAME, VERSION)]
     public class RiskOfRamenMain : BaseUnityPlugin
@@ -30,6 +31,9 @@ namespace RiskOfRamen
         internal static AssetBundle assetBundle { get; private set; }
         internal static string assetBundleDir => System.IO.Path.Combine(System.IO.Path.GetDirectoryName(pluginInfo.Location), "riskoframenassets");
 
+        internal static string loadingScreenBundleDir => System.IO.Path.Combine(System.IO.Path.GetDirectoryName(pluginInfo.Location), "riskoframenssa");
+
+
         [System.Obsolete]
         private void Awake()
         {
@@ -37,9 +41,7 @@ namespace RiskOfRamen
             pluginInfo = Info;
             new RiskOfRamenContent();
             RecalculateStatsAPI.GetStatCoefficients += RecalculateStatsAPI_GetStatCoefficients;
-            
-            LoadingScreenFix.LoadingScreenFix.AddSpriteAnimation(RiskOfRamenContent._ssaWaxWisp);
-            
+            LoadingScreenFix.LoadingScreenFix.AddSpriteAnimations(GetLoadingScreenBundle());            
         }
 
         internal static void LogFatal(object data)
@@ -85,7 +87,7 @@ namespace RiskOfRamen
             }
             if (obsidianCardCount >= 1)
             {
-                args.barrierDecayMult -= 0.1f * obsidianCardCount;
+                args.barrierDecayMult -= 0.25f + (0.1f * obsidianCardCount);
             }
             if (waxIdolCount >= 1)
             {
@@ -96,7 +98,14 @@ namespace RiskOfRamen
             }
 
         }
-        
-        
+
+
+        internal static AssetBundle GetLoadingScreenBundle()
+        {
+            return AssetBundle.LoadFromFile(loadingScreenBundleDir);
+        }
+
+
+
     }
 }

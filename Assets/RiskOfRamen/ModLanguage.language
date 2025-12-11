@@ -5,7 +5,7 @@
 		"EXPANSION_RAMEN_DESC": "Adds content from the Risk of Ramen mod into the game.",
 		"ITEM_WAXIDOL_NAME": "Wax Idol",
 		"ITEM_WAXIDOL_PICKUP": "Take less damage when you're ignited.",
-		"ITEM_WAXIDOL_DESC": "Gain <style=cIsHealing>50</style> <style=cStack>(+10 per stack)</style> <style=cIsHealing>armor</style> when <style=cIsDamage>on fire</style>. Summon a <style=cIsUtility>chud Wisp</style> to do <style=cIsHealing>nothing</style>.",
+		"ITEM_WAXIDOL_DESC": "Gain <style=cIsHealing>50</style> <style=cStack>(+10 per stack)</style> <style=cIsHealing>armor</style> when <style=cIsDamage>on fire</style>. Summon a <style=cIsUtility>Chud Wisp</style> to do <style=cIsHealing>nothing</style>.",
 		"ITEM_WAXIDOL_DESC_OLD": "Gain <style=cIsHealing>50</style> <style=cStack>(+10 per stack)</style> <style=cIsHealing>armor</style> when <style=cIsDamage>on fire</style>. Recruit a <style=cIsUtility>friendly Wisp</style>.",
 		"ITEM_WAXIDOL_LORE": "HELLO, LITTLE ONE.\n\n
 OH?\n\n
@@ -17,7 +17,7 @@ TAKE IT WITH YOU. IT WILL STRENGTHEN YOU, BRING YOU GOOD FORTUNE.\n\n
 I AM PROUD OF YOU, LITTLE ONE.",
 		"ITEM_OBSIDIANCARD_NAME": "Obsidian Card",
 		"ITEM_OBSIDIANCARD_PICKUP": "Barrier decreases slower.",
-		"ITEM_OBSIDIANCARD_DESC": "Your <style=cIsHealing>barrier</style> decreases <style=cisHealing>10%</style> <style=cStack>(+10% per stack)</style> slower.",
+		"ITEM_OBSIDIANCARD_DESC": "Your <style=cIsHealing>barrier</style> decreases <style=cisHealing>25%</style> <style=cStack>(+10% per stack)</style> slower.",
 		"ITEM_OBSIDIANCARD_LORE": "<style=cMono>Lab Dissection Analysis File</style>\n\n
 Subject: Obsidian Card\n
 Technician: Ren Kellin\n

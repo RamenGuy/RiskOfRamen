@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using UnityEngine.AddressableAssets;
 using static RoR2.Console;
 using RoR2.UI;
+using MSU;
 
 namespace RiskOfRamen
 {
@@ -16,7 +17,7 @@ namespace RiskOfRamen
             public string identifier => RiskOfRamenMain.GUID;
 
             public static ReadOnlyContentPack readOnlyContentPack => new ReadOnlyContentPack(RiskOfRamenContentPack);
-            internal static ContentPack RiskOfRamenContentPack { get; } = new ContentPack();
+            internal static ContentPack RiskOfRamenContentPack { get; } = new ContentPack();    
 
             public static ItemDef _WaxIdol;
             public static ItemDef _ObsidianCard;
@@ -24,7 +25,6 @@ namespace RiskOfRamen
 
             public static GameObject _WaxWispBody;
             public static GameObject _WaxWispMaster;
-            public static SimpleSpriteAnimation _ssaWaxWisp;
             public static CharacterSpawnCard _cscWaxWisp;
 
         public static ItemDisplayRuleDict _idrsObsidianCard;
@@ -54,8 +54,6 @@ namespace RiskOfRamen
                 _WaxWispBody = _assetBundle.LoadAsset<GameObject>("WaxWispBody");
                 _WaxWispMaster = _assetBundle.LoadAsset<GameObject>("WaxWispMaster");
                 _cscWaxWisp = _assetBundle.LoadAsset<CharacterSpawnCard>("cscWaxWisp");
-                _ssaWaxWisp = _assetBundle.LoadAsset<SimpleSpriteAnimation>("ssaWaxWisp");
-
 
                 var expansionDef = _assetBundle.LoadAsset<ExpansionDef>("RiskOfRamenExpansion");
                 RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _WaxIdol });
@@ -65,6 +63,7 @@ namespace RiskOfRamen
                 RiskOfRamenContentPack.masterPrefabs.Add(new GameObject[] { _WaxWispMaster });
                 RiskOfRamenContentPack.expansionDefs.Add(new ExpansionDef[] { expansionDef });
 
+                //ShaderUtil.SwapStubbedShadersAsync(_assetBundle);
                 SwapAllShaders();
                  
             #region ITEM DISPLAY RULES
@@ -750,7 +749,7 @@ namespace RiskOfRamen
 
             }
         }
-
+        
         public IEnumerator GenerateContentPackAsync(GetContentPackAsyncArgs args)
         {
              ContentPack.Copy(RiskOfRamenContentPack, args.output);
@@ -766,7 +765,7 @@ namespace RiskOfRamen
         {
             addContentPackProvider(this);
         }
-        
+
         internal RiskOfRamenContent()
         {
             ContentManager.collectContentPackProviders += AddSelf;

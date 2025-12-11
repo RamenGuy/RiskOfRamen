@@ -1,7 +1,10 @@
 ManifestFileVersion: 0
-CRC: 2587554879
+CRC: 267320572
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: riskoframenassets
+      Dependencies: {}
+    Info_1:
+      Name: riskoframenssa
       Dependencies: {}

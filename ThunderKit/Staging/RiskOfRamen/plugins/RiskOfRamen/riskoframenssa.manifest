@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2380959536
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6af6509aa304eb1698fc8696661d5ff7
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 455bdbe883cebd9fe17d415a31f0e31e
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 2054123791, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 213
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: RoR2
+  ClassName: RoR2.SimpleSpriteAnimation/Frame
+Assets:
+- Assets/RiskOfRamen/loadingicon/ssaWaxWisp.asset
+- Assets/RiskOfRamen/loadingicon/waxWisp_strip1.png
+Dependencies: []
