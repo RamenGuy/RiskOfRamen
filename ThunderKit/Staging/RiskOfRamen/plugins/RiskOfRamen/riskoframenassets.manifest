@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 1551142450
+CRC: 2816007678
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0ac4a77d3106ced57dd80e64bf0b6016
+    Hash: 73c95d49dafdb83c329bd94c58cc135e
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2a3bcf858c6403771c3757ce21bf0ea4
@@ -216,9 +216,10 @@ Assets:
 - Assets/RiskOfRamen/Assets/textures/texRopeNormal.png
 - Assets/RiskOfRamen/Assets/WaxWisp/WispBody 1.prefab
 - Assets/RiskOfRamen/Assets/textures/texCloudDifferenceBW2.png
-- Assets/RiskOfRamen/Assets/WaxIdol/WaxIdol.prefab
+- Assets/RiskOfRamen/Assets/ObsidianCard/iddObsidianCard.asset
 - Assets/RiskOfRamen/Assets/StainedBelt/StainedBeltIcon.png
 - Assets/RiskOfRamen/Assets/textures/texRampWisp.png
+- Assets/RiskOfRamen/Assets/WaxIdol/WaxIdol.prefab
 - Assets/RiskOfRamen/Assets/DenkuRope/iddDenkuRope.asset
 - Assets/RiskOfRamen/cscWaxWisp.asset
 - Assets/RiskOfRamen/Assets/WaxIdol/meshes/WaxIdolModel.fbx

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   deprecatedTier: 1
   _itemTierDef: {fileID: 0}
-  nameToken: ITEM_DENTEDBUCKLE_NAME
-  pickupToken: ITEM_DENTEDBUCKLE_PICKUP
-  descriptionToken: ITEM_DENTEDBUCKLE_DESC
+  nameToken: ITEM_STAINEDBELT_NAME
+  pickupToken: ITEM_STAINEDBELT_PICKUP
+  descriptionToken: ITEM_STAINEDBELT_DESC
   loreToken: 
   unlockableDef: {fileID: 0}
   pickupModelPrefab: {fileID: 8454340409770522292, guid: 309c7c14d7b9dae4cac5b10f88f3c326, type: 3}

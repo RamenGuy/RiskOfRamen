@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4e121de46f1e5741803234bbc5af467, type: 3}
   m_Name: iddObsidianCard
   m_EditorClassIdentifier: 
-  keyAsset: {fileID: 11400000, guid: 5009131624fbfd045b1926177890a45e, type: 2}
+  keyAsset: {fileID: 11400000, guid: c96033c8b9fb5bc4db548cd90342173e, type: 2}
   displayPrefabs:
-  - {fileID: 8454340409770522292, guid: 7fd8b6f82bbeb3b48a4345855861a292, type: 3}
+  - {fileID: 8454340409770522292, guid: 4e88d3e200d235f4da2b7f929d54d445, type: 3}
   displayDictionaryEntries:
   - idrsName: idrsCommando
     rules:
@@ -47,89 +47,89 @@ MonoBehaviour:
     rules:
     - ruleType: 0
       displayPrefabIndex: 0
-      childName: LowerArmL
-      localPos: {x: -0.02377, y: 6.47737, z: -0.07741}
-      localAngles: {x: 354.3408, y: 163.9241, z: 188.9696}
-      localScale: {x: 5, y: 5, z: 5}
+      childName: UpperArmL
+      localPos: {x: -0.02233, y: 1.97931, z: -0.99985}
+      localAngles: {x: 2.15264, y: 5.1404, z: 176.7258}
+      localScale: {x: 3.5, y: 3.5, z: 3.5}
       limbMask: 0
   - idrsName: idrsEngi
     rules:
     - ruleType: 0
       displayPrefabIndex: 0
-      childName: MuzzleLeft
-      localPos: {x: 0.18999, y: -0.18691, z: -0.14626}
-      localAngles: {x: 314.211, y: 133.8138, z: 150.7838}
-      localScale: {x: 1, y: 1, z: 1}
+      childName: LowerArmL
+      localPos: {x: 0.01394, y: 0.13063, z: -0.09528}
+      localAngles: {x: 21.59121, y: 341.9269, z: 182.462}
+      localScale: {x: 0.3, y: 0.3, z: 0.3}
       limbMask: 0
   - idrsName: idrsMerc
     rules:
     - ruleType: 0
       displayPrefabIndex: 0
-      childName: SwordBase
-      localPos: {x: -0.00199, y: -0.24974, z: -0.00197}
-      localAngles: {x: 354.5048, y: 95.20892, z: 2.57154}
-      localScale: {x: 1, y: 1, z: 1}
+      childName: ThighR
+      localPos: {x: -0.13783, y: 0.10082, z: 0.02668}
+      localAngles: {x: 20.26766, y: 267.0182, z: 183.088}
+      localScale: {x: 0.3, y: 0.3, z: 0.3}
       limbMask: 0
   - idrsName: idrsMage
     rules:
     - ruleType: 0
       displayPrefabIndex: 0
-      childName: LowerArmR
-      localPos: {x: 0.03725, y: 0.19161, z: 0.10103}
-      localAngles: {x: 357.9278, y: 85.20364, z: 184.9252}
-      localScale: {x: 1, y: 1, z: 1}
+      childName: UpperArmL
+      localPos: {x: 0.05757, y: 0.15938, z: -0.00618}
+      localAngles: {x: 27.84833, y: 281.4216, z: 174.5701}
+      localScale: {x: 0.3, y: 0.3, z: 0.3}
       limbMask: 0
   - idrsName: idrsTreebot
     rules:
     - ruleType: 0
       displayPrefabIndex: 0
-      childName: FootFrontL
-      localPos: {x: 0.00551, y: 0.71076, z: -0.11309}
-      localAngles: {x: 357.9278, y: 85.20364, z: 184.9252}
-      localScale: {x: 3, y: 3, z: 3}
+      childName: FlowerBase
+      localPos: {x: -0.26653, y: 0.74262, z: 0.66245}
+      localAngles: {x: 25.29461, y: 341.2172, z: 176.4987}
+      localScale: {x: 1, y: 1, z: 1}
       limbMask: 0
   - idrsName: idrsLoader
     rules:
     - ruleType: 0
       displayPrefabIndex: 0
-      childName: MechLowerArmR
-      localPos: {x: -0.02843, y: 0.24618, z: -0.09062}
-      localAngles: {x: 357.9278, y: 85.20364, z: 184.9252}
-      localScale: {x: 1, y: 1, z: 1}
+      childName: MechHandL
+      localPos: {x: -0.09678, y: 0.0888, z: 0.06277}
+      localAngles: {x: 28.01476, y: 302.2359, z: 174.3781}
+      localScale: {x: 0.3, y: 0.3, z: 0.3}
       limbMask: 0
   - idrsName: idrsCroco
     rules:
     - ruleType: 0
       displayPrefabIndex: 0
-      childName: Finger31L
-      localPos: {x: -0.08831, y: 0.39782, z: 0.21602}
-      localAngles: {x: 357.9278, y: 85.20364, z: 184.9252}
-      localScale: {x: 4, y: 4, z: 4}
+      childName: MuzzleHandL
+      localPos: {x: -0.79111, y: 0.41593, z: -1.39771}
+      localAngles: {x: 45.29366, y: 346.007, z: 95.27855}
+      localScale: {x: 2, y: 2, z: 2}
       limbMask: 0
   - idrsName: idrsCaptain
     rules:
     - ruleType: 0
       displayPrefabIndex: 0
-      childName: HandL
-      localPos: {x: -0.01378, y: 0.06592, z: -0.05853}
-      localAngles: {x: 357.9278, y: 85.20364, z: 184.9252}
-      localScale: {x: 1, y: 1, z: 1}
+      childName: CalfR
+      localPos: {x: 0.00546, y: -0.00302, z: -0.06705}
+      localAngles: {x: 12.07266, y: 348.8349, z: 189.9568}
+      localScale: {x: 0.2, y: 0.2, z: 0.2}
       limbMask: 0
   - idrsName: idrsRailGunner
     rules:
     - ruleType: 0
       displayPrefabIndex: 0
-      childName: GunScope
-      localPos: {x: 0.08196, y: -0.15036, z: 0.17895}
-      localAngles: {x: 4.57669, y: 87.67169, z: 274.0066}
-      localScale: {x: 1, y: 1, z: 1}
+      childName: TopRail
+      localPos: {x: 0.00546, y: 0.71316, z: 0.04062}
+      localAngles: {x: 345.0563, y: 6.60493, z: 355.4799}
+      localScale: {x: 0.2, y: 0.2, z: 0.2}
       limbMask: 0
   - idrsName: idrsVoidSurvivor
     rules:
     - ruleType: 0
       displayPrefabIndex: 0
-      childName: LargeExhaust2L
-      localPos: {x: -0.00767, y: 0.04671, z: -0.00454}
-      localAngles: {x: 14.96666, y: 92.26138, z: 186.8235}
-      localScale: {x: 1, y: 1, z: 1}
+      childName: Chest
+      localPos: {x: -0.14121, y: 0.06264, z: 0.18703}
+      localAngles: {x: 21.73587, y: 330.568, z: 202.2781}
+      localScale: {x: 0.2, y: 0.2, z: 0.2}
       limbMask: 0
