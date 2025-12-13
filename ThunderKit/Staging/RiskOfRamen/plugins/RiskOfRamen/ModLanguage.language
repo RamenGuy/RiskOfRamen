@@ -48,6 +48,10 @@ Notes:\n\n
 > Resuming analysis\n
 > Bandage lacerated from contact with the strand, closer examination and testing reveals that it cuts very easily when under tension\n
 > Ending analysis, protective equipment needed for further testing",
+		"ITEM_DENTEDBUCKLE_NAME": "Stained Belt",
+		"ITEM_DENTEDBUCKLE_PICKUP": "Gain 'Critical Strike' chance when you have barrier.",
+		"ITEM_DENTEDBUCKLE_DESC": "Gain <style=cIsDamage>Critical Strike</style> chance equal to <style=cIsDamage>25%</style> <style=cStack>(+25% per stack)</style> of your <style=cIsHealing>barrier</style>.",
+		"ITEM_DENTEDBUCKLE_LORE": "",
 		"WAXWISP_BODY_NAME": "Willow",
 	}
 }

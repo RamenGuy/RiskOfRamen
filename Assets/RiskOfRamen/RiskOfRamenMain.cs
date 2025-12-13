@@ -6,7 +6,7 @@ using R2API;
 using UnityEngine.AddressableAssets;
 using RoR2.UI;
 using LoadingScreenFix;
-using MSU;
+//using MSU;
 
 [assembly: HG.Reflection.SearchableAttribute.OptIn]
 
@@ -16,7 +16,7 @@ namespace RiskOfRamen
     [BepInDependency("___riskofthunder.RoR2BepInExPack")]
     [BepInDependency(RecalculateStatsAPI.PluginGUID)]
     [BepInDependency("Nebby1999.LoadingScreenFix", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInDependency("com.TeamMoonstorm.MSU", BepInDependency.DependencyFlags.HardDependency)]
+    //[BepInDependency("com.TeamMoonstorm.MSU", BepInDependency.DependencyFlags.HardDependency)]
 
     #endregion
     [BepInPlugin(GUID, MODNAME, VERSION)]
@@ -24,7 +24,7 @@ namespace RiskOfRamen
     {
         public const string GUID = "com.Ramen.RiskOfRamen";
         public const string MODNAME = "Risk Of Ramen";
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "1.0.3";  
 
         public static PluginInfo pluginInfo { get; private set; }
         public static RiskOfRamenMain instance { get; private set; }
@@ -81,6 +81,7 @@ namespace RiskOfRamen
             int denkuRopeCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._DenkuRope);
             int obsidianCardCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._ObsidianCard);
             int waxIdolCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._WaxIdol);
+            int dentedBuckleCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._StainedBelt);
             if (denkuRopeCount >= 1)
             {
                 args.critDamageMultAdd += 0.1f * denkuRopeCount;                
@@ -96,13 +97,22 @@ namespace RiskOfRamen
                     args.armorAdd += 40 + (10 * waxIdolCount);
                 }
             }
-
+            if (dentedBuckleCount >= 1)
+            {
+                // Add (barrier/max health) * 0.25 per stack to crit chance
+                args.critAdd += GetBarrierPercentage(self) * (0.25f * dentedBuckleCount);
+            }
         }
 
 
         internal static AssetBundle GetLoadingScreenBundle()
         {
             return AssetBundle.LoadFromFile(loadingScreenBundleDir);
+        }
+
+        public static float GetBarrierPercentage(CharacterBody self)
+        {
+            return self.healthComponent.barrier / self.healthComponent.fullBarrier;
         }
 
 

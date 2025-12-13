@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1284244208, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: StainedBelt
+  m_EditorClassIdentifier: 
+  deprecatedTier: 1
+  _itemTierDef: {fileID: 0}
+  nameToken: ITEM_DENTEDBUCKLE_NAME
+  pickupToken: ITEM_DENTEDBUCKLE_PICKUP
+  descriptionToken: ITEM_DENTEDBUCKLE_DESC
+  loreToken: 
+  unlockableDef: {fileID: 0}
+  pickupModelPrefab: {fileID: 8454340409770522292, guid: 309c7c14d7b9dae4cac5b10f88f3c326, type: 3}
+  pickupModelReference:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
+  pickupIconSprite: {fileID: 21300000, guid: 50134d82c382e564faa0b16c68f68fa8, type: 3}
+  isConsumed: 0
+  hidden: 0
+  canRemove: 0
+  tags: 01000000
+  requiredExpansion: {fileID: 11400000, guid: b04b2db98183f1342b5c7a719126d64d, type: 2}

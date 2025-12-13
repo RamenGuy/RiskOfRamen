@@ -1,0 +1,135 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a4e121de46f1e5741803234bbc5af467, type: 3}
+  m_Name: iddStainedBelt
+  m_EditorClassIdentifier: 
+  keyAsset: {fileID: 11400000, guid: d7543e49159363b4d85c0e683a11d603, type: 2}
+  displayPrefabs:
+  - {fileID: 8454340409770522292, guid: a4fc0d294f8112649b9009e6195b4ce6, type: 3}
+  displayDictionaryEntries:
+  - idrsName: idrsCommando
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Stomach
+      localPos: {x: -0.0006196699, y: 0.0664756, z: 0.005291909}
+      localAngles: {x: 2.347317, y: 0.1241108, z: 359.6479}
+      localScale: {x: 0.21, y: 0.2, z: 0.17}
+      limbMask: 0
+  - idrsName: idrsHuntress
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Pelvis
+      localPos: {x: -0.005323232, y: -0.09249908, z: -0.03102574}
+      localAngles: {x: 356.1983, y: 170.2309, z: 358.5276}
+      localScale: {x: 0.13, y: 0.2, z: 0.13}
+      limbMask: 0
+  - idrsName: idrsBandit2
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Stomach
+      localPos: {x: -0.0005652234, y: 0.03553234, z: 0.01952896}
+      localAngles: {x: 359.4539, y: 2.116131, z: 359.7868}
+      localScale: {x: 0.2, y: 0.2, z: 0.19}
+      limbMask: 0
+  - idrsName: idrsToolbot
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: LowerArmL
+      localPos: {x: 0.241448, y: 1.959035, z: -0.02630174}
+      localAngles: {x: 354.3408, y: 163.9241, z: 188.9696}
+      localScale: {x: 1.08, y: 1.08, z: 1.08}
+      limbMask: 0
+  - idrsName: idrsEngi
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Pelvis
+      localPos: {x: 0, y: 0.0271, z: -3.1795}
+      localAngles: {x: 9.883212, y: 180.9746, z: 0.1673175}
+      localScale: {x: 0.23, y: 0.3, z: 0.23}
+      limbMask: 0
+  - idrsName: idrsMerc
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Pelvis
+      localPos: {x: 0.00922018, y: 0.03408307, z: -0.05420827}
+      localAngles: {x: 0.262402, y: 178.3843, z: 356.6398}
+      localScale: {x: 0.2, y: 0.2, z: 0.16}
+      limbMask: 0
+  - idrsName: idrsMage
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Stomach
+      localPos: {x: 0.007699824, y: 0.1468786, z: 0.0404258}
+      localAngles: {x: 13.93606, y: 15.0213, z: 0.5456346}
+      localScale: {x: 0.13, y: 0.13, z: 0.08}
+      limbMask: 0
+  - idrsName: idrsTreebot
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: AimOriginSyringe
+      localPos: {x: 0.001178374, y: -0.1037042, z: -0.8423809}
+      localAngles: {x: 57.30596, y: 94.5711, z: 271.8822}
+      localScale: {x: 0.24, y: 0.24, z: 0.24}
+      limbMask: 0
+  - idrsName: idrsLoader
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Stomach
+      localPos: {x: 0, y: 0, z: 0}
+      localAngles: {x: 0.02879967, y: 2.010558, z: 181.875}
+      localScale: {x: 0.2, y: 0.2, z: 0.2}
+      limbMask: 0
+  - idrsName: idrsCroco
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Head
+      localPos: {x: -0.04304644, y: 0.4384076, z: -0.4009538}
+      localAngles: {x: 359.0912, y: 84.59714, z: 198.729}
+      localScale: {x: 1.9, y: 4, z: 1.8}
+      limbMask: 0
+  - idrsName: idrsCaptain
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Stomach
+      localPos: {x: -0.003693141, y: 0.1459543, z: -0.001844868}
+      localAngles: {x: 6.604173, y: 2.410964, z: 178.6564}
+      localScale: {x: 0.23, y: 0.23, z: 0.2}
+      limbMask: 0
+  - idrsName: idrsRailGunner
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: GunScope
+      localPos: {x: -0.04557515, y: -0.07592946, z: 0.001052856}
+      localAngles: {x: 0, y: 283.0537, z: 353.6153}
+      localScale: {x: 0.18, y: 0.2, z: 0.12}
+      limbMask: 0
+  - idrsName: idrsVoidSurvivor
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: LargeExhaust2L
+      localPos: {x: -0.00767, y: 0.04671, z: -0.00454}
+      localAngles: {x: 14.96666, y: 92.26138, z: 186.8235}
+      localScale: {x: 0.17, y: 0.17, z: 0.17}
+      limbMask: 0

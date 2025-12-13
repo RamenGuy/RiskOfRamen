@@ -17,6 +17,7 @@
     "com.unity.visualscripting": "1.9.1",
     "riskofthunder-ror2editorkit": "https://github.com/risk-of-thunder/RoR2EditorKit.git#5.6.0",
     "riskofthunder-ror2importextensions": "file:C:/Users/nickh/Downloads/RoR2ImportExtensions-1.7.1/RoR2ImportExtensions-1.7.1",
+    "teammoonstorm-moonstormsharedutils": "https://github.com/TeamMoonstorm/MoonstormSharedUtils.git#2.4.3",
     "com.unity.modules.ai": "1.0.0",
     "com.unity.modules.androidjni": "1.0.0",
     "com.unity.modules.animation": "1.0.0",

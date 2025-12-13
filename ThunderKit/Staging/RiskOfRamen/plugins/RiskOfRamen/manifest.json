@@ -1,13 +1,12 @@
 {
     "name": "RiskOfRamen",
     "author": "Ramen",
-    "version_number": "1.0.0",
+    "version_number": "1.0.3",
     "website_url": "",
-    "description": "contemnt",
+    "description": "Modded expansion for Risk of Rain 2! Contains a few items with more content to come.",
     "dependencies": [
         "bbepis-BepInExPack-5.4.2121",
-        "TeamMoonstorm-MoonstormSharedUtils-2.4.3",
         "Nebby-LoadingScreenSpriteFix-2.0.1",
-        "Smooth_Salad-ShaderSwapper-1.0.1"
+        "TeamMoonstorm-MoonstormSharedUtils-2.4.3"
     ]
 }

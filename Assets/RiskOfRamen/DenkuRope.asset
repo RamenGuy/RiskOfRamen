@@ -19,7 +19,7 @@ MonoBehaviour:
   descriptionToken: ITEM_DENKUROPE_DESC
   loreToken: ITEM_DENKUROPE_LORE
   unlockableDef: {fileID: 0}
-  pickupModelPrefab: {fileID: 8454340409770522292, guid: 2b3a939e3b3b1184ba287cfd4d1f8f66, type: 3}
+  pickupModelPrefab: {fileID: 8454340409770522292, guid: 7fd8b6f82bbeb3b48a4345855861a292, type: 3}
   pickupModelReference:
     m_AssetGUID: 
     m_SubObjectName: 

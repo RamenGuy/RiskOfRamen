@@ -90,7 +90,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 2800000, guid: 88e85d56e2fdb9b47872b4be6025d0e7, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -157,7 +157,7 @@ Material:
     - _LimbRemovalOn: 0
     - _Metallic: 0.292
     - _Mode: 0
-    - _NormalStrength: 2.74
+    - _NormalStrength: 0
     - _OcclusionStrength: 0.641
     - _Parallax: 0.005
     - _PrintBias: 0

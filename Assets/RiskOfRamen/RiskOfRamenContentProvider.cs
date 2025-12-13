@@ -8,63 +8,68 @@ using System.Collections.Generic;
 using UnityEngine.AddressableAssets;
 using static RoR2.Console;
 using RoR2.UI;
-using MSU;
+//using MSU;
 
 namespace RiskOfRamen
-{
-        public class RiskOfRamenContent : IContentPackProvider
-        {
-            public string identifier => RiskOfRamenMain.GUID;
+    {
+    public class RiskOfRamenContent : IContentPackProvider
+    {
+        public string identifier => RiskOfRamenMain.GUID;
 
-            public static ReadOnlyContentPack readOnlyContentPack => new ReadOnlyContentPack(RiskOfRamenContentPack);
-            internal static ContentPack RiskOfRamenContentPack { get; } = new ContentPack();    
+        public static ReadOnlyContentPack readOnlyContentPack => new ReadOnlyContentPack(RiskOfRamenContentPack);
+        internal static ContentPack RiskOfRamenContentPack { get; } = new ContentPack();    
 
-            public static ItemDef _WaxIdol;
-            public static ItemDef _ObsidianCard;
-            public static ItemDef _DenkuRope;
+        public static ItemDef _WaxIdol;
+        public static ItemDef _ObsidianCard;
+        public static ItemDef _DenkuRope;
+        public static ItemDef _StainedBelt;
 
-            public static GameObject _WaxWispBody;
-            public static GameObject _WaxWispMaster;
-            public static CharacterSpawnCard _cscWaxWisp;
+        public static GameObject _StainedBeltDisplay;
+        public static GameObject _WaxWispBody;
+        public static GameObject _WaxWispMaster;
+        public static CharacterSpawnCard _cscWaxWisp;
 
         public static ItemDisplayRuleDict _idrsObsidianCard;
         
 
-            public static AssetBundle _assetBundle;
+        public static AssetBundle _assetBundle;
 
 
-            [System.Obsolete]
+        [System.Obsolete]
 
-            public IEnumerator LoadStaticContentAsync(LoadStaticContentAsyncArgs args)
+        public IEnumerator LoadStaticContentAsync(LoadStaticContentAsyncArgs args)
+        {
+            var asyncOperation = AssetBundle.LoadFromFileAsync(RiskOfRamenMain.assetBundleDir);
+            while(!asyncOperation.isDone)
             {
-                var asyncOperation = AssetBundle.LoadFromFileAsync(RiskOfRamenMain.assetBundleDir);
-                while(!asyncOperation.isDone)
-                {
-                    args.ReportProgress(asyncOperation.progress);
-                    yield return null;
-                }
+                args.ReportProgress(asyncOperation.progress);
+                yield return null;
+            }
 
-                //Write code here to initialize your mod post assetbundle load
+            //Write code here to initialize your mod post assetbundle load
 
-                _assetBundle = asyncOperation.assetBundle;
-                _WaxIdol = _assetBundle.LoadAsset<ItemDef>("WaxIdol");
-                _ObsidianCard = _assetBundle.LoadAsset<ItemDef>("ObsidianCard");
-                _DenkuRope = _assetBundle.LoadAsset<ItemDef>("DenkuRope");
+            _assetBundle = asyncOperation.assetBundle;
+            _WaxIdol = _assetBundle.LoadAsset<ItemDef>("WaxIdol");
+            _ObsidianCard = _assetBundle.LoadAsset<ItemDef>("ObsidianCard");
+            _DenkuRope = _assetBundle.LoadAsset<ItemDef>("DenkuRope");
+            _StainedBelt = _assetBundle.LoadAsset<ItemDef>("StainedBelt");
+            _StainedBeltDisplay = _assetBundle.LoadAsset<GameObject>("StainedBeltDisplay");
 
-                _WaxWispBody = _assetBundle.LoadAsset<GameObject>("WaxWispBody");
-                _WaxWispMaster = _assetBundle.LoadAsset<GameObject>("WaxWispMaster");
-                _cscWaxWisp = _assetBundle.LoadAsset<CharacterSpawnCard>("cscWaxWisp");
+            _WaxWispBody = _assetBundle.LoadAsset<GameObject>("WaxWispBody");
+            _WaxWispMaster = _assetBundle.LoadAsset<GameObject>("WaxWispMaster");
+            _cscWaxWisp = _assetBundle.LoadAsset<CharacterSpawnCard>("cscWaxWisp");
 
-                var expansionDef = _assetBundle.LoadAsset<ExpansionDef>("RiskOfRamenExpansion");
-                RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _WaxIdol });
-                RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _ObsidianCard }); 
-                RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _DenkuRope });
-                RiskOfRamenContentPack.bodyPrefabs.Add(new GameObject[] { _WaxWispBody });
-                RiskOfRamenContentPack.masterPrefabs.Add(new GameObject[] { _WaxWispMaster });
-                RiskOfRamenContentPack.expansionDefs.Add(new ExpansionDef[] { expansionDef });
+            var expansionDef = _assetBundle.LoadAsset<ExpansionDef>("RiskOfRamenExpansion");
+            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _WaxIdol });
+            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _ObsidianCard }); 
+            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _DenkuRope });
+            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _StainedBelt });
+            RiskOfRamenContentPack.bodyPrefabs.Add(new GameObject[] { _WaxWispBody });
+            RiskOfRamenContentPack.masterPrefabs.Add(new GameObject[] { _WaxWispMaster });
+            RiskOfRamenContentPack.expansionDefs.Add(new ExpansionDef[] { expansionDef });
 
-                //ShaderUtil.SwapStubbedShadersAsync(_assetBundle);
-                SwapAllShaders();
+            //ShaderUtil.SwapStubbedShadersAsync(_assetBundle);
+            SwapAllShaders();
                  
             #region ITEM DISPLAY RULES
 
@@ -281,7 +286,7 @@ namespace RiskOfRamen
             });
 
 
-            ItemAPI.Add(new CustomItem(_DenkuRope, DenkuRopeDisplay));
+            //ItemAPI.Add(new CustomItem(_DenkuRope, DenkuRopeDisplay));
             #endregion
             #region OBSIDIAN CARD
             var ObsidianCardDisplay = new ItemDisplayRuleDict();
@@ -492,220 +497,13 @@ namespace RiskOfRamen
             });
 
 
-            //ItemAPI.Add(new CustomItem(_ObsidianCard, ObsidianCardDisplay));
+            ItemAPI.Add(new CustomItem(_ObsidianCard, ObsidianCardDisplay));
             #endregion
-            #region WAX IDOL
-            var WaxIdolDisplay = new ItemDisplayRuleDict();
 
-            WaxIdolDisplay.Add("mdlCommandoDualies", new ItemDisplayRule[]
-            {
-                    new ItemDisplayRule {
-                        ruleType = ItemDisplayRuleType.ParentedPrefab,
-                        followerPrefab = _WaxIdol.pickupModelPrefab,
-                        followerPrefabAddress = new UnityEngine.AddressableAssets.AssetReferenceGameObject(""),
-                        limbMask = LimbFlags.None,
-                        childName = "Stomach",
-                        localPos = new Vector3(-0.15959F, 0.04731F, 0.0912F),
-                        localAngles = new Vector3(2.00543F, 21.73442F, 2.04146F),
-                        localScale = new Vector3(1F, 1F, 1F)
-
-                    },
-
-            });
-
-            WaxIdolDisplay.Add("mdlHuntress", new ItemDisplayRule[]
-            {
-                    new ItemDisplayRule {
-                        ruleType = ItemDisplayRuleType.ParentedPrefab,
-                        followerPrefab = _WaxIdol.pickupModelPrefab,
-                        followerPrefabAddress = new UnityEngine.AddressableAssets.AssetReferenceGameObject(""),
-                        limbMask = LimbFlags.None,
-                        childName = "Muzzle",
-                        localPos = new Vector3(0.00806F, -0.06331F, -0.03886F),
-                        localAngles = new Vector3(354.5048F, 95.20891F, 272.4645F),
-                        localScale = new Vector3(1F, 1F, 1F)
-                    },
-
-            });
-
-            WaxIdolDisplay.Add("mdlBandit2", new ItemDisplayRule[]
-            {
-                    new ItemDisplayRule {
-                        ruleType = ItemDisplayRuleType.ParentedPrefab,
-                        followerPrefab = _WaxIdol.pickupModelPrefab,
-                        followerPrefabAddress = new UnityEngine.AddressableAssets.AssetReferenceGameObject(""),
-                        limbMask = LimbFlags.None,
-                        childName = "Chest",
-                        localPos = new Vector3(-0.18403F, 0.17287F, -0.21192F),
-                        localAngles = new Vector3(356.2089F, 114.2677F, 293.7615F),
-                        localScale = new Vector3(1F, 1F, 1F)
-
-
-                    },
-
-            });
-
-            WaxIdolDisplay.Add("mdlToolbot", new ItemDisplayRule[]
-            {
-                    new ItemDisplayRule {
-                        ruleType = ItemDisplayRuleType.ParentedPrefab,
-                        followerPrefab = _WaxIdol.pickupModelPrefab,
-                        followerPrefabAddress = new UnityEngine.AddressableAssets.AssetReferenceGameObject(""),
-                        limbMask = LimbFlags.None,
-                        childName = "LowerArmL",
-                        localPos = new Vector3(-0.02377F, 6.47737F, -0.07741F),
-                        localAngles = new Vector3(354.3408F, 163.9241F, 188.9696F),
-                        localScale = new Vector3(5F, 5F, 5F)
-
-                    },
-
-            });
-
-            WaxIdolDisplay.Add("mdlEngi", new ItemDisplayRule[]
-            {
-                    new ItemDisplayRule {
-                        ruleType = ItemDisplayRuleType.ParentedPrefab,
-                        followerPrefab = _WaxIdol.pickupModelPrefab,
-                        followerPrefabAddress = new UnityEngine.AddressableAssets.AssetReferenceGameObject(""),
-                        limbMask = LimbFlags.None,
-                        childName = "MuzzleLeft",
-                        localPos = new Vector3(0.18999F, -0.18691F, -0.14626F),
-                        localAngles = new Vector3(314.211F, 133.8138F, 150.7838F),
-                        localScale = new Vector3(1F, 1F, 1F)
-
-                    },
-
-            });
-
-            WaxIdolDisplay.Add("mdlMerc", new ItemDisplayRule[]
-            {
-                    new ItemDisplayRule {
-                        ruleType = ItemDisplayRuleType.ParentedPrefab,
-                        followerPrefab = _WaxIdol.pickupModelPrefab,
-                        followerPrefabAddress = new UnityEngine.AddressableAssets.AssetReferenceGameObject(""),
-                        limbMask = LimbFlags.None,
-                        childName = "SwordBase",
-                        localPos = new Vector3(-0.00199F, -0.24974F, -0.00197F),
-                        localAngles = new Vector3(354.5048F, 95.20892F, 2.57154F),
-                        localScale = new Vector3(1F, 1F, 1F)
-
-                    },
-
-            });
-
-            WaxIdolDisplay.Add("mdlMage", new ItemDisplayRule[]
-            {
-                    new ItemDisplayRule {
-                        ruleType = ItemDisplayRuleType.ParentedPrefab,
-                        followerPrefab = _WaxIdol.pickupModelPrefab,
-                        followerPrefabAddress = new UnityEngine.AddressableAssets.AssetReferenceGameObject(""),
-                        limbMask = LimbFlags.None,
-                        childName = "LowerArmR",
-                        localPos = new Vector3(0.03725F, 0.19161F, 0.10103F),
-                        localAngles = new Vector3(357.9278F, 85.20364F, 184.9252F),
-                        localScale = new Vector3(1F, 1F, 1F)
-
-                    },
-
-            });
-
-            WaxIdolDisplay.Add("mdlTreebot", new ItemDisplayRule[]
-            {
-                    new ItemDisplayRule {
-                        ruleType = ItemDisplayRuleType.ParentedPrefab,
-                        followerPrefab = _WaxIdol.pickupModelPrefab,
-                        followerPrefabAddress = new UnityEngine.AddressableAssets.AssetReferenceGameObject(""),
-                        limbMask = LimbFlags.None,
-                        childName = "FootFrontL",
-                        localPos = new Vector3(0.00551F, 0.71076F, -0.11309F),
-                        localAngles = new Vector3(357.9278F, 85.20364F, 184.9252F),
-                        localScale = new Vector3(3F, 3F, 3F)
-                    },
-
-            });
-
-            WaxIdolDisplay.Add("mdlLoader", new ItemDisplayRule[]
-            {
-                    new ItemDisplayRule {
-                        ruleType = ItemDisplayRuleType.ParentedPrefab,
-                        followerPrefab = _WaxIdol.pickupModelPrefab,
-                        followerPrefabAddress = new UnityEngine.AddressableAssets.AssetReferenceGameObject(""),
-                        limbMask = LimbFlags.None,
-                        childName = "MechLowerArmR",
-                        localPos = new Vector3(-0.02843F, 0.24618F, -0.09062F),
-                        localAngles = new Vector3(357.9278F, 85.20364F, 184.9252F),
-                        localScale = new Vector3(1F, 1F, 1F)
-                    },
-            });
-
-            WaxIdolDisplay.Add("mdlCroco", new ItemDisplayRule[]
-            {
-                    new ItemDisplayRule {
-                        ruleType = ItemDisplayRuleType.ParentedPrefab,
-                        followerPrefab = _WaxIdol.pickupModelPrefab,
-                        followerPrefabAddress = new UnityEngine.AddressableAssets.AssetReferenceGameObject(""),
-                        limbMask = LimbFlags.None,
-                        childName = "Finger31L",
-                        localPos = new Vector3(-0.08831F, 0.39782F, 0.21602F),
-                        localAngles = new Vector3(357.9278F, 85.20364F, 184.9252F),
-                        localScale = new Vector3(4F, 4F, 4F)
-
-                    },
-
-            });
-
-            WaxIdolDisplay.Add("mdlCaptain", new ItemDisplayRule[]
-            {
-                    new ItemDisplayRule {
-                        ruleType = ItemDisplayRuleType.ParentedPrefab,
-                        followerPrefab = _WaxIdol.pickupModelPrefab,
-                        followerPrefabAddress = new UnityEngine.AddressableAssets.AssetReferenceGameObject(""),
-                        limbMask = LimbFlags.None,
-                        childName = "HandL",
-                        localPos = new Vector3(-0.01378F, 0.06592F, -0.05853F),
-                        localAngles = new Vector3(357.9278F, 85.20364F, 184.9252F),
-                        localScale = new Vector3(1F, 1F, 1F)
-                    },
-            });
-
-            WaxIdolDisplay.Add("mdlRailGunner", new ItemDisplayRule[]
-            {
-                    new ItemDisplayRule {
-                        ruleType = ItemDisplayRuleType.ParentedPrefab,
-                        followerPrefab = _WaxIdol.pickupModelPrefab,
-                        followerPrefabAddress = new UnityEngine.AddressableAssets.AssetReferenceGameObject(""),
-                        limbMask = LimbFlags.None,
-                        childName = "GunScope",
-                        localPos = new Vector3(0.08196F, -0.15036F, 0.17895F),
-                        localAngles = new Vector3(4.57669F, 87.67169F, 274.0066F),
-                        localScale = new Vector3(1F, 1F, 1F)
-
-                    },
-            });         
-
-            WaxIdolDisplay.Add("mdlVoidSurvivor", new ItemDisplayRule[]
-            {
-                    new ItemDisplayRule {
-                        ruleType = ItemDisplayRuleType.ParentedPrefab,
-                        followerPrefab = _WaxIdol.pickupModelPrefab,
-                        followerPrefabAddress = new UnityEngine.AddressableAssets.AssetReferenceGameObject(""),
-                        limbMask = LimbFlags.None,
-                        childName = "LargeExhaust2L",
-                        localPos = new Vector3(-0.00767F, 0.04671F, -0.00454F),
-                        localAngles = new Vector3(14.96666F, 92.26138F, 186.8235F),
-                        localScale = new Vector3(1F, 1F, 1F)
-
-                    },
-            });
-
-
-
-            ItemAPI.Add(new CustomItem(_WaxIdol, WaxIdolDisplay));
-            #endregion
             #endregion
         }
 
-        
+
         private static void SwapAllShaders()
         {
             foreach (var material in _assetBundle.LoadAllAssets<Material>())
@@ -752,7 +550,7 @@ namespace RiskOfRamen
         
         public IEnumerator GenerateContentPackAsync(GetContentPackAsyncArgs args)
         {
-             ContentPack.Copy(RiskOfRamenContentPack, args.output);
+                ContentPack.Copy(RiskOfRamenContentPack, args.output);
             args.ReportProgress(1f);
             yield break;
         }
