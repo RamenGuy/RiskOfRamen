@@ -51,7 +51,19 @@ Notes:\n\n
 		"ITEM_STAINEDBELT_NAME": "Stained Belt",
 		"ITEM_STAINEDBELT_PICKUP": "Gain 'Critical Strike' chance when you have barrier.",
 		"ITEM_STAINEDBELT_DESC": "Gain <style=cIsDamage>Critical Strike</style> chance equal to <style=cIsDamage>25%</style> <style=cStack>(+25% per stack)</style> of your <style=cIsHealing>barrier</style>.",
-		"ITEM_STAINEDBELT_LORE": "",
+		"ITEM_STAINEDBELT_LORE": "A man limps into a quiet camp, covered in blood. He tosses his gun into the dirt, watching dispassionately as it bounces along the ground and clatters to a halt by a dying fire.\n\n
+From a shadowy bench, a figure rises.\n\n
+"Oh my god, Henderson, you're alive!"\n\n
+"Yeah."\n\n
+"How the hell did you get out of there? There must have been hundreds of them!"\n\n
+"I... I dunno. I popped one in the head and... it was like my bullets were made of dynamite."\n\n
+He wipes a chunk of meat off of his visor.\n\n
+"I think... I think I need to sit down."\n\n
+As Henderson collapses onto the bench, he fiddles with something around his neck. It comes loose, dropping a small medallion into his hand.\n\n
+"Here."\n\n
+"What? I gave that to you to keep!"\n\n
+"I don't care. If we had a shower, I wouldn't leave for two days. At least getting that thing off me gets a bit of the smell away."\n\n
+The second figure sighs, and places the brooch in a pouch. As they retreat into a tent, Henderson stares down at his belt, soaked in blood and brains.",
 		"WAXWISP_BODY_NAME": "Willow",
 	}
 }

@@ -133,3 +133,12 @@ MonoBehaviour:
       localAngles: {x: 14.96666, y: 92.26138, z: 186.8235}
       localScale: {x: 0.17, y: 0.17, z: 0.17}
       limbMask: 0
+  - idrsName: idrsDroneTech
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Stomach
+      localPos: {x: -0.06079633, y: 0.009141459, z: 0.0005270023}
+      localAngles: {x: 67.87451, y: 320.5556, z: 48.23643}
+      localScale: {x: 0.15, y: 0.15, z: 0.15}
+      limbMask: 0

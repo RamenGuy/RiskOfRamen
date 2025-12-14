@@ -133,3 +133,12 @@ MonoBehaviour:
       localAngles: {x: 14.96666, y: 92.26138, z: 186.8235}
       localScale: {x: 0.6, y: 0.6, z: 0.6}
       limbMask: 0
+  - idrsName: idrsDroneTech
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: ClawLowerTip
+      localPos: {x: 0.04757485, y: 0.2250681, z: -0.001875037}
+      localAngles: {x: 13.34037, y: 1.081787, z: 190.6445}
+      localScale: {x: 0.6, y: 0.6, z: 0.6}
+      limbMask: 0
