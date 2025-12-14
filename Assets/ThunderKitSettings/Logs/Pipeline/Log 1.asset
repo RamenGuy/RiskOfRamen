@@ -1,0 +1,863 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9af1c6015733a42be940cc462aa7ed, type: 3}
+  m_Name: Log 1
+  m_EditorClassIdentifier: 
+  pipeline: {fileID: 11400000, guid: 1cd69e79a95a5d44cb323bf460fb78a5, type: 2}
+  creationDate:
+    ticks: 639013170585228792
+  entries:
+  - logLevel: 0
+    internalTime:
+      ticks: 639013170753334275
+    message: '[Pipeline(1 - StageAssetBundles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      Creating 2 AssetBundles'
+    context:
+    - 'RiskOfRamenAssets
+
+      [expIcon](assetlink://Assets%2fRiskOfRamen%2fAssets%2fexpIcon.png)
+
+      
+
+      [DenkuRope](assetlink://Assets%2fRiskOfRamen%2fAssets%2fDenkuRope%2fDenkuRope.prefab)
+
+      
+
+      [DenkuRopeDisplay](assetlink://Assets%2fRiskOfRamen%2fAssets%2fDenkuRope%2fDenkuRopeDisplay.prefab)
+
+      
+
+      [denkurope_icon](assetlink://Assets%2fRiskOfRamen%2fAssets%2fDenkuRope%2fdenkurope_icon.png)
+
+      
+
+      [iddDenkuRope](assetlink://Assets%2fRiskOfRamen%2fAssets%2fDenkuRope%2fiddDenkuRope.asset)
+
+      
+
+      [matLeatherBelt](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatLeatherBelt.mat)
+
+      
+
+      [matObsidian](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatObsidian.mat)
+
+      
+
+      [matRope](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatRope.mat)
+
+      
+
+      [matSilver](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatSilver.mat)
+
+      
+
+      [matStainedSilver](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatStainedSilver.mat)
+
+      
+
+      [matWax](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatWax.mat)
+
+      
+
+      [matWaxWispFire](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatWaxWispFire.mat)
+
+      
+
+      [matWaxWispMask](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatWaxWispMask.mat)
+
+      
+
+      [iddObsidianCard](assetlink://Assets%2fRiskOfRamen%2fAssets%2fObsidianCard%2fiddObsidianCard.asset)
+
+      
+
+      [ObsidianCard](assetlink://Assets%2fRiskOfRamen%2fAssets%2fObsidianCard%2fObsidianCard.prefab)
+
+      
+
+      [obsidiancard_icon](assetlink://Assets%2fRiskOfRamen%2fAssets%2fObsidianCard%2fobsidiancard_icon.png)
+
+      
+
+      [iddStainedBelt](assetlink://Assets%2fRiskOfRamen%2fAssets%2fStainedBelt%2fiddStainedBelt.asset)
+
+      
+
+      [StainedBelt](assetlink://Assets%2fRiskOfRamen%2fAssets%2fStainedBelt%2fStainedBelt.prefab)
+
+      
+
+      [StainedBeltDisplay](assetlink://Assets%2fRiskOfRamen%2fAssets%2fStainedBelt%2fStainedBeltDisplay.prefab)
+
+      
+
+      [StainedBeltIcon](assetlink://Assets%2fRiskOfRamen%2fAssets%2fStainedBelt%2fStainedBeltIcon.png)
+
+      
+
+      [texBronze](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexBronze.jpg)
+
+      
+
+      [texBronzeNormal](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexBronzeNormal.jpg)
+
+      
+
+      [texCloudDifferenceBW2](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexCloudDifferenceBW2.png)
+
+      
+
+      [texGlowPaintMask](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexGlowPaintMask.png)
+
+      
+
+      [texObsidian](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexObsidian.jpg)
+
+      
+
+      [texObsidianNormal](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexObsidianNormal.jpg)
+
+      
+
+      [texRampWisp](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexRampWisp.png)
+
+      
+
+      [texRope](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexRope.png)
+
+      
+
+      [texRopeNormal](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexRopeNormal.png)
+
+      
+
+      [texSilver](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexSilver.jpg)
+
+      
+
+      [texWaxIdolBase](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexWaxIdolBase.jpg)
+
+      
+
+      [iddWaxIdol](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWaxIdol%2fiddWaxIdol.asset)
+
+      
+
+      [WaxIdol](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWaxIdol%2fWaxIdol.prefab)
+
+      
+
+      [wax_icon](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWaxIdol%2fwax_icon.png)
+
+      
+
+      [DevotedLemurianMaster](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWaxWisp%2fDevotedLemurianMaster.prefab)
+
+      
+
+      [Drone1Master](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWaxWisp%2fDrone1Master.prefab)
+
+      
+
+      [mdlWaxWisp](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWaxWisp%2fmdlWaxWisp.prefab)
+
+      
+
+      [WaxWispBody](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWaxWisp%2fWaxWispBody.prefab)
+
+      
+
+      [WaxWispIcon](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWaxWisp%2fWaxWispIcon.png)
+
+      
+
+      [WaxWispMaster](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWaxWisp%2fWaxWispMaster.prefab)
+
+      
+
+      [WispBody
+      1](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWaxWisp%2fWispBody+1.prefab)
+
+      
+
+      [WispMaster](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWaxWisp%2fWispMaster.prefab)
+
+      
+
+      [KnotBelt](assetlink://Assets%2fRiskOfRamen%2fAssets%2fDenkuRope%2fmeshes%2fKnotBelt.fbx)
+
+      
+
+      [knotrp](assetlink://Assets%2fRiskOfRamen%2fAssets%2fDenkuRope%2fmeshes%2fknotrp.fbx)
+
+      
+
+      [CurvedPlane](assetlink://Assets%2fRiskOfRamen%2fAssets%2fObsidianCard%2fmeshes%2fCurvedPlane.fbx)
+
+      
+
+      [beltdisplay](assetlink://Assets%2fRiskOfRamen%2fAssets%2fStainedBelt%2fmeshes%2fbeltdisplay.fbx)
+
+      
+
+      [BeltStrap](assetlink://Assets%2fRiskOfRamen%2fAssets%2fStainedBelt%2fmeshes%2fBeltStrap.fbx)
+
+      
+
+      [one](assetlink://Assets%2fRiskOfRamen%2fAssets%2fStainedBelt%2fmeshes%2fone.fbx)
+
+      
+
+      [two](assetlink://Assets%2fRiskOfRamen%2fAssets%2fStainedBelt%2fmeshes%2ftwo.fbx)
+
+      
+
+      [WaxIdolModel](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWaxIdol%2fmeshes%2fWaxIdolModel.fbx)
+
+      
+
+      [WispMask](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWaxWisp%2fmeshes%2fWispMask.fbx)
+
+      
+
+      [WaxIdol](assetlink://Assets%2fRiskOfRamen%2fWaxIdol.asset)
+
+      
+
+      [RiskOfRamenExpansion](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenExpansion.asset)
+
+      
+
+      [ObsidianCard](assetlink://Assets%2fRiskOfRamen%2fObsidianCard.asset)
+
+      
+
+      [DenkuRope](assetlink://Assets%2fRiskOfRamen%2fDenkuRope.asset)
+
+      
+
+      [StainedBelt](assetlink://Assets%2fRiskOfRamen%2fStainedBelt.asset)
+
+      
+
+      [cscWaxWisp](assetlink://Assets%2fRiskOfRamen%2fcscWaxWisp.asset)
+
+      
+
+      [HGStandard](assetlink://Assets%2fRiskOfRamen%2fshaders%2fDeferred%2fHGStandard.shader)
+
+      
+
+      [HGCloudRemap](assetlink://Assets%2fRiskOfRamen%2fshaders%2fFX%2fHGCloudRemap.shader)
+
+      
+
+      
+
+'
+    - 'RiskOfRamenSSA
+
+      [ssaWaxWisp](assetlink://Assets%2fRiskOfRamen%2floadingicon%2fssaWaxWisp.asset)
+
+      
+
+      [waxWisp_strip1](assetlink://Assets%2fRiskOfRamen%2floadingicon%2fwaxWisp_strip1.png)
+
+      
+
+      
+
+'
+  - logLevel: 0
+    internalTime:
+      ticks: 639013170751096724
+    message: '[Pipeline(1 - StageAssetBundles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MSUManifest](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUManifest.asset)
+      Creating 1 AssetBundles'
+    context:
+    - 'runtimemsuassetbundle
+
+      [MSUSCP](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fMSUSCP.asset)
+
+      
+
+      [RuntimeAddressableMaterialShader](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fRuntimeAddressableMaterialShader.shader)
+
+      
+
+      [GameplayEventText](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fPrefabs%2fGameplayEventText.prefab)
+
+      
+
+      [LICENSE](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fLICENSE)
+
+      
+
+      [README](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fREADME.md)
+
+      
+
+      [StubbedShaderRoot](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fStubbedShaderRoot.txt)
+
+      
+
+      [CalmWater
+      - DoubleSided](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fCalmWater%2fCalmWater+-+DoubleSided.shader)
+
+      
+
+      [CalmWater
+      - DX11 - DoubleSided](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fCalmWater%2fCalmWater+-+DX11+-+DoubleSided.shader)
+
+      
+
+      [CalmWater
+      - DX11](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fCalmWater%2fCalmWater+-+DX11.shader)
+
+      
+
+      [CalmWater
+      - SingleSided](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fCalmWater%2fCalmWater+-+SingleSided.shader)
+
+      
+
+      [ProjectorCaustics](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fCalmWater%2fProjectorCaustics.shader)
+
+      
+
+      [UnderWaterFog](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fCalmWater%2fUnderWaterFog.shader)
+
+      
+
+      [DecaliciousDeferredDecal](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fDecalicious%2fDecaliciousDeferredDecal.shader)
+
+      
+
+      [DecaliciousGameObjectID](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fDecalicious%2fDecaliciousGameObjectID.shader)
+
+      
+
+      [DecaliciousUnlitDecal](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fDecalicious%2fDecaliciousUnlitDecal.shader)
+
+      
+
+      [DownTent](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fLeTai%27sAsset%2fDownTent.shader)
+
+      
+
+      [EfficientBlur](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fLeTai%27sAsset%2fEfficientBlur.shader)
+
+      
+
+      [FillCrop](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fLeTai%27sAsset%2fFillCrop.shader)
+
+      
+
+      [QuickDumbBlur](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fLeTai%27sAsset%2fQuickDumbBlur.shader)
+
+      
+
+      [TranslucentImage](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fLeTai%27sAsset%2fTranslucentImage.shader)
+
+      
+
+      [NGSS_ContactShadows](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fPsychoseNGGS%2fNGSS_ContactShadows.shader)
+
+      
+
+      [NGSS_Directional](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fPsychoseNGGS%2fNGSS_Directional.shader)
+
+      
+
+      [NGSS_FrustumShadows](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fPsychoseNGGS%2fNGSS_FrustumShadows.shader)
+
+      
+
+      [Distance
+      Field](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fDistance+Field.shader)
+
+      
+
+      [TMP_Bitmap-Custom-Atlas](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fTMP_Bitmap-Custom-Atlas.shader)
+
+      
+
+      [TMP_Bitmap-Mobile](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fTMP_Bitmap-Mobile.shader)
+
+      
+
+      [TMP_Bitmap](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fTMP_Bitmap.shader)
+
+      
+
+      [TMP_SDF
+      Overlay](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fTMP_SDF+Overlay.shader)
+
+      
+
+      [TMP_SDF
+      SSD](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fTMP_SDF+SSD.shader)
+
+      
+
+      [TMP_SDF-Mobile
+      Masking](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fTMP_SDF-Mobile+Masking.shader)
+
+      
+
+      [TMP_SDF-Mobile
+      Overlay](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fTMP_SDF-Mobile+Overlay.shader)
+
+      
+
+      [TMP_SDF-Mobile
+      SSD](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fTMP_SDF-Mobile+SSD.shader)
+
+      
+
+      [TMP_SDF-Mobile](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fTMP_SDF-Mobile.shader)
+
+      
+
+      [TMP_SDF-Surface-Mobile](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fTMP_SDF-Surface-Mobile.shader)
+
+      
+
+      [TMP_SDF-Surface](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fTMP_SDF-Surface.shader)
+
+      
+
+      [TMP_SDF](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fTMP_SDF.shader)
+
+      
+
+      [TMP_Sprite](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fTextMeshPro%2fTMP_Sprite.shader)
+
+      
+
+      [DecaliciousGameObjectID](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fDecalicious%2fFormerResources%2fDecaliciousGameObjectID.shader)
+
+      
+
+      [DecaliciousDeferredDecal](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fDecalicious%2fShader%2fDecaliciousDeferredDecal.shader)
+
+      
+
+      [DecaliciousUnlitDecal](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fDecalicious%2fShader%2fDecaliciousUnlitDecal.shader)
+
+      
+
+      [Internal-ScreenSpaceShadows_Cheaper](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fInternal-ScreenSpaceShadows_Cheaper.shader)
+
+      
+
+      [MobileBlur](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fMobileBlur.shader)
+
+      
+
+      [HGScreenDamage](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fCore%2fCameraEffects%2fHGScreenDamage.shader)
+
+      
+
+      [OutlineHighlightNew](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fCore%2fOutline%2fOutlineHighlightNew.shader)
+
+      
+
+      [OutlineHighlightSurf](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fCore%2fOutline%2fOutlineHighlightSurf.shader)
+
+      
+
+      [HopooSSR](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fCustomPostProcess%2fHopooSSR.shader)
+
+      
+
+      [RampFog](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fCustomPostProcess%2fRampFog.shader)
+
+      
+
+      [SceneTint](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fCustomPostProcess%2fSceneTint.shader)
+
+      
+
+      [SobelOutline](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fCustomPostProcess%2fSobelOutline.shader)
+
+      
+
+      [SobelRain](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fCustomPostProcess%2fSobelRain.shader)
+
+      
+
+      [HGOnTop](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fDeferred%2fHGOnTop.shader)
+
+      
+
+      [HGSnowTopped](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fDeferred%2fHGSnowTopped.shader)
+
+      
+
+      [HGStandard](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fDeferred%2fHGStandard.shader)
+
+      
+
+      [HGStandardWithDistortion](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fDeferred%2fHGStandardWithDistortion.shader)
+
+      
+
+      [HGTriplanarTerrainBlend](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fDeferred%2fHGTriplanarTerrainBlend.shader)
+
+      
+
+      [HGWavyCloth](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fDeferred%2fHGWavyCloth.shader)
+
+      
+
+      [HGDistantWater](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fEnvironment%2fHGDistantWater.shader)
+
+      
+
+      [HGFlag](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fEnvironment%2fHGFlag.shader)
+
+      
+
+      [HGGrass](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fEnvironment%2fHGGrass.shader)
+
+      
+
+      [HGWaterfall](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fEnvironment%2fHGWaterfall.shader)
+
+      
+
+      [HGCloudRemap](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fFX%2fHGCloudRemap.shader)
+
+      
+
+      [HGDamageNumber](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fFX%2fHGDamageNumber.shader)
+
+      
+
+      [HGDistortion](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fFX%2fHGDistortion.shader)
+
+      
+
+      [HGForwardPlanet](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fFX%2fHGForwardPlanet.shader)
+
+      
+
+      [HGIntersectionCloudRemap](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fFX%2fHGIntersectionCloudRemap.shader)
+
+      
+
+      [HGOpaqueCloudRemap](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fFX%2fHGOpaqueCloudRemap.shader)
+
+      
+
+      [HGSolidParallax](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fFX%2fHGSolidParallax.shader)
+
+      
+
+      [HGVertexOnly](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fFX%2fHGVertexOnly.shader)
+
+      
+
+      [DamageIndicator](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fPostProcess%2fDamageIndicator.shader)
+
+      
+
+      [HGOutlineHighlight](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fPostProcess%2fHGOutlineHighlight.shader)
+
+      
+
+      [HGScopeShader](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fPostProcess%2fHGScopeShader.shader)
+
+      
+
+      [HGSobelBuffer](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fPostProcess%2fHGSobelBuffer.shader)
+
+      
+
+      [HGVisionLimit](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fPostProcess%2fHGVisionLimit.shader)
+
+      
+
+      [SpeedTreeBillboard](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fSpeedtree+Override%2fSpeedTreeBillboard.shader)
+
+      
+
+      [SpeedTreeCustom](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fSpeedtree+Override%2fSpeedTreeCustom.shader)
+
+      
+
+      [HealthBar](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fUI%2fHealthBar.shader)
+
+      
+
+      [HGUIAnimateAlpha](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fUI%2fHGUIAnimateAlpha.shader)
+
+      
+
+      [HGUIBarRemap](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fUI%2fHGUIBarRemap.shader)
+
+      
+
+      [HGUIBlur](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fUI%2fHGUIBlur.shader)
+
+      
+
+      [HGUICustomBlend](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fUI%2fHGUICustomBlend.shader)
+
+      
+
+      [HGUIIgnoreZ](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fUI%2fHGUIIgnoreZ.shader)
+
+      
+
+      [HGUIOverbrighten](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fUI%2fHGUIOverbrighten.shader)
+
+      
+
+      [Fill-Linear](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fScenes%2fskymeadow%2fShaders%2fFill-Linear.shader)
+
+      
+
+      [DoublePassUnlitTemplate](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUAssets%2fStubbedShaders%2fRoR2%2fBase%2fShaders%2fOptimized%2fMods%2fDoublePassUnlitTemplate.shader)
+
+      
+
+      [MSUEventDirector](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntimeLegacy%2fMSUAssets%2fPrefabs%2fMSUEventDirector.prefab)
+
+      
+
+      [EntityStates.Events.DummyEventState](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntimeLegacy%2fMSUAssets%2fEntityStates.Events.DummyEventState.asset)
+
+      
+
+      [DummyEventCard](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntimeLegacy%2fMSUAssets%2fDummyEventCard.asset)
+
+      
+
+      
+
+'
+  - logLevel: 3
+    internalTime:
+      ticks: 639013170742779583
+    message: '[Pipeline(1 - StageAssetBundles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 639013170742469303
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      Build Completed: ``` ThunderKit/Libraries/RiskOfRamen.dll ```'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 639013170739700170
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      staging ``` ThunderKit/Libraries ``` in ``` ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen
+      ```
+
+'
+    context:
+    - "Assembly Files\r\nFrom: ThunderKit/Libraries\\RiskOfRamen.pdb\r\n  To: ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen/RiskOfRamen.pdb\r\n\r\nFrom:
+      ThunderKit/Libraries\\RiskOfRamen.dll\r\n  To: ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen/RiskOfRamen.dll\r\n\r\n"
+  - logLevel: 0
+    internalTime:
+      ticks: 639013170696772827
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      Building : ThunderKit/Libraries/RiskOfRamen.dll'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 639013170694645550
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MSUManifest](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUManifest.asset)
+      Build Completed: ``` ThunderKit/Libraries/MSU.Runtime.dll ```'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 639013170690307065
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MSUManifest](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUManifest.asset)
+      staging ``` ThunderKit/Libraries ``` in ``` ThunderKit/Builds/MoonstormSharedUtils/2.4.3/plugins
+      ```
+
+'
+    context:
+    - "Assembly Files\r\nFrom: ThunderKit/Libraries\\MSU.Runtime.dll.mdb\r\n  To:
+      ThunderKit/Builds/MoonstormSharedUtils/2.4.3/plugins/MSU.Runtime.dll.mdb\r\n\r\nFrom:
+      ThunderKit/Libraries\\MSU.Runtime.dll\r\n  To: ThunderKit/Builds/MoonstormSharedUtils/2.4.3/plugins/MSU.Runtime.dll\r\n\r\n"
+  - logLevel: 0
+    internalTime:
+      ticks: 639013170606821714
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MSUManifest](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUManifest.asset)
+      Building : ThunderKit/Libraries/MSU.Runtime.dll'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170604094235
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[ShaderSwapper](assetlink://Packages%2fsmooth_salad-shaderswapper%2fShaderSwapper.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170603813981
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[Risk_Of_Options](assetlink://Packages%2frune580-risk_of_options%2fRisk_Of_Options.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170603543729
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Skins](assetlink://Packages%2friskofthunder-r2api_skins%2fR2API_Skins.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170603093321
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_StringSerializerExtensions](assetlink://Packages%2friskofthunder-r2api_stringserializerextensions%2fR2API_StringSerializerExtensions.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170602783040
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Stages](assetlink://Packages%2friskofthunder-r2api_stages%2fR2API_Stages.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170602472766
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Networking](assetlink://Packages%2friskofthunder-r2api_networking%2fR2API_Networking.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170601982317
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Dot](assetlink://Packages%2friskofthunder-r2api_dot%2fR2API_Dot.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170601672027
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_RecalculateStats](assetlink://Packages%2friskofthunder-r2api_recalculatestats%2fR2API_RecalculateStats.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170601311699
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Elites](assetlink://Packages%2friskofthunder-r2api_elites%2fR2API_Elites.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170600771214
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Director](assetlink://Packages%2friskofthunder-r2api_director%2fR2API_Director.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170600480946
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Addressables](assetlink://Packages%2friskofthunder-r2api_addressables%2fR2API_Addressables.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170600010525
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_DamageType](assetlink://Packages%2friskofthunder-r2api_damagetype%2fR2API_DamageType.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170599672538
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Colors](assetlink://Packages%2friskofthunder-r2api_colors%2fR2API_Colors.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170599382282
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_ArtifactCode](assetlink://Packages%2friskofthunder-r2api_artifactcode%2fR2API_ArtifactCode.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170598881824
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_ContentManagement](assetlink://Packages%2friskofthunder-r2api_contentmanagement%2fR2API_ContentManagement.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170598571539
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Core](assetlink://Packages%2friskofthunder-r2api_core%2fR2API_Core.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170598271265
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[HookGenPatcher](assetlink://Packages%2friskofthunder-hookgenpatcher%2fHookGenPatcher.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170597790833
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[LoadingScreenSpriteFix](assetlink://Packages%2fnebby-loadingscreenspritefix%2fLoadingScreenSpriteFix.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170597473135
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[BepInExPack](assetlink://Packages%2fbbepis-bepinexpack%2fBepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170596972680
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MiscFixes](assetlink://Packages%2fscore-miscfixes%2fMiscFixes.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170595518298
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[SeekersPatcher](assetlink://Packages%2fpseudopulse-seekerspatcher%2fSeekersPatcher.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170595198006
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170594897733
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[FixPluginTypesSerialization](assetlink://Packages%2friskofthunder-fixplugintypesserialization%2fFixPluginTypesSerialization.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 639013170594566420
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 639013170587776305
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 639013170587756285
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 639013170587456008
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
+      Execute Pipeline'
+    context: []
