@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 2816007678
+CRC: 1848724735
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 73c95d49dafdb83c329bd94c58cc135e
+    Hash: 1b1add4017dfcf03f9824e285ce4586b
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2a3bcf858c6403771c3757ce21bf0ea4
@@ -209,7 +209,8 @@ Assets:
 - Assets/RiskOfRamen/Assets/WaxWisp/DevotedLemurianMaster.prefab
 - Assets/RiskOfRamen/Assets/DenkuRope/DenkuRope.prefab
 - Assets/RiskOfRamen/Assets/WaxWisp/WispMaster.prefab
-- Assets/RiskOfRamen/Assets/Icon.png
+- Assets/RiskOfRamen/Assets/expIcon.png
+- Assets/RiskOfRamen/Assets/DenkuRope/meshes/KnotBelt.fbx
 - Assets/RiskOfRamen/Assets/ObsidianCard/obsidiancard_icon.png
 - Assets/RiskOfRamen/Assets/WaxWisp/mdlWaxWisp.prefab
 - Assets/RiskOfRamen/Assets/materials/matLeatherBelt.mat
@@ -223,6 +224,7 @@ Assets:
 - Assets/RiskOfRamen/Assets/DenkuRope/iddDenkuRope.asset
 - Assets/RiskOfRamen/cscWaxWisp.asset
 - Assets/RiskOfRamen/Assets/WaxIdol/meshes/WaxIdolModel.fbx
+- Assets/RiskOfRamen/Assets/DenkuRope/DenkuRopeDisplay.prefab
 - Assets/RiskOfRamen/StainedBelt.asset
 - Assets/RiskOfRamen/Assets/textures/texWaxIdolBase.jpg
 - Assets/RiskOfRamen/WaxIdol.asset

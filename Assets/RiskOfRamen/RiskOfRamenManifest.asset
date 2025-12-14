@@ -16,8 +16,9 @@ MonoBehaviour:
   - <ManifestPluginStaging>
   Author: Ramen
   Name: RiskOfRamen
-  Description: Modded expansion for Risk of Rain 2! Contains a few items with more
-    content to come.
+  Description: A modded expansion for Risk of Rain 2! Contains a few items with more
+    content to come.  If you have any suggestions, ideas, or bugs to report, feel
+    free to DM me on Discord at ramenguy221!
   Version: 1.0.3
   Dependencies:
   - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}
@@ -45,8 +46,8 @@ MonoBehaviour:
     - {fileID: 11400000, guid: b04b2db98183f1342b5c7a719126d64d, type: 2}
     - {fileID: 11400000, guid: c96033c8b9fb5bc4db548cd90342173e, type: 2}
     - {fileID: 11400000, guid: 5009131624fbfd045b1926177890a45e, type: 2}
-    - {fileID: 11400000, guid: a81eb87c1950a844b90fbcf654d27cad, type: 2}
     - {fileID: 11400000, guid: d7543e49159363b4d85c0e683a11d603, type: 2}
+    - {fileID: 11400000, guid: a81eb87c1950a844b90fbcf654d27cad, type: 2}
   - assetBundleName: RiskOfRamenSSA
     assets:
     - {fileID: 102900000, guid: 4ae9b7419eb85784fae4f4a0742281b8, type: 3}
@@ -68,7 +69,7 @@ MonoBehaviour:
   files:
   - {fileID: 4900000, guid: 583618911c2122b4788b1094b176cbf9, type: 3}
   - {fileID: 4900000, guid: 71046fcf12a84e9409a544bd7544d733, type: 3}
-  - {fileID: 2800000, guid: ce8f8a7cef6050c408f7452b259bfeb4, type: 3}
+  - {fileID: 2800000, guid: 4179645b3eda8d34eb94ab656e95cc43, type: 3}
   - {fileID: 102900000, guid: a911bf300310d934a96898ae03ca6a4b, type: 3}
 --- !u!114 &-1199804652398355712
 MonoBehaviour:

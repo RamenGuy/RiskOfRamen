@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: ce8f8a7cef6050c408f7452b259bfeb4
+guid: 4179645b3eda8d34eb94ab656e95cc43
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -63,7 +63,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -119,5 +119,5 @@ TextureImporter:
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
   userData: 
-  assetBundleName: riskoframenassets
+  assetBundleName: 
   assetBundleVariant: 

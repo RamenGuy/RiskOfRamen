@@ -3,7 +3,7 @@
     "author": "Ramen",
     "version_number": "1.0.3",
     "website_url": "",
-    "description": "Modded expansion for Risk of Rain 2! Contains a few items with more content to come.",
+    "description": "A modded expansion for Risk of Rain 2! Contains a few items with more content to come.  If you have any suggestions, ideas, or bugs to report, feel free to DM me on Discord at ramenguy221!",
     "dependencies": [
         "bbepis-BepInExPack-5.4.2121",
         "Nebby-LoadingScreenSpriteFix-2.0.1",
