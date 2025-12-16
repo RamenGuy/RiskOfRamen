@@ -1,10 +1,11 @@
 ManifestFileVersion: 0
-CRC: 1215707754
+CRC: 4291859064
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: riskoframenassets
-      Dependencies: {}
+      Dependencies:
+        Dependency_0: runtimemsuassetbundle
     Info_1:
       Name: riskoframenssa
       Dependencies: {}

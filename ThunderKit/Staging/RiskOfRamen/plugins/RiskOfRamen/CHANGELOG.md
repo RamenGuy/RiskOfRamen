@@ -10,4 +10,6 @@
 # 1.0.3
 * Implemented Stained Belt lore and item displays
 * Resprited Stained Belt's icon
-
+# 1.0.4
+* Added Glass Tiara
+* Fixed Stained Belt's lore

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 3494538604
+CRC: 63548754
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 306a82ffd0828917f39bb5703d5d540c
+    Hash: 5b886e25d588c2b7826d6ce9cb7fb007
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2a3bcf858c6403771c3757ce21bf0ea4
@@ -208,23 +208,32 @@ Assets:
 - Assets/RiskOfRamen/RiskOfRamenExpansion.asset
 - Assets/RiskOfRamen/Assets/WaxWisp/DevotedLemurianMaster.prefab
 - Assets/RiskOfRamen/Assets/DenkuRope/DenkuRope.prefab
-- Assets/RiskOfRamen/Assets/WaxWisp/WispMaster.prefab
+- Assets/RiskOfRamen/Assets/GlassTiara/GlassTiara.prefab
+- Assets/RiskOfRamen/Assets/GlassTiara/GlassTiaraIcon.png
+- Assets/RiskOfRamen/Assets/GlassTiara/iddGlassTiara.asset
 - Assets/RiskOfRamen/Assets/expIcon.png
+- Assets/RiskOfRamen/Assets/WaxWisp/WispMaster.prefab
 - Assets/RiskOfRamen/Assets/DenkuRope/meshes/KnotBelt.fbx
 - Assets/RiskOfRamen/Assets/ObsidianCard/obsidiancard_icon.png
+- Assets/RiskOfRamen/Assets/textures/texCloudCaustic2.png
 - Assets/RiskOfRamen/Assets/WaxWisp/mdlWaxWisp.prefab
 - Assets/RiskOfRamen/Assets/materials/matLeatherBelt.mat
 - Assets/RiskOfRamen/Assets/textures/texRopeNormal.png
 - Assets/RiskOfRamen/Assets/WaxWisp/WispBody 1.prefab
 - Assets/RiskOfRamen/Assets/textures/texCloudDifferenceBW2.png
 - Assets/RiskOfRamen/Assets/ObsidianCard/iddObsidianCard.asset
+- Assets/RiskOfRamen/Assets/materials/matLunarEmissive.mat
 - Assets/RiskOfRamen/Assets/StainedBelt/StainedBeltIcon.png
-- Assets/RiskOfRamen/Assets/textures/texRampWisp.png
 - Assets/RiskOfRamen/Assets/WaxIdol/WaxIdol.prefab
 - Assets/RiskOfRamen/Assets/DenkuRope/iddDenkuRope.asset
 - Assets/RiskOfRamen/cscWaxWisp.asset
+- Assets/RiskOfRamen/Assets/textures/texRampWisp.png
+- Assets/RiskOfRamen/Assets/GlassTiara/meshes/tiara.fbx
 - Assets/RiskOfRamen/Assets/WaxIdol/meshes/WaxIdolModel.fbx
+- Assets/RiskOfRamen/Assets/textures/texRampGlassTiaraColor.png
 - Assets/RiskOfRamen/Assets/DenkuRope/DenkuRopeDisplay.prefab
+- Assets/RiskOfRamen/Assets/materials/matGlassTiaraDistortion.mat
+- Assets/RiskOfRamen/Assets/textures/texCloudDifferenceBW1.png
 - Assets/RiskOfRamen/StainedBelt.asset
 - Assets/RiskOfRamen/Assets/textures/texWaxIdolBase.jpg
 - Assets/RiskOfRamen/WaxIdol.asset
@@ -252,14 +261,19 @@ Assets:
 - Assets/RiskOfRamen/Assets/WaxWisp/meshes/WispMask.fbx
 - Assets/RiskOfRamen/Assets/materials/matWaxWispFire.mat
 - Assets/RiskOfRamen/Assets/materials/matSilver.mat
+- Assets/RiskOfRamen/GlassTiara.asset
+- Assets/RiskOfRamen/Assets/textures/texGlassTiaraNormal.png
 - Assets/RiskOfRamen/Assets/materials/matRope.mat
 - Assets/RiskOfRamen/Assets/StainedBelt/iddStainedBelt.asset
 - Assets/RiskOfRamen/ObsidianCard.asset
 - Assets/RiskOfRamen/Assets/WaxWisp/WaxWispBody.prefab
+- Assets/RiskOfRamen/Assets/materials/matGlassTiaraInside.mat
 - Assets/RiskOfRamen/Assets/textures/texSilver.jpg
 - Assets/RiskOfRamen/Assets/WaxIdol/iddWaxIdol.asset
 - Assets/RiskOfRamen/Assets/WaxWisp/WaxWispIcon.png
 - Assets/RiskOfRamen/Assets/WaxIdol/wax_icon.png
 - Assets/RiskOfRamen/Assets/textures/texObsidianNormal.jpg
 - Assets/RiskOfRamen/shaders/Deferred/HGStandard.shader
-Dependencies: []
+- Assets/RiskOfRamen/Assets/materials/matGlassTiara.mat
+Dependencies:
+- C:/Users/nickh/RiskOfRamen/ThunderKit/AssetBundleStaging/runtimemsuassetbundle

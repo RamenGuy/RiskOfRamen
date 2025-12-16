@@ -17,9 +17,8 @@ MonoBehaviour:
   Author: Ramen
   Name: RiskOfRamen
   Description: A modded expansion for Risk of Rain 2! Contains a few items with more
-    content to come.  If you have any suggestions, ideas, or bugs to report, feel
-    free to DM me on Discord at ramenguy221!
-  Version: 1.0.3
+    content to come.
+  Version: 1.0.4
   Dependencies:
   - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}
   - {fileID: 11400000, guid: f36042a759878ca23fab51eb17dc0ec2, type: 2}
@@ -48,6 +47,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5009131624fbfd045b1926177890a45e, type: 2}
     - {fileID: 11400000, guid: d7543e49159363b4d85c0e683a11d603, type: 2}
     - {fileID: 11400000, guid: a81eb87c1950a844b90fbcf654d27cad, type: 2}
+    - {fileID: 11400000, guid: e5f856b867314664d9ce7b990f8b250f, type: 2}
   - assetBundleName: RiskOfRamenSSA
     assets:
     - {fileID: 102900000, guid: 4ae9b7419eb85784fae4f4a0742281b8, type: 3}

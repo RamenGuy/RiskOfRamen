@@ -159,9 +159,9 @@ MonoBehaviour:
     _typeName: EntityStates.AI.Walker.Wander, RoR2, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
   mainStateType:
-    _typeName: EntityStates.Drone.Follow, RoR2, Version=0.0.0.0, Culture=neutral,
+    _typeName: EntityStates.AI.Walker.Wander, RoR2, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  debug: 0
+  debug: 1
 --- !u!114 &8460838641314858091
 MonoBehaviour:
   m_ObjectHideFlags: 0

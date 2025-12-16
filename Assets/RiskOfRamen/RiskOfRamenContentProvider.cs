@@ -23,6 +23,7 @@ namespace RiskOfRamen
         public static ItemDef _ObsidianCard;
         public static ItemDef _DenkuRope;
         public static ItemDef _StainedBelt;
+        public static ItemDef _GlassTiara;
 
         public static GameObject _WaxWispBody;
         public static GameObject _WaxWispMaster;
@@ -52,6 +53,7 @@ namespace RiskOfRamen
             _ObsidianCard = _assetBundle.LoadAsset<ItemDef>("ObsidianCard");
             _DenkuRope = _assetBundle.LoadAsset<ItemDef>("DenkuRope");
             _StainedBelt = _assetBundle.LoadAsset<ItemDef>("StainedBelt");
+            _GlassTiara = _assetBundle.LoadAsset<ItemDef>("GlassTiara");
 
             _WaxWispBody = _assetBundle.LoadAsset<GameObject>("WaxWispBody");
             _WaxWispMaster = _assetBundle.LoadAsset<GameObject>("WaxWispMaster");
@@ -63,6 +65,7 @@ namespace RiskOfRamen
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _ObsidianCard }); 
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _DenkuRope });
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _StainedBelt });
+            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _GlassTiara });
 
             RiskOfRamenContentPack.bodyPrefabs.Add(new GameObject[] { _WaxWispBody });
             RiskOfRamenContentPack.masterPrefabs.Add(new GameObject[] { _WaxWispMaster });
