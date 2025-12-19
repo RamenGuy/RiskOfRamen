@@ -23,7 +23,12 @@ namespace RiskOfRamen
         public static ItemDef _ObsidianCard;
         public static ItemDef _DenkuRope;
         public static ItemDef _StainedBelt;
-        public static ItemDef _GlassTiara;
+        //public static ItemDef _GlassTiara;
+
+        //public static ItemDef _Allocentrism;
+        //public static ItemTierDef _VoidLunarTier;
+
+        //public static InteractableSpawnCard _ContaminationFont;
 
         public static GameObject _WaxWispBody;
         public static GameObject _WaxWispMaster;
@@ -53,11 +58,16 @@ namespace RiskOfRamen
             _ObsidianCard = _assetBundle.LoadAsset<ItemDef>("ObsidianCard");
             _DenkuRope = _assetBundle.LoadAsset<ItemDef>("DenkuRope");
             _StainedBelt = _assetBundle.LoadAsset<ItemDef>("StainedBelt");
-            _GlassTiara = _assetBundle.LoadAsset<ItemDef>("GlassTiara");
+            //_GlassTiara = _assetBundle.LoadAsset<ItemDef>("GlassTiara");
+            //_Allocentrism = _assetBundle.LoadAsset<ItemDef>("Allocentrism");
+
+            //_VoidLunarTier = _assetBundle.LoadAsset<ItemTierDef>("VoidLunarTierDef");
 
             _WaxWispBody = _assetBundle.LoadAsset<GameObject>("WaxWispBody");
             _WaxWispMaster = _assetBundle.LoadAsset<GameObject>("WaxWispMaster");
             _cscWaxWisp = _assetBundle.LoadAsset<CharacterSpawnCard>("cscWaxWisp");
+
+            //_ContaminationFont = _assetBundle.LoadAsset<InteractableSpawnCard>("iscContaminationFont");
 
             var expansionDef = _assetBundle.LoadAsset<ExpansionDef>("RiskOfRamenExpansion");
 
@@ -65,7 +75,10 @@ namespace RiskOfRamen
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _ObsidianCard }); 
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _DenkuRope });
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _StainedBelt });
-            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _GlassTiara });
+            //RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _GlassTiara });
+
+            //RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _Allocentrism });
+            //RiskOfRamenContentPack.itemTierDefs.Add(new ItemTierDef[] { _VoidLunarTier }); 
 
             RiskOfRamenContentPack.bodyPrefabs.Add(new GameObject[] { _WaxWispBody });
             RiskOfRamenContentPack.masterPrefabs.Add(new GameObject[] { _WaxWispMaster });
@@ -73,8 +86,30 @@ namespace RiskOfRamen
             RiskOfRamenContentPack.expansionDefs.Add(new ExpansionDef[] { expansionDef });
 
             SwapAllShaders();
-                 
-        
+
+            /*
+            DirectorCard directorCard = new DirectorCard
+            {
+                selectionWeight = 100, // The higher this number the more common it'll be, for reference a normal chest is about 230
+                spawnCard = _ContaminationFont,
+            };
+
+            DirectorAPI.DirectorCardHolder directorCardHolder = new DirectorAPI.DirectorCardHolder
+            {
+                Card = directorCard,
+                InteractableCategory = DirectorAPI.InteractableCategory.Shrines
+            };
+
+            // Or create your stage list and register it on each of those stages
+            List<DirectorAPI.Stage> stageList = new List<DirectorAPI.Stage>();
+
+            stageList.Add(DirectorAPI.Stage.VoidLocus);
+
+            foreach (DirectorAPI.Stage stage in stageList)
+            {
+                DirectorAPI.Helpers.AddNewInteractableToStage(directorCardHolder, stage);
+            }*/
+
         }
 
 

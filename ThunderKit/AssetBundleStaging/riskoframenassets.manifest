@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 63548754
+CRC: 616718379
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 5b886e25d588c2b7826d6ce9cb7fb007
+    Hash: 90b91dd6de2f9a2c0aa1be0b171d88ea
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 2a3bcf858c6403771c3757ce21bf0ea4
+    Hash: ef187ffb387070ef9ad9b0c860cbd8ec
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -27,7 +27,11 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 54
   Script: {instanceID: 0}
+- Class: 65
+  Script: {instanceID: 0}
 - Class: 95
+  Script: {instanceID: 0}
+- Class: 96
   Script: {instanceID: 0}
 - Class: 108
   Script: {instanceID: 0}
@@ -35,6 +39,8 @@ ClassTypes:
   Script: {fileID: 1143142494, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1297580292, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 370243918, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1052602003, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -68,6 +74,10 @@ ClassTypes:
 - Class: 114
   Script: {fileID: -265070313, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
+  Script: {fileID: -104859921, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1161602148, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: 1144835783, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 802575700, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
@@ -76,11 +86,17 @@ ClassTypes:
 - Class: 114
   Script: {fileID: -365436499, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
+  Script: {fileID: 871971028, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -2044128026, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: -202159943, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -1792105662, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -1549848242, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1063210218, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -359660931, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -92,6 +108,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: -1479993534, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
+  Script: {fileID: 1006468269, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: -1578512655, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -1699741063, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
@@ -101,6 +119,8 @@ ClassTypes:
   Script: {fileID: 1533710874, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1918207524, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -287833090, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 80205854, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -130,6 +150,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: a4e121de46f1e5741803234bbc5af467, type: 3}
 - Class: 114
+  Script: {fileID: -765806418, guid: d3e719b59ab71ba3f6b398058c866280, type: 3}
+- Class: 114
   Script: {fileID: 372142912, guid: d382a022563c7517aadbc92ca1060016, type: 3}
 - Class: 115
   Script: {instanceID: 0}
@@ -146,6 +168,12 @@ ClassTypes:
 - Class: 199
   Script: {instanceID: 0}
 - Class: 213
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
 - AssemblyName: AK.Wwise.Unity.API.WwiseTypes
@@ -171,7 +199,13 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: RoR2
   ClassName: RoR2.DamageTypeCombo
 - AssemblyName: RoR2
+  ClassName: RoR2.DetailedPurchaseEvent
+- AssemblyName: RoR2
   ClassName: RoR2.ModelSkinController/AsyncPrefabInstantiationData
+- AssemblyName: RoR2
+  ClassName: RoR2.PlaySoundOnEvent/PlaySoundEvent
+- AssemblyName: RoR2
+  ClassName: RoR2.PurchaseEvent
 - AssemblyName: RoR2
   ClassName: RoR2.Run/FixedTimeStamp
 - AssemblyName: RoR2
@@ -203,77 +237,113 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: com.unity.multiplayer-hlapi.Runtime
   ClassName: UnityEngine.Networking.NetworkSceneId
 Assets:
-- Assets/RiskOfRamen/Assets/materials/matWaxWispMask.mat
-- Assets/RiskOfRamen/Assets/textures/texBronzeNormal.jpg
-- Assets/RiskOfRamen/RiskOfRamenExpansion.asset
 - Assets/RiskOfRamen/Assets/WaxWisp/DevotedLemurianMaster.prefab
-- Assets/RiskOfRamen/Assets/DenkuRope/DenkuRope.prefab
-- Assets/RiskOfRamen/Assets/GlassTiara/GlassTiara.prefab
-- Assets/RiskOfRamen/Assets/GlassTiara/GlassTiaraIcon.png
-- Assets/RiskOfRamen/Assets/GlassTiara/iddGlassTiara.asset
-- Assets/RiskOfRamen/Assets/expIcon.png
 - Assets/RiskOfRamen/Assets/WaxWisp/WispMaster.prefab
-- Assets/RiskOfRamen/Assets/DenkuRope/meshes/KnotBelt.fbx
+- Assets/RiskOfRamen/Assets/GlassTiara/iddGlassTiara.asset
+- Assets/RiskOfRamen/Assets/VoidLunar/matTracerVoidLunar.mat
 - Assets/RiskOfRamen/Assets/ObsidianCard/obsidiancard_icon.png
 - Assets/RiskOfRamen/Assets/textures/texCloudCaustic2.png
 - Assets/RiskOfRamen/Assets/WaxWisp/mdlWaxWisp.prefab
 - Assets/RiskOfRamen/Assets/materials/matLeatherBelt.mat
-- Assets/RiskOfRamen/Assets/textures/texRopeNormal.png
-- Assets/RiskOfRamen/Assets/WaxWisp/WispBody 1.prefab
+- Assets/RiskOfRamen/Assets/ContaminationFont/meshes/POOLER.fbx
+- Assets/RiskOfRamen/Assets/ContaminationFont/meshes/POOL.fbx
+- Assets/RiskOfRamen/Assets/VoidLunar/matVoidLunarPulseGlow.mat
+- Assets/RiskOfRamen/Assets/VoidLunar/texRampTritone3.png
 - Assets/RiskOfRamen/Assets/textures/texCloudDifferenceBW2.png
 - Assets/RiskOfRamen/Assets/ObsidianCard/iddObsidianCard.asset
-- Assets/RiskOfRamen/Assets/materials/matLunarEmissive.mat
 - Assets/RiskOfRamen/Assets/StainedBelt/StainedBeltIcon.png
+- Assets/RiskOfRamen/Assets/textures/texRampWisp.png
 - Assets/RiskOfRamen/Assets/WaxIdol/WaxIdol.prefab
 - Assets/RiskOfRamen/Assets/DenkuRope/iddDenkuRope.asset
-- Assets/RiskOfRamen/cscWaxWisp.asset
-- Assets/RiskOfRamen/Assets/textures/texRampWisp.png
-- Assets/RiskOfRamen/Assets/GlassTiara/meshes/tiara.fbx
 - Assets/RiskOfRamen/Assets/WaxIdol/meshes/WaxIdolModel.fbx
-- Assets/RiskOfRamen/Assets/textures/texRampGlassTiaraColor.png
-- Assets/RiskOfRamen/Assets/DenkuRope/DenkuRopeDisplay.prefab
 - Assets/RiskOfRamen/Assets/materials/matGlassTiaraDistortion.mat
-- Assets/RiskOfRamen/Assets/textures/texCloudDifferenceBW1.png
-- Assets/RiskOfRamen/StainedBelt.asset
-- Assets/RiskOfRamen/Assets/textures/texWaxIdolBase.jpg
-- Assets/RiskOfRamen/WaxIdol.asset
-- Assets/RiskOfRamen/Assets/StainedBelt/StainedBeltDisplay.prefab
-- Assets/RiskOfRamen/Assets/StainedBelt/StainedBelt.prefab
-- Assets/RiskOfRamen/Assets/WaxWisp/Drone1Master.prefab
-- Assets/RiskOfRamen/Assets/StainedBelt/meshes/two.fbx
+- Assets/RiskOfRamen/Assets/materials/matContaminationGloop.mat
+- Assets/RiskOfRamen/Assets/Allocentrism/AllocentrismIcon.png
+- Assets/RiskOfRamen/Assets/textures/texRampPortalVoid.png
+- Assets/RiskOfRamen/Assets/Allocentrism/Allocentrism.prefab
 - Assets/RiskOfRamen/Assets/DenkuRope/denkurope_icon.png
 - Assets/RiskOfRamen/Assets/materials/matWax.mat
 - Assets/RiskOfRamen/Assets/WaxWisp/WaxWispMaster.prefab
 - Assets/RiskOfRamen/DenkuRope.asset
-- Assets/RiskOfRamen/Assets/textures/texObsidian.jpg
-- Assets/RiskOfRamen/Assets/textures/texRope.png
+- Assets/RiskOfRamen/Assets/textures/texNormalStrange1.png
 - Assets/RiskOfRamen/Assets/ObsidianCard/meshes/CurvedPlane.fbx
 - Assets/RiskOfRamen/Assets/materials/matStainedSilver.mat
+- Assets/RiskOfRamen/Assets/StainedBelt/meshes/one.fbx
+- Assets/RiskOfRamen/Assets/DenkuRope/meshes/knotrp.fbx
+- Assets/RiskOfRamen/Assets/textures/texTrimsheetVoidMetalNormal.png
+- Assets/RiskOfRamen/Assets/ObsidianCard/ObsidianCard.prefab
+- Assets/RiskOfRamen/Assets/textures/texGalaxy1Mask.png
+- Assets/RiskOfRamen/Assets/materials/matWaxWispFire.mat
+- Assets/RiskOfRamen/Assets/VoidLunar/texRampTritone.png
+- Assets/RiskOfRamen/Assets/materials/matRope.mat
+- Assets/RiskOfRamen/Assets/StainedBelt/iddStainedBelt.asset
+- Assets/RiskOfRamen/Assets/WaxWisp/WaxWispBody.prefab
+- Assets/RiskOfRamen/Assets/ContaminationFont/meshes/ContFont2.fbx
+- Assets/RiskOfRamen/Assets/ContaminationFont/DCCSContaminationFont.asset
+- Assets/RiskOfRamen/Assets/textures/texSilver.jpg
+- Assets/RiskOfRamen/Assets/ContaminationFont/iscContaminationFont.asset
+- Assets/RiskOfRamen/Assets/materials/matWaxWispMask.mat
+- Assets/RiskOfRamen/Allocentrism.asset
+- Assets/RiskOfRamen/Assets/textures/texBronzeNormal.jpg
+- Assets/RiskOfRamen/RiskOfRamenExpansion.asset
+- Assets/RiskOfRamen/Assets/DenkuRope/DenkuRope.prefab
+- Assets/RiskOfRamen/Assets/GlassTiara/GlassTiara.prefab
+- Assets/RiskOfRamen/Assets/GlassTiara/GlassTiaraIcon.png
+- Assets/RiskOfRamen/Assets/materials/matVoidMetal.mat
+- Assets/RiskOfRamen/Assets/textures/texRampGalaxy.png
+- Assets/RiskOfRamen/Assets/materials/matVoidLunarEmissive.mat
+- Assets/RiskOfRamen/Assets/expIconDisabled.png
+- Assets/RiskOfRamen/Assets/DenkuRope/meshes/KnotBelt.fbx
+- Assets/RiskOfRamen/cscWaxWisp.asset
+- Assets/RiskOfRamen/VoidLunarTierDef.asset
+- Assets/RiskOfRamen/Assets/textures/texRopeNormal.png
+- Assets/RiskOfRamen/Assets/WaxWisp/WispBody 1.prefab
+- Assets/RiskOfRamen/Assets/textures/texCloudWaterRipples.png
+- Assets/RiskOfRamen/Assets/VoidLunar/texParticleDust1Mask.png
+- Assets/RiskOfRamen/Assets/materials/matLunarEmissive.mat
+- Assets/RiskOfRamen/Assets/VoidLunar/texOmniShockwave1Mask.png
+- Assets/RiskOfRamen/Assets/GlassTiara/meshes/tiara.fbx
+- Assets/RiskOfRamen/Assets/textures/texRampGlassTiaraColor.png
+- Assets/RiskOfRamen/Assets/VoidLunar/VoidLunarOrb.prefab
+- Assets/RiskOfRamen/Assets/DenkuRope/DenkuRopeDisplay.prefab
+- Assets/RiskOfRamen/Assets/ContaminationFont/ContaminationFontInteractable.prefab
+- Assets/RiskOfRamen/Assets/textures/texCloudDifferenceBW1.png
+- Assets/RiskOfRamen/StainedBelt.asset
+- Assets/RiskOfRamen/Assets/textures/texWaxIdolBase.jpg
+- Assets/RiskOfRamen/Assets/Allocentrism/meshes/Allocentrism.fbx
+- Assets/RiskOfRamen/WaxIdol.asset
+- Assets/RiskOfRamen/Assets/materials/matContaminationPool.mat
+- Assets/RiskOfRamen/Assets/StainedBelt/StainedBeltDisplay.prefab
+- Assets/RiskOfRamen/Assets/StainedBelt/StainedBelt.prefab
+- Assets/RiskOfRamen/Assets/expIcon.png
+- Assets/RiskOfRamen/Assets/WaxWisp/Drone1Master.prefab
+- Assets/RiskOfRamen/Assets/VoidLunar/donut1Mesh.asset
+- Assets/RiskOfRamen/Assets/StainedBelt/meshes/two.fbx
+- Assets/RiskOfRamen/Assets/VoidLunar/HighlightTier1Item.prefab
+- Assets/RiskOfRamen/Assets/materials/matContaminationFont.mat
+- Assets/RiskOfRamen/Assets/textures/texRope.png
+- Assets/RiskOfRamen/Assets/textures/texObsidian.jpg
 - Assets/RiskOfRamen/Assets/materials/matObsidian.mat
 - Assets/RiskOfRamen/Assets/textures/texGlowPaintMask.png
 - Assets/RiskOfRamen/Assets/textures/texBronze.jpg
-- Assets/RiskOfRamen/Assets/DenkuRope/meshes/knotrp.fbx
 - Assets/RiskOfRamen/Assets/StainedBelt/meshes/beltdisplay.fbx
-- Assets/RiskOfRamen/Assets/StainedBelt/meshes/one.fbx
 - Assets/RiskOfRamen/shaders/FX/HGCloudRemap.shader
 - Assets/RiskOfRamen/Assets/StainedBelt/meshes/BeltStrap.fbx
-- Assets/RiskOfRamen/Assets/ObsidianCard/ObsidianCard.prefab
 - Assets/RiskOfRamen/Assets/WaxWisp/meshes/WispMask.fbx
-- Assets/RiskOfRamen/Assets/materials/matWaxWispFire.mat
+- Assets/RiskOfRamen/Assets/textures/texTrimsheetVoidMetalDiffuse.png
 - Assets/RiskOfRamen/Assets/materials/matSilver.mat
-- Assets/RiskOfRamen/GlassTiara.asset
+- Assets/RiskOfRamen/Assets/VoidLunar/texVoidLunarBGIcon.png
 - Assets/RiskOfRamen/Assets/textures/texGlassTiaraNormal.png
-- Assets/RiskOfRamen/Assets/materials/matRope.mat
-- Assets/RiskOfRamen/Assets/StainedBelt/iddStainedBelt.asset
 - Assets/RiskOfRamen/ObsidianCard.asset
-- Assets/RiskOfRamen/Assets/WaxWisp/WaxWispBody.prefab
+- Assets/RiskOfRamen/GlassTiara.asset
 - Assets/RiskOfRamen/Assets/materials/matGlassTiaraInside.mat
-- Assets/RiskOfRamen/Assets/textures/texSilver.jpg
 - Assets/RiskOfRamen/Assets/WaxIdol/iddWaxIdol.asset
 - Assets/RiskOfRamen/Assets/WaxWisp/WaxWispIcon.png
 - Assets/RiskOfRamen/Assets/WaxIdol/wax_icon.png
 - Assets/RiskOfRamen/Assets/textures/texObsidianNormal.jpg
 - Assets/RiskOfRamen/shaders/Deferred/HGStandard.shader
 - Assets/RiskOfRamen/Assets/materials/matGlassTiara.mat
+- Assets/RiskOfRamen/Assets/ContaminationFont/meshes/GWAHRG.fbx
+- Assets/RiskOfRamen/Assets/textures/texRampNullifier.png
 Dependencies:
 - C:/Users/nickh/RiskOfRamen/ThunderKit/AssetBundleStaging/runtimemsuassetbundle

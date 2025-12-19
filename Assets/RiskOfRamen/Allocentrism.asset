@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1284244208, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: Allocentrism
+  m_EditorClassIdentifier: 
+  deprecatedTier: 11
+  _itemTierDef: {fileID: 11400000, guid: de3cc9e3863bb154cb3839de70118dae, type: 2}
+  nameToken: ITEM_ALLOCENTRISM_NAME
+  pickupToken: ITEM_ALLOCENTRISM_PICKUP
+  descriptionToken: ITEM_ALLOCENTRISM_DESC
+  loreToken: ITEM_ALLOCENTRISM_LORE
+  unlockableDef: {fileID: 0}
+  pickupModelPrefab: {fileID: 2819738662628719539, guid: 5f8a5eb40d4598844948862d42c89bd7, type: 3}
+  pickupModelReference:
+    m_AssetGUID: 
+    m_SubObjectName: 
+    m_SubObjectType: 
+  pickupIconSprite: {fileID: 21300000, guid: 097891293db1ca849b717e8e8364c871, type: 3}
+  isConsumed: 0
+  hidden: 0
+  canRemove: 0
+  tags: 05000000040000001700000016000000
+  requiredExpansion: {fileID: 11400000, guid: b04b2db98183f1342b5c7a719126d64d, type: 2}

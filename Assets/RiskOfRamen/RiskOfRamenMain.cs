@@ -6,6 +6,7 @@ using R2API;
 using UnityEngine.AddressableAssets;
 using RoR2.UI;
 using LoadingScreenFix;
+using System.Collections.Generic;
 //using MSU;
 
 [assembly: HG.Reflection.SearchableAttribute.OptIn]
@@ -41,7 +42,10 @@ namespace RiskOfRamen
             pluginInfo = Info;
             new RiskOfRamenContent();
             RecalculateStatsAPI.GetStatCoefficients += RecalculateStatsAPI_GetStatCoefficients;
-            LoadingScreenFix.LoadingScreenFix.AddSpriteAnimations(GetLoadingScreenBundle());            
+            LoadingScreenFix.LoadingScreenFix.AddSpriteAnimations(GetLoadingScreenBundle());
+
+
+
         }
 
         internal static void LogFatal(object data)
@@ -114,8 +118,6 @@ namespace RiskOfRamen
         {
             return self.healthComponent.barrier / self.healthComponent.fullBarrier;
         }
-
-
 
     }
 }

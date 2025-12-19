@@ -33,7 +33,8 @@
         "R2API.Language.dll",
         "R2API.Core.dll",
         "R2API.Deployable.dll",
-        "LoadingScreenFix.dll"
+        "LoadingScreenFix.dll",
+        "R2API.Director.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],

@@ -16,6 +16,6 @@ MonoBehaviour:
   requiredEntitlement: {fileID: 0}
   nameToken: EXPANSION_RAMEN_NAME
   descriptionToken: EXPANSION_RAMEN_DESC
-  iconSprite: {fileID: 21300000, guid: 1f3d2981903325049a6680d90dfab500, type: 3}
-  disabledIconSprite: {fileID: 10915, guid: 0000000000000000f000000000000000, type: 0}
+  iconSprite: {fileID: 21300000, guid: 4aa02bfef0a53b946bf8011b0ed5166c, type: 3}
+  disabledIconSprite: {fileID: 21300000, guid: f816a1d4ef3e0bd4bab28ada1064ec3d, type: 3}
   runBehaviorPrefab: {fileID: 0}

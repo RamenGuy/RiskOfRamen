@@ -2,7 +2,7 @@
 	strings:
 	{
 		"EXPANSION_RAMEN_NAME": "Risk of Ramen",
-		"EXPANSION_RAMEN_DESC": "Adds content from the Risk of Ramen mod into the game.",
+		"EXPANSION_RAMEN_DESC": "Adds content from the 'Risk of Ramen' mod into the game.",
 		"ITEM_WAXIDOL_NAME": "Wax Idol",
 		"ITEM_WAXIDOL_PICKUP": "Take less damage when you're ignited.",
 		"ITEM_WAXIDOL_DESC": "Gain <style=cIsHealing>50</style> <style=cStack>(+10 per stack)</style> <style=cIsHealing>armor</style> when <style=cIsDamage>on fire</style>. Summon a <style=cIsUtility>Chud Wisp</style> to do <style=cIsHealing>nothing</style>.",
@@ -69,5 +69,9 @@ The second figure sighs, and places the brooch in a pouch. As they retreat into 
 		"ITEM_GLASSTIARA_PICKUP": "",
 		"ITEM_GLASSTIARA_DESC": "",
 		"ITEM_GLASSTIARA_LORE": "",
+		"ITEM_ALLOCENTRISM_NAME": "Allocentrism",
+		"ITEM_ALLOCENTRISM_PICKUP": "Fire collapsing missiles when using a skill. <style=cDeath>Every minute, assimilate a non-Void item into Allocentrism.</style>",
+		"ITEM_ALLOCENTRISM_DESC": "Every time you use a skill, fire <style=cIsUtility>3 missiles</style> <style=cStack>(+1 per stack)</style> for <style=cIsDamage>10% TOTAL damage</style>. Missiles <style=cIsDamage>collapse</style> on hit. Every <style=cIsUtility>60</style> seconds, a random non-Void item is <style=cIsVoid>subsumed</style> by this item.",
+		"ITEM_ALLOCENTRISM_LORE": "",
 	}
 }

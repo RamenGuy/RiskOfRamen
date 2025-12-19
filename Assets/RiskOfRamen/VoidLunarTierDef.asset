@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 1006468269, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: VoidLunarTierDef
   m_EditorClassIdentifier: 
-  _tier: 9
+  _tier: 11
   bgIconTexture: {fileID: 2800000, guid: c70720046938c5b4b8254547fab73a6e, type: 3}
   colorIndex: 25
   darkColorIndex: 26
-  isDroppable: 0
+  isDroppable: 1
   canScrap: 0
   canRestack: 0
   pickupRules: 2

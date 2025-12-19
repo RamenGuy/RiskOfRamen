@@ -47,6 +47,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 5009131624fbfd045b1926177890a45e, type: 2}
     - {fileID: 11400000, guid: d7543e49159363b4d85c0e683a11d603, type: 2}
     - {fileID: 11400000, guid: a81eb87c1950a844b90fbcf654d27cad, type: 2}
+    - {fileID: 11400000, guid: ad4608a63001077419924fc840c05e46, type: 2}
     - {fileID: 11400000, guid: e5f856b867314664d9ce7b990f8b250f, type: 2}
   - assetBundleName: RiskOfRamenSSA
     assets:
