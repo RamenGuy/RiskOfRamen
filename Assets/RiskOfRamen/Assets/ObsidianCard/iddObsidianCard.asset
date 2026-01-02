@@ -142,3 +142,39 @@ MonoBehaviour:
       localAngles: {x: 357.528, y: 16.00661, z: 258.4928}
       localScale: {x: 0.25, y: 0.25, z: 0.25}
       limbMask: 0
+  - idrsName: idrsSeeker
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: CalfL
+      localPos: {x: 0.0735276, y: 0.1820356, z: -0.01666532}
+      localAngles: {x: 341.0988, y: 96.3399, z: 358.6757}
+      localScale: {x: 0.25, y: 0.25, z: 0.25}
+      limbMask: 0
+  - idrsName: idrsChef
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: OvenDoor
+      localPos: {x: -0.1955146, y: 0.01584891, z: 0.05280943}
+      localAngles: {x: 5.815436, y: 16.39225, z: 266.9815}
+      localScale: {x: 0.25, y: 0.25, z: 0.25}
+      limbMask: 0
+  - idrsName: idrsFalseSon
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Chest
+      localPos: {x: -0.2821258, y: 0.2026115, z: 0.2475688}
+      localAngles: {x: 339.2542, y: 4.326185, z: 274.9009}
+      localScale: {x: 0.25, y: 0.25, z: 0.25}
+      limbMask: 0
+  - idrsName: idrsDrifter
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: UpperArmL
+      localPos: {x: 0.04597701, y: -0.04921409, z: -0.1385513}
+      localAngles: {x: 19.47016, y: 352.5666, z: 173.5212}
+      localScale: {x: 0.25, y: 0.25, z: 0.25}
+      limbMask: 0

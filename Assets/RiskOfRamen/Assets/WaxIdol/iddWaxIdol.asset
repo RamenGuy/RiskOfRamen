@@ -142,3 +142,39 @@ MonoBehaviour:
       localAngles: {x: 13.34037, y: 1.081787, z: 190.6445}
       localScale: {x: 0.6, y: 0.6, z: 0.6}
       limbMask: 0
+  - idrsName: idrsSeeker
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Chest
+      localPos: {x: -0.001692839, y: 0.1379475, z: -0.05757707}
+      localAngles: {x: 0, y: 90, z: 0}
+      localScale: {x: 0.6, y: 0.6, z: 0.6}
+      limbMask: 0
+  - idrsName: idrsChef
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Cleaver
+      localPos: {x: 0.0001216903, y: -0.199108, z: 0.0003987803}
+      localAngles: {x: 354.5865, y: 79.32413, z: 2.632188}
+      localScale: {x: 0.6, y: 0.6, z: 0.6}
+      limbMask: 0
+  - idrsName: idrsFalseSon
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: ClavL
+      localPos: {x: 0.01457368, y: 0.6420035, z: -0.1623861}
+      localAngles: {x: 9.858255, y: 257.4982, z: 202.3628}
+      localScale: {x: 0.6, y: 0.6, z: 0.6}
+      limbMask: 0
+  - idrsName: idrsDrifter
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: BagFlap
+      localPos: {x: 0.03005702, y: -0.31522, z: 0.007867218}
+      localAngles: {x: 353.2069, y: 174.0919, z: 337.7101}
+      localScale: {x: 0.6, y: 0.6, z: 0.6}
+      limbMask: 0

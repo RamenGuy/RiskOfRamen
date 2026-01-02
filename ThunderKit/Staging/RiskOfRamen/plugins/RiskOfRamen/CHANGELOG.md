@@ -11,5 +11,14 @@
 * Implemented Stained Belt lore and item displays
 * Resprited Stained Belt's icon
 # 1.0.4
-* Added Glass Tiara
+* Internal fixes and frameworks for future content
+* New expansion icon
 * Fixed Stained Belt's lore
+* New item display model for Denku Rope Coil
+* Items now dither and disappear properly
+# 1.1.0
+* Fixed Stained Belt's display on Engie
+* Added SOTS and AC item displays
+* Added Worn Turnkey
+* Added the Void Lunar tier and the Contamination Font
+* Added Allocentrism

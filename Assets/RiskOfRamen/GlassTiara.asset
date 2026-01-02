@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: -1284244208, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: GlassTiara
   m_EditorClassIdentifier: 
-  deprecatedTier: 3
-  _itemTierDef: {fileID: 0}
+  deprecatedTier: 11
+  _itemTierDef: {fileID: 11400000, guid: de3cc9e3863bb154cb3839de70118dae, type: 2}
   nameToken: ITEM_GLASSTIARA_NAME
   pickupToken: ITEM_GLASSTIARA_PICKUP
   descriptionToken: ITEM_GLASSTIARA_DESC
@@ -27,6 +27,6 @@ MonoBehaviour:
   pickupIconSprite: {fileID: 21300000, guid: aeae1a4a432e18440b9f14f5ad1545f8, type: 3}
   isConsumed: 0
   hidden: 0
-  canRemove: 1
-  tags: 
+  canRemove: 0
+  tags: 05000000040000001700000016000000
   requiredExpansion: {fileID: 11400000, guid: b04b2db98183f1342b5c7a719126d64d, type: 2}

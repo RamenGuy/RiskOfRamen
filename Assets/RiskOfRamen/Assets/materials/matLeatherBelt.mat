@@ -11,10 +11,11 @@ Material:
   m_Shader: {fileID: 4800000, guid: a2546fc4237b8754ab0c36b27d57ed49, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords:
+  - DITHER
   - _NORMALMAP
   - _SMOOTHNESS_TEXTURE_ALBEDO_CHANNEL_A
   m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -125,6 +126,7 @@ Material:
     - _DecalLayer: 0
     - _Depth: 0.2
     - _DetailNormalMapScale: 1
+    - _DitherOn: 1
     - _DoubleColorsOn: 0
     - _DstBlend: 0
     - _EliteBrightnessMax: 1
@@ -134,6 +136,7 @@ Material:
     - _EnableCutout: 0
     - _FEON: 0
     - _Fade: 1
+    - _FadeBias: 0
     - _FlowEmissionStrength: 1
     - _FlowHeightBias: 0
     - _FlowHeightPower: 1

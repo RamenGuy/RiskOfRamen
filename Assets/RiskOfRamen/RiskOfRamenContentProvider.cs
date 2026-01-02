@@ -1,4 +1,4 @@
-using RoR2.ContentManagement;
+    using RoR2.ContentManagement;
 using UnityEngine;
 using RoR2;
 using RoR2.ExpansionManagement;
@@ -8,6 +8,9 @@ using System.Collections.Generic;
 using UnityEngine.AddressableAssets;
 using static RoR2.Console;
 using RoR2.UI;
+using UnityEngine.UIElements;
+using RoR2.Projectile;
+using RiskOfRamen.Assets.Allocentrism;
 //using MSU;
 
 namespace RiskOfRamen
@@ -23,21 +26,31 @@ namespace RiskOfRamen
         public static ItemDef _ObsidianCard;
         public static ItemDef _DenkuRope;
         public static ItemDef _StainedBelt;
-        //public static ItemDef _GlassTiara;
+        public static ItemDef _WornTurnkey;
 
-        //public static ItemDef _Allocentrism;
-        //public static ItemTierDef _VoidLunarTier;
 
-        //public static InteractableSpawnCard _ContaminationFont;
+        public static ItemDef _GlassTiara;
+        public static ItemDef _Allocentrism;
+        public static ItemTierDef _VoidLunarTier;
+
+        public static GameObject _ContaminationFont;
+        public static InteractableSpawnCard _iscContaminationFont;
 
         public static GameObject _WaxWispBody;
         public static GameObject _WaxWispMaster;
         public static CharacterSpawnCard _cscWaxWisp;
 
-        public static ItemDisplayRuleDict _idrsObsidianCard;
-        
+        public static BuffDef _stillnessBuff;
+
+        public static GameObject _AllocentrismBomb;
+        public static GameObject _AllocentrismGhost;
+        public static EffectDef _AllocentrismExplosion;
+
+        public static DeployableSlot AllocentrismBomb;
 
         public static AssetBundle _assetBundle;
+
+        public static ItemDef.Pair[] _corruptibleLunars;
 
 
         [System.Obsolete]
@@ -52,66 +65,120 @@ namespace RiskOfRamen
             }
 
             //Write code here to initialize your mod post assetbundle load
-
             _assetBundle = asyncOperation.assetBundle;
+
             _WaxIdol = _assetBundle.LoadAsset<ItemDef>("WaxIdol");
             _ObsidianCard = _assetBundle.LoadAsset<ItemDef>("ObsidianCard");
             _DenkuRope = _assetBundle.LoadAsset<ItemDef>("DenkuRope");
             _StainedBelt = _assetBundle.LoadAsset<ItemDef>("StainedBelt");
-            //_GlassTiara = _assetBundle.LoadAsset<ItemDef>("GlassTiara");
-            //_Allocentrism = _assetBundle.LoadAsset<ItemDef>("Allocentrism");
+            _WornTurnkey = _assetBundle.LoadAsset<ItemDef>("WornTurnkey");
+            _GlassTiara = _assetBundle.LoadAsset<ItemDef>("GlassTiara");
+            _Allocentrism = _assetBundle.LoadAsset<ItemDef>("Allocentrism");
 
-            //_VoidLunarTier = _assetBundle.LoadAsset<ItemTierDef>("VoidLunarTierDef");
+            _VoidLunarTier = _assetBundle.LoadAsset<ItemTierDef>("VoidLunarTierDef");
 
             _WaxWispBody = _assetBundle.LoadAsset<GameObject>("WaxWispBody");
             _WaxWispMaster = _assetBundle.LoadAsset<GameObject>("WaxWispMaster");
             _cscWaxWisp = _assetBundle.LoadAsset<CharacterSpawnCard>("cscWaxWisp");
 
-            //_ContaminationFont = _assetBundle.LoadAsset<InteractableSpawnCard>("iscContaminationFont");
+            _ContaminationFont = _assetBundle.LoadAsset<GameObject>("ContaminationFontInteractable");
+            _iscContaminationFont = _assetBundle.LoadAsset<InteractableSpawnCard>("iscContaminationFont");
+
+            _stillnessBuff = _assetBundle.LoadAsset<BuffDef>("StillnessBuff");
+
+            _AllocentrismBomb = _assetBundle.LoadAsset<GameObject>("AllocentrismBombProjectile");
+            _AllocentrismGhost = _assetBundle.LoadAsset<GameObject>("AllocentrismBombProjectileGhost");
+            _AllocentrismExplosion = new EffectDef(_assetBundle.LoadAsset<GameObject>("ExplosionAllocentrism"));
 
             var expansionDef = _assetBundle.LoadAsset<ExpansionDef>("RiskOfRamenExpansion");
+
 
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _WaxIdol });
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _ObsidianCard }); 
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _DenkuRope });
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _StainedBelt });
-            //RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _GlassTiara });
+            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _WornTurnkey });
 
-            //RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _Allocentrism });
-            //RiskOfRamenContentPack.itemTierDefs.Add(new ItemTierDef[] { _VoidLunarTier }); 
+            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _GlassTiara });
+
+            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _Allocentrism });
+            RiskOfRamenContentPack.itemTierDefs.Add(new ItemTierDef[] { _VoidLunarTier }); 
 
             RiskOfRamenContentPack.bodyPrefabs.Add(new GameObject[] { _WaxWispBody });
             RiskOfRamenContentPack.masterPrefabs.Add(new GameObject[] { _WaxWispMaster });
 
+            RiskOfRamenContentPack.buffDefs.Add(new BuffDef[] { _stillnessBuff });
+            RiskOfRamenContentPack.networkedObjectPrefabs.Add(new GameObject[] { _ContaminationFont });
+            
             RiskOfRamenContentPack.expansionDefs.Add(new ExpansionDef[] { expansionDef });
+            RiskOfRamenContentPack.effectDefs.Add(new EffectDef[] { _AllocentrismExplosion });
 
             SwapAllShaders();
 
-            /*
-            DirectorCard directorCard = new DirectorCard
+            var AllocentrismVoid = CreateVoidPair(_Allocentrism, Addressables.LoadAssetAsync<ItemDef>("RoR2/DLC1/LunarSun/LunarSun.asset").WaitForCompletion());
+            
+            RiskOfRamenContentPack.itemRelationshipProviders.Add(new ItemRelationshipProvider[] { AllocentrismVoid });
+
+            var GlassTiaraVoid = CreateVoidPair(_GlassTiara, Addressables.LoadAssetAsync<ItemDef>("RoR2/Base/GoldOnHit/GoldOnHit.asset").WaitForCompletion());
+
+            RiskOfRamenContentPack.itemRelationshipProviders.Add(new ItemRelationshipProvider[] { GlassTiaraVoid });
+
+            AllocentrismBomb = DeployableAPI.RegisterDeployableSlot((self, deployableCountMultiplier) =>
             {
-                selectionWeight = 100, // The higher this number the more common it'll be, for reference a normal chest is about 230
-                spawnCard = _ContaminationFont,
-            };
+                if (self)
+                {
+                    return AllocentrismBodyBehavior.GetMaxProjectiles(self.inventory);
+                }
+                return 1;
+            });
 
-            DirectorAPI.DirectorCardHolder directorCardHolder = new DirectorAPI.DirectorCardHolder
-            {
-                Card = directorCard,
-                InteractableCategory = DirectorAPI.InteractableCategory.Shrines
-            };
-
-            // Or create your stage list and register it on each of those stages
-            List<DirectorAPI.Stage> stageList = new List<DirectorAPI.Stage>();
-
-            stageList.Add(DirectorAPI.Stage.VoidLocus);
-
-            foreach (DirectorAPI.Stage stage in stageList)
-            {
-                DirectorAPI.Helpers.AddNewInteractableToStage(directorCardHolder, stage);
-            }*/
-
+            _corruptibleLunars = PopulateCorruptibleLunars();
         }
 
+        private static ItemRelationshipProvider CreateVoidPair(ItemDef corrupted, ItemDef normal)
+        {
+            var provider = ScriptableObject.CreateInstance<ItemRelationshipProvider>();
+
+            provider.name = $"{corrupted.name}{normal.name}Relationship";
+            provider.relationshipType = Addressables.LoadAssetAsync<ItemRelationshipType>("RoR2/DLC1/Common/ContagiousItem.asset").WaitForCompletion();
+            
+            provider.relationships = new ItemDef.Pair[] { 
+                new ItemDef.Pair
+                {
+                    itemDef1 = normal,
+                    itemDef2 = corrupted
+                }
+            };
+
+            return provider;
+        }
+
+        private static ItemDef.Pair[] PopulateCorruptibleLunars()
+        {
+            return new ItemDef.Pair[] {
+                new ItemDef.Pair
+                {
+                    itemDef1 = Addressables.LoadAssetAsync<ItemDef>("RoR2/DLC1/LunarSun/LunarSun.asset").WaitForCompletion(),
+                    itemDef2 = _Allocentrism,
+                },
+                new ItemDef.Pair
+                {
+                    itemDef1 = Addressables.LoadAssetAsync<ItemDef>("RoR2/Base/GoldOnHit/GoldOnHit.asset").WaitForCompletion(),
+                    itemDef2 = _GlassTiara,
+                }
+            };
+        }
+        public static ItemDef TryGetPairForLunar(ItemDef lunar)
+        {
+            foreach (var pair in _corruptibleLunars)
+            {
+                if (pair.itemDef1 == lunar)
+                {
+                    return pair.itemDef2;
+                }
+            }
+            return null;
+        }
 
         private static void SwapAllShaders()
         {
@@ -159,7 +226,7 @@ namespace RiskOfRamen
         
         public IEnumerator GenerateContentPackAsync(GetContentPackAsyncArgs args)
         {
-                ContentPack.Copy(RiskOfRamenContentPack, args.output);
+            ContentPack.Copy(RiskOfRamenContentPack, args.output);
             args.ReportProgress(1f);
             yield break;
         }

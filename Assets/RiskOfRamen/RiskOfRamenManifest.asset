@@ -18,7 +18,7 @@ MonoBehaviour:
   Name: RiskOfRamen
   Description: A modded expansion for Risk of Rain 2! Contains a few items with more
     content to come.
-  Version: 1.0.4
+  Version: 1.1.0
   Dependencies:
   - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}
   - {fileID: 11400000, guid: f36042a759878ca23fab51eb17dc0ec2, type: 2}
@@ -49,6 +49,10 @@ MonoBehaviour:
     - {fileID: 11400000, guid: a81eb87c1950a844b90fbcf654d27cad, type: 2}
     - {fileID: 11400000, guid: ad4608a63001077419924fc840c05e46, type: 2}
     - {fileID: 11400000, guid: e5f856b867314664d9ce7b990f8b250f, type: 2}
+    - {fileID: 11400000, guid: db2116cb616186244a603b350da3ddb8, type: 2}
+    - {fileID: 11400000, guid: 55ee865a325f8f3489f78cd58da452be, type: 2}
+    - {fileID: 11400000, guid: 6cfe1d2ee48dea8459aaf81e15d30485, type: 2}
+    - {fileID: 9170588562588299619, guid: 4937f2bf69ff0c7419fb294285325469, type: 3}
   - assetBundleName: RiskOfRamenSSA
     assets:
     - {fileID: 102900000, guid: 4ae9b7419eb85784fae4f4a0742281b8, type: 3}

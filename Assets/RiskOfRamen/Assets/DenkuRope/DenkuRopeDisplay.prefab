@@ -68,7 +68,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rendererInfos:
-  - renderer: {fileID: 0}
+  - renderer: {fileID: 5225215605392203224}
     defaultMaterialAddress:
       m_AssetGUID: 
       m_SubObjectName: 
@@ -140,6 +140,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c65fd8869b4cb647a04555b5c733fa2, type: 3}
+--- !u!23 &5225215605392203224 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 7c65fd8869b4cb647a04555b5c733fa2, type: 3}
+  m_PrefabInstance: {fileID: 6864088679906296156}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6397536117580965559 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7c65fd8869b4cb647a04555b5c733fa2, type: 3}

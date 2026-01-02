@@ -143,3 +143,39 @@ MonoBehaviour:
       localAngles: {x: 62.1572, y: 310.8894, z: 347.9646}
       localScale: {x: 0.38, y: 0.54, z: 0.42}
       limbMask: 0
+  - idrsName: idrsSeeker
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Stomach
+      localPos: {x: 0.003820031, y: 0.006777961, z: -0.02497598}
+      localAngles: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.24, y: 0.24, z: 0.17}
+      limbMask: 0
+  - idrsName: idrsChef
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Pelvis
+      localPos: {x: -0.09997765, y: 0.01041515, z: -0.004169392}
+      localAngles: {x: 270, y: 90, z: 0}
+      localScale: {x: 0.33, y: 0.33, z: 0.33}
+      limbMask: 0
+  - idrsName: idrsFalseSon
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Chest
+      localPos: {x: -0.04007388, y: 0.2964706, z: -0.0007226467}
+      localAngles: {x: 8.52603, y: 343.9974, z: 27.73974}
+      localScale: {x: 0.32, y: 0.32, z: 0.32}
+      limbMask: 0
+  - idrsName: idrsDrifter
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Stomach
+      localPos: {x: -0.208178, y: 0.002561547, z: -0.01491718}
+      localAngles: {x: 278.9067, y: 110.8942, z: 329.9986}
+      localScale: {x: 0.5, y: 0.5, z: 0.5}
+      limbMask: 0
