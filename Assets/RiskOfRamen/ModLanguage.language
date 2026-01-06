@@ -72,8 +72,8 @@ The second figure sighs, and places the brooch in a pouch. As they retreat into 
 		"WAXWISP_BODY_NAME": "Willow",
 
 		"ITEM_GLASSTIARA_NAME": "Glass Tiara",
-		"ITEM_GLASSTIARA_PICKUP": "Become a pretty princess.",
-		"ITEM_GLASSTIARA_DESC": "Not quite sure what this does yet. <style=cIsVoid>Corrupts all Brittle Crowns.</style>",
+		"ITEM_GLASSTIARA_PICKUP": "You hurt enemies that hit you. Gain and lose max health when you earn and spend gold. <style=cIsVoid>Corrupts all Brittle Crowns.</style>",
+		"ITEM_GLASSTIARA_DESC": "Enemies take 2.5% <style=cStack>(+1% per stack)</style> of their <style=cIsHealth>max health</style> as damage when they hit you. When you spend gold, temporarily <style=cIsHealth>reduce your max health</style> by 20% <style=cStack>(+5% per stack)</style> of spent gold. When you earn gold, <style=cIsHealing>increase your max health</style> by 10% <style=cStack>(+10% per stack)</style> of earned gold, capped at its normal value. <style=cIsVoid>Corrupts all Brittle Crowns.</style>",
 		"ITEM_GLASSTIARA_LORE": "",
 
 		"ITEM_ALLOCENTRISM_NAME": "Allocentrism",
@@ -93,7 +93,32 @@ Can they hear me?\n\n
 		"ITEM_WORNTURNKEY_NAME": "Worn Turnkey",
 		"ITEM_WORNTURNKEY_PICKUP": "Your stillness strengthens others.",
 		"ITEM_WORNTURNKEY_DESC": "After standing still for <style=cIsUtility>1</style> second, <style=cIsUtility>ALL allies</style> recieve buffs to <style=cIsUtility>ALL stats</style>.",
-		"ITEM_WORNTURNKEY_LORE": "",
+		"ITEM_WORNTURNKEY_LORE": "<style=cMono>========================================\n
+====   MyBabel Machine Translator   ====\n
+====     [ Version 12.45.1.009 ]   ======\n
+========================================\n
+Training... <100000000 cycles>\n
+Training... <100000000 cycles>\n
+Training... <100000000 cycles>\n
+Training... <74781455 cycles>\n
+Paused...\n
+Display partial result? Y/N\n
+Y\n
+================================\n\n</style>
+\"Personal log of A.R. Kellin. My work is complete. 162 - 'Cinnamon', as I have taken to calling it - has finally [become]. The shell is complete, though inanimate.\"\n\n
+\"I have fashioned a turnkey with which I may give it [stillness] and a charm by which it may know [purpose].\"\n\n
+\"The turnkey slots into the back of its neck. I wind the key to the left twenty and one times. This one stirs, and its porcelain reflects the sun into my eyes.\"\n\n
+\"Its eyes slide up to me and await something. I chuckle and nod.\"\n\n
+\"It raises its arms and stretches out its entire body, brass ball-joints popping.\"\n\n
+\"This one speaks. 'Good morning, [witch].'\"\n\n
+<style=cMono>Translation Errors: 4</style>\n
+# [Become] could not be fully translated.\n
+# [Stillness] could not be fully translated.\n
+# [Purpose] could not be fully translated.\n
+# [Witch] could not be fully translated.\n
+<style=cMono>================================\n
+Continue training? Y/N\n
+Y</style>",
 
 		"INTERACTABLE_CONTAMINATIONFONT_NAME": "Contamination Font",
 		"INTERACTABLE_CONTAMINATIONFONT_CONTEXT": "<style=cIsVoid>【「?CONTA??MINA?TE??』】</style>",

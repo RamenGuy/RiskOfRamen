@@ -22,3 +22,4 @@
 * Added Worn Turnkey
 * Added the Void Lunar tier and the Contamination Font
 * Added Allocentrism
+* Added Glass Tiara

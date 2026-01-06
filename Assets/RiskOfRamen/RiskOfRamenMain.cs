@@ -107,6 +107,8 @@ namespace RiskOfRamen
             int dentedBuckleCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._StainedBelt);
             int wornTurnkeyCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._WornTurnkey);
             int allocentrismCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._Allocentrism);
+            int glassTiaraCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._GlassTiara);
+
             if (denkuRopeCount >= 1)
             {
                 args.critDamageMultAdd += 0.1f * denkuRopeCount;                
@@ -145,6 +147,12 @@ namespace RiskOfRamen
                 args.armorTotalMult *= 1f + stillnessBoost;
             }
 
+            if (glassTiaraCount >= 1)
+            {
+                GlassTiaraBodyBehavior tiaraBehavior = self.GetComponent<GlassTiaraBodyBehavior>();
+                args.baseCurseAdd += tiaraBehavior.curseAdd / self.baseMaxHealth;
+                //args.baseCurseAdd += tiaraBehavior.curseAdd * self.maxHealth * 0.01f;
+            }
         }
 
         private static void SceneDirector_onPostPopulatesceneServer(SceneDirector sceneDirector) 

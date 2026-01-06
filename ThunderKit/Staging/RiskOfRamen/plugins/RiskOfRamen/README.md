@@ -12,3 +12,8 @@ If you have any suggestions, ideas, or bugs to report, feel free to DM me on Dis
 | <img width="128" height="128" alt="stainedbelticon" src="https://raw.githubusercontent.com/RamenGuy/RiskOfRamen/refs/heads/main/Assets/RiskOfRamen/Assets/StainedBelt/StainedBeltIcon.png" />  | Stained Belt    | Gain Critical Strike chance equal to 25% (+25% per stack) of your current barrier. | `Green`  |
 | ---      | ---             | ---                                                                                | ---      |
 | <img width="128" height="128" alt="wornturnkeyicon" src="https://raw.githubusercontent.com/RamenGuy/RiskOfRamen/refs/heads/main/Assets/RiskOfRamen/Assets/WornTurnkey/WornTurnkeyIcon.png" />  | Worn Turnkey    | Gain Critical Strike chance equal to 25% (+25% per stack) of your current barrier. | `Red`  |
+| ---      | ---             | ---                                                                                | ---      |
+| <img width="128" height="128" alt="allocentrismicon" src="https://raw.githubusercontent.com/RamenGuy/RiskOfRamen/refs/heads/main/Assets/RiskOfRamen/Assets/Allocentrism/AllocentrismIcon.png" />  | Allocentrism    | Hitting enemies gives them orbiting bombs. Every minute, subsume a non-Void item into Allocentrism. Corrupts all Egocentrisms. | `Void Lunar`  |
+| <img width="128" height="128" alt="glasstiaraicon" src="https://raw.githubusercontent.com/RamenGuy/RiskOfRamen/refs/heads/main/Assets/RiskOfRamen/Assets/GlassTiara/GlassTiaraIcon.png" />  | Glass Tiara    | TBD. Corrupts all Brittle Crowns. | `Void Lunar`  |
+
+

@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 286601298
+CRC: 3665880967
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 161f3615c5add31262e0edda2cc2c4e1
+    Hash: 0b9b1475c0762e61b7dab797e8e89391
   TypeTreeHash:
     serializedVersion: 2
     Hash: b7f30d4ef0e2df5a25fd2f60d9b40c5b
@@ -390,6 +390,7 @@ Assets:
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/texVoidWhale.png
 - Assets/RiskOfRamen/Assets/materials/matAllocentrismDisplay.mat
 - Assets/RiskOfRamen/Assets/textures/texRampNullifier.png
+- Assets/RiskOfRamen/Assets/textures/texRampVoidRaidCrabTripleBeam.png
 - Assets/RiskOfRamen/Assets/WornTurnkey/WornTurnkeyDisplay.prefab
 - Assets/RiskOfRamen/Assets/VoidLunar/matVoidLunarPulseGlow.mat
 - Assets/RiskOfRamen/Assets/WaxWisp/mdlWaxWisp.prefab
