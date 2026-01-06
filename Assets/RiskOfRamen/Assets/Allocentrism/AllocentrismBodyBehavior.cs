@@ -172,7 +172,7 @@ namespace RiskOfRamen.Assets.Allocentrism
                     damageColorIndex = DamageColorIndex.Item,
                     force = 0f,
                     owner = gameObject,
-                    position = damageReport.victimBody.transform.position,
+                    position = damageReport.victimBody.corePosition + (damageReport.victimBody.corePosition - damageReport.victimBody.footPosition),
                     rotation = Quaternion.identity,
                     target = damageReport.victim.gameObject,
 

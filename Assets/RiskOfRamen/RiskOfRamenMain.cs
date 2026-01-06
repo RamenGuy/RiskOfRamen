@@ -1,4 +1,4 @@
-using BepInEx;
+    using BepInEx;
 using System.IO;
 using UnityEngine;
 using RoR2;
@@ -14,9 +14,10 @@ using System;
 //using MSU;
 using System.Security;
 using System.Security.Permissions;
+using UnityEngine.Networking;
 
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
-
+        
 [assembly: HG.Reflection.SearchableAttribute.OptIn]
 
 namespace RiskOfRamen
@@ -57,8 +58,9 @@ namespace RiskOfRamen
             LoadingScreenFix.LoadingScreenFix.AddSpriteAnimations(GetLoadingScreenBundle());
             CostTypeCatalog.modHelper.getAdditionalEntries += ModHelper_getAdditionalEntries;
 
-
+            On.RoR2.CharacterMaster.OnServerStageBegin += CharacterMaster_OnServerStageBegin;
         }
+
 
         [SystemInitializer(typeof(CostTypeCatalog))]
         private static void Init()
@@ -169,6 +171,16 @@ namespace RiskOfRamen
                 }, RoR2Application.rng));
             }
             
+        }
+
+        private void CharacterMaster_OnServerStageBegin(On.RoR2.CharacterMaster.orig_OnServerStageBegin orig, CharacterMaster self, Stage stage)
+        {
+            uint LargeChestCost = (uint)Run.instance.GetDifficultyScaledCost(50);
+            uint GlassTiaraCount = (uint)self.inventory.GetItemCountEffective(RiskOfRamenContent._GlassTiara);
+            if (GlassTiaraCount >= 1)
+            {
+                self.GiveMoney(LargeChestCost * (GlassTiaraCount + 1));
+            }
         }
 
         internal static AssetBundle GetLoadingScreenBundle()

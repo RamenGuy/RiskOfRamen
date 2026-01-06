@@ -14,147 +14,69 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipeline: {fileID: 11400000, guid: 1cd69e79a95a5d44cb323bf460fb78a5, type: 2}
   creationDate:
-    ticks: 639013170585228792
+    ticks: 639033050173953230
   entries:
-  - logLevel: 3
-    internalTime:
-      ticks: 639013170773583288
-    message: '[Pipeline](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset) Finished
-      execution'
-    context: []
   - logLevel: 0
     internalTime:
-      ticks: 639013170773202946
-    message: '[Pipeline(4 - Copy)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
-      ``` <ManifestPluginStaging> ``` to ``` <DeploymentFolder> ```
-
-      
-
-      Copied
-      ``` ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen ``` to ``` C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen
-      ```'
-    context:
-    - "Copied Files\r\n\r\n 1. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\CHANGELOG.md\r\n\r\n
-      2. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\icon.png\r\n\r\n
-      3. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\manifest.json\r\n\r\n
-      4. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\ModLanguage.language\r\n\r\n
-      5. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\README.md\r\n\r\n
-      6. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\RiskOfRamen.dll\r\n\r\n
-      7. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\RiskOfRamen.manifest\r\n\r\n
-      8. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\RiskOfRamen.pdb\r\n\r\n
-      9. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\riskoframenassets\r\n\r\n
-      10. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\riskoframenassets.manifest\r\n\r\n
-      11. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\riskoframenssa\r\n\r\n
-      12. C:/Users/nickh/AppData/Roaming/r2modmanPlus-local/RiskOfRain2/profiles/modge/BepInEx/plugins/RiskOfRamen\\riskoframenssa.manifest"
-  - logLevel: 3
-    internalTime:
-      ticks: 639013170772432242
-    message: '[Pipeline(4 - Copy)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)
-      Execute Job'
-    context: []
-  - logLevel: 0
-    internalTime:
-      ticks: 639013170772111957
-    message: '[Pipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
-      Creating Thunderstore manifest.json'
-    context:
-    - "Manifest.json\r\n```js\r\n{\n    \"name\": \"RiskOfRamen\",\n    \"author\":
-      \"Ramen\",\n    \"version_number\": \"1.0.3\",\n    \"website_url\": \"\",\n   
-      \"description\": \"A modded expansion for Risk of Rain 2! Contains a few items
-      with more content to come.  If you have any suggestions, ideas, or bugs to
-      report, feel free to DM me on Discord at ramenguy221!\",\n    \"dependencies\":
-      [\n        \"bbepis-BepInExPack-5.4.2121\",\n        \"Nebby-LoadingScreenSpriteFix-2.0.1\",\n       
-      \"TeamMoonstorm-MoonstormSharedUtils-2.4.3\"\n    ]\n}\r\n```"
-  - logLevel: 0
-    internalTime:
-      ticks: 639013170771791664
-    message: '[Pipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MSUManifest](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUManifest.asset)
-      Creating Thunderstore manifest.json'
-    context:
-    - "Manifest.json\r\n```js\r\n{\n    \"name\": \"MoonstormSharedUtils\",\n   
-      \"author\": \"TeamMoonstorm\",\n    \"version_number\": \"2.4.3\",\n    \"website_url\":
-      \"https://github.com/TeamMoonstorm/MoonstormSharedUtils\",\n    \"description\":
-      \"An API focused with the intention of working in an editor enviroment using
-      ThunderKit, MSU is a modular API system designed for ease of use and simplicity.\",\n   
-      \"dependencies\": [\n        \"RiskofThunder-R2API_Core-5.2.0\",\n        \"RiskofThunder-R2API_ContentManagement-1.0.10\",\n       
-      \"RiskofThunder-R2API_ArtifactCode-1.0.1\",\n        \"RiskofThunder-R2API_Colors-1.0.3\",\n       
-      \"RiskofThunder-R2API_DamageType-1.1.7\",\n        \"RiskofThunder-R2API_Director-2.3.7\",\n       
-      \"RiskofThunder-R2API_Elites-1.0.7\",\n        \"RiskofThunder-R2API_RecalculateStats-1.6.5\",\n       
-      \"RiskofThunder-R2API_Addressables-1.1.2\",\n        \"RiskofThunder-R2API_Dot-1.1.2\",\n       
-      \"RiskofThunder-R2API_Networking-1.0.4\",\n        \"RiskofThunder-R2API_Stages-1.0.3\",\n       
-      \"RiskofThunder-R2API_StringSerializerExtensions-1.0.0\",\n        \"RiskofThunder-R2API_Skins-1.4.1\",\n       
-      \"Rune580-Risk_Of_Options-2.8.4\",\n        \"Smooth_Salad-ShaderSwapper-1.0.1\",\n       
-      \"Nebby-LoadingScreenSpriteFix-2.0.1\"\n    ]\n}\r\n```"
-  - logLevel: 3
-    internalTime:
-      ticks: 639013170771281204
-    message: '[Pipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)
-      Execute Job'
-    context: []
-  - logLevel: 0
-    internalTime:
-      ticks: 639013170771020958
-    message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
-      staged ``` Assets/RiskOfRamen/ModLanguage.language ``` in ``` ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen/ModLanguage.language
-      ```'
-    context: []
-  - logLevel: 0
-    internalTime:
-      ticks: 639013170770730694
-    message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
-      staged ``` Assets/RiskOfRamen/icon.png ``` in ``` ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen/icon.png
-      ```'
-    context: []
-  - logLevel: 0
-    internalTime:
-      ticks: 639013170770420411
-    message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
-      staged ``` Assets/RiskOfRamen/CHANGELOG.md ``` in ``` ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen/CHANGELOG.md
-      ```'
-    context: []
-  - logLevel: 0
-    internalTime:
-      ticks: 639013170769599670
-    message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
-      staged ``` Assets/RiskOfRamen/README.md ``` in ``` ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen/README.md
-      ```'
-    context: []
-  - logLevel: 0
-    internalTime:
-      ticks: 639013170769169274
-    message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MSUManifest](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUManifest.asset)
-      staged ``` Packages/teammoonstorm-moonstormsharedutils/Runtime/icon.png ```
-      in ``` ThunderKit/Builds/MoonstormSharedUtils/2.4.3/icon.png ```'
-    context: []
-  - logLevel: 0
-    internalTime:
-      ticks: 639013170768909042
-    message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MSUManifest](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUManifest.asset)
-      staged ``` Packages/teammoonstorm-moonstormsharedutils/Runtime/CHANGELOG.md
-      ``` in ``` ThunderKit/Builds/MoonstormSharedUtils/2.4.3/CHANGELOG.md ```'
-    context: []
-  - logLevel: 0
-    internalTime:
-      ticks: 639013170768608767
-    message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MSUManifest](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUManifest.asset)
-      staged ``` Packages/teammoonstorm-moonstormsharedutils/Runtime/README.md ```
-      in ``` ThunderKit/Builds/MoonstormSharedUtils/2.4.3/README.md ```'
-    context: []
-  - logLevel: 3
-    internalTime:
-      ticks: 639013170768228422
-    message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)
-      Execute Job'
-    context: []
-  - logLevel: 0
-    internalTime:
-      ticks: 639013170753334275
+      ticks: 639033050297703557
     message: '[Pipeline(1 - StageAssetBundles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
       Creating 2 AssetBundles'
     context:
     - 'RiskOfRamenAssets
 
       [expIcon](assetlink://Assets%2fRiskOfRamen%2fAssets%2fexpIcon.png)
+
+      
+
+      [expIconDisabled](assetlink://Assets%2fRiskOfRamen%2fAssets%2fexpIconDisabled.png)
+
+      
+
+      [Allocentrism](assetlink://Assets%2fRiskOfRamen%2fAssets%2fAllocentrism%2fAllocentrism.prefab)
+
+      
+
+      [AllocentrismBombProjectile](assetlink://Assets%2fRiskOfRamen%2fAssets%2fAllocentrism%2fAllocentrismBombProjectile.prefab)
+
+      
+
+      [AllocentrismBombProjectileGhost](assetlink://Assets%2fRiskOfRamen%2fAssets%2fAllocentrism%2fAllocentrismBombProjectileGhost.prefab)
+
+      
+
+      [AllocentrismIcon](assetlink://Assets%2fRiskOfRamen%2fAssets%2fAllocentrism%2fAllocentrismIcon.png)
+
+      
+
+      [DisplayAllocentrismHead](assetlink://Assets%2fRiskOfRamen%2fAssets%2fAllocentrism%2fDisplayAllocentrismHead.prefab)
+
+      
+
+      [DisplayAllocentrismNeck](assetlink://Assets%2fRiskOfRamen%2fAssets%2fAllocentrism%2fDisplayAllocentrismNeck.prefab)
+
+      
+
+      [ExplosionAllocentrism](assetlink://Assets%2fRiskOfRamen%2fAssets%2fAllocentrism%2fExplosionAllocentrism.prefab)
+
+      
+
+      [idrsAllocentrism](assetlink://Assets%2fRiskOfRamen%2fAssets%2fAllocentrism%2fidrsAllocentrism.asset)
+
+      
+
+      [StillnessIcon](assetlink://Assets%2fRiskOfRamen%2fAssets%2fBuffIcons%2fStillnessIcon.png)
+
+      
+
+      [ContaminationFontInteractable](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fContaminationFontInteractable.prefab)
+
+      
+
+      [DCCSContaminationFont](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fDCCSContaminationFont.asset)
+
+      
+
+      [iscContaminationFont](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fiscContaminationFont.asset)
 
       
 
@@ -174,7 +96,91 @@ MonoBehaviour:
 
       
 
+      [GlassTiara](assetlink://Assets%2fRiskOfRamen%2fAssets%2fGlassTiara%2fGlassTiara.prefab)
+
+      
+
+      [GlassTiaraIcon](assetlink://Assets%2fRiskOfRamen%2fAssets%2fGlassTiara%2fGlassTiaraIcon.png)
+
+      
+
+      [iddGlassTiara](assetlink://Assets%2fRiskOfRamen%2fAssets%2fGlassTiara%2fiddGlassTiara.asset)
+
+      
+
+      [matAllocentrismDisplay](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatAllocentrismDisplay.mat)
+
+      
+
+      [matAlloExplosionEmissive](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatAlloExplosionEmissive.mat)
+
+      
+
+      [matAlloExplosionRing](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatAlloExplosionRing.mat)
+
+      
+
+      [matAlloProj](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatAlloProj.mat)
+
+      
+
+      [matAlloProjBackdrop](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatAlloProjBackdrop.mat)
+
+      
+
+      [matAlloProjTrail](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatAlloProjTrail.mat)
+
+      
+
+      [matAlloTracer](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatAlloTracer.mat)
+
+      
+
+      [matContaminationFont](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatContaminationFont.mat)
+
+      
+
+      [matContaminationGloop](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatContaminationGloop.mat)
+
+      
+
+      [matContaminationPool](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatContaminationPool.mat)
+
+      
+
+      [matGlass](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatGlass.mat)
+
+      
+
+      [matGlassNew](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatGlassNew.mat)
+
+      
+
+      [matGlassTiara](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatGlassTiara.mat)
+
+      
+
+      [matGlassTiaraDistortion](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatGlassTiaraDistortion.mat)
+
+      
+
+      [matGlassTiaraFinal](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatGlassTiaraFinal.mat)
+
+      
+
+      [matGlassTiaraInside](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatGlassTiaraInside.mat)
+
+      
+
+      [matGlassTiaraShell](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatGlassTiaraShell.mat)
+
+      
+
       [matLeatherBelt](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatLeatherBelt.mat)
+
+      
+
+      [matLunarEmissive](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatLunarEmissive.mat)
 
       
 
@@ -194,6 +200,22 @@ MonoBehaviour:
 
       
 
+      [matVoidLunarEmissive](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatVoidLunarEmissive.mat)
+
+      
+
+      [matVoidMetal](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatVoidMetal.mat)
+
+      
+
+      [matVoidMetalAllocollar](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatVoidMetalAllocollar.mat)
+
+      
+
+      [matVoidSparkly](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatVoidSparkly.mat)
+
+      
+
       [matWax](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatWax.mat)
 
       
@@ -203,6 +225,10 @@ MonoBehaviour:
       
 
       [matWaxWispMask](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatWaxWispMask.mat)
+
+      
+
+      [matWindKey](assetlink://Assets%2fRiskOfRamen%2fAssets%2fmaterials%2fmatWindKey.mat)
 
       
 
@@ -234,6 +260,14 @@ MonoBehaviour:
 
       
 
+      [texAlphaGradient3Mask](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexAlphaGradient3Mask.png)
+
+      
+
+      [texBehemothTileMask](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexBehemothTileMask.png)
+
+      
+
       [texBronze](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexBronze.jpg)
 
       
@@ -242,11 +276,67 @@ MonoBehaviour:
 
       
 
+      [texCloudCaustic2](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexCloudCaustic2.png)
+
+      
+
+      [texCloudCrackedIceInverted](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexCloudCrackedIceInverted.png)
+
+      
+
+      [texCloudDifferenceBW1](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexCloudDifferenceBW1.png)
+
+      
+
       [texCloudDifferenceBW2](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexCloudDifferenceBW2.png)
 
       
 
+      [texCloudWaterRipples](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexCloudWaterRipples.png)
+
+      
+
+      [texGalaxy1Mask](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexGalaxy1Mask.png)
+
+      
+
+      [texGlassTiaraDiffuse](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexGlassTiaraDiffuse.png)
+
+      
+
+      [texGlassTiaraFresnel](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexGlassTiaraFresnel.png)
+
+      
+
+      [texGlassTiaraNormal](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexGlassTiaraNormal.png)
+
+      
+
+      [texGlassTiaraNormal2](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexGlassTiaraNormal2.png)
+
+      
+
       [texGlowPaintMask](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexGlowPaintMask.png)
+
+      
+
+      [texMapWindKey](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexMapWindKey.png)
+
+      
+
+      [texMapWindKeyPink](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexMapWindKeyPink.png)
+
+      
+
+      [texNormalStrange1](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexNormalStrange1.png)
+
+      
+
+      [texNormalWindKey](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexNormalWindKey.png)
+
+      
+
+      [texNullifierSky2](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexNullifierSky2.png)
 
       
 
@@ -255,6 +345,46 @@ MonoBehaviour:
       
 
       [texObsidianNormal](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexObsidianNormal.jpg)
+
+      
+
+      [texRampAlloBomb](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexRampAlloBomb.png)
+
+      
+
+      [texRampGalaxy](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexRampGalaxy.png)
+
+      
+
+      [texRampGlassTiaraColor](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexRampGlassTiaraColor.png)
+
+      
+
+      [texRampGloop](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexRampGloop.png)
+
+      
+
+      [texRampNullifier](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexRampNullifier.png)
+
+      
+
+      [texRampNullifierSmoothLowSaturation](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexRampNullifierSmoothLowSaturation.png)
+
+      
+
+      [texRampPortalVoid](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexRampPortalVoid.png)
+
+      
+
+      [texRampTimeCrystalReverse](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexRampTimeCrystalReverse.png)
+
+      
+
+      [texRampTwotoneWhite](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexRampTwotoneWhite.png)
+
+      
+
+      [texRampVoidRaidCrabTripleBeam](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexRampVoidRaidCrabTripleBeam.png)
 
       
 
@@ -274,7 +404,67 @@ MonoBehaviour:
 
       
 
+      [texSimpleTriangle](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexSimpleTriangle.png)
+
+      
+
+      [texTrimsheetVoidMetalDiffuse](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexTrimsheetVoidMetalDiffuse.png)
+
+      
+
+      [texTrimsheetVoidMetalHeightNormal](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexTrimsheetVoidMetalHeightNormal.png)
+
+      
+
+      [texTrimsheetVoidMetalNormal](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexTrimsheetVoidMetalNormal.png)
+
+      
+
+      [texVoidGrass](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexVoidGrass.png)
+
+      
+
       [texWaxIdolBase](assetlink://Assets%2fRiskOfRamen%2fAssets%2ftextures%2ftexWaxIdolBase.jpg)
+
+      
+
+      [donut1Mesh](assetlink://Assets%2fRiskOfRamen%2fAssets%2fVoidLunar%2fdonut1Mesh.asset)
+
+      
+
+      [HighlightTier1Item](assetlink://Assets%2fRiskOfRamen%2fAssets%2fVoidLunar%2fHighlightTier1Item.prefab)
+
+      
+
+      [matTracerVoidLunar](assetlink://Assets%2fRiskOfRamen%2fAssets%2fVoidLunar%2fmatTracerVoidLunar.mat)
+
+      
+
+      [matVoidLunarPulseGlow](assetlink://Assets%2fRiskOfRamen%2fAssets%2fVoidLunar%2fmatVoidLunarPulseGlow.mat)
+
+      
+
+      [texOmniShockwave1Mask](assetlink://Assets%2fRiskOfRamen%2fAssets%2fVoidLunar%2ftexOmniShockwave1Mask.png)
+
+      
+
+      [texParticleDust1Mask](assetlink://Assets%2fRiskOfRamen%2fAssets%2fVoidLunar%2ftexParticleDust1Mask.png)
+
+      
+
+      [texRampTritone](assetlink://Assets%2fRiskOfRamen%2fAssets%2fVoidLunar%2ftexRampTritone.png)
+
+      
+
+      [texRampTritone3](assetlink://Assets%2fRiskOfRamen%2fAssets%2fVoidLunar%2ftexRampTritone3.png)
+
+      
+
+      [texVoidLunarBGIcon](assetlink://Assets%2fRiskOfRamen%2fAssets%2fVoidLunar%2ftexVoidLunarBGIcon.png)
+
+      
+
+      [VoidLunarOrb](assetlink://Assets%2fRiskOfRamen%2fAssets%2fVoidLunar%2fVoidLunarOrb.prefab)
 
       
 
@@ -323,11 +513,159 @@ MonoBehaviour:
 
       
 
+      [iddWornTurnkey](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWornTurnkey%2fiddWornTurnkey.asset)
+
+      
+
+      [WornTurnkey](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWornTurnkey%2fWornTurnkey.prefab)
+
+      
+
+      [WornTurnkeyDisplay](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWornTurnkey%2fWornTurnkeyDisplay.prefab)
+
+      
+
+      [WornTurnkeyIcon](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWornTurnkey%2fWornTurnkeyIcon.png)
+
+      
+
+      [Allocentrism](assetlink://Assets%2fRiskOfRamen%2fAssets%2fAllocentrism%2fmeshes%2fAllocentrism.fbx)
+
+      
+
+      [AlloCollar](assetlink://Assets%2fRiskOfRamen%2fAssets%2fAllocentrism%2fmeshes%2fAlloCollar.fbx)
+
+      
+
+      [AlloHead](assetlink://Assets%2fRiskOfRamen%2fAssets%2fAllocentrism%2fmeshes%2fAlloHead.fbx)
+
+      
+
+      [Untitled](assetlink://Assets%2fRiskOfRamen%2fAssets%2fAllocentrism%2fmeshes%2fUntitled.fbx)
+
+      
+
+      [ContFont2](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fmeshes%2fContFont2.fbx)
+
+      
+
+      [GRAH](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fmeshes%2fGRAH.fbx)
+
+      
+
+      [GWAHRG](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fmeshes%2fGWAHRG.fbx)
+
+      
+
+      [POOL](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fmeshes%2fPOOL.fbx)
+
+      
+
+      [POOLER](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fmeshes%2fPOOLER.fbx)
+
+      
+
+      [animVoidWhale](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fanimVoidWhale.controller)
+
+      
+
+      [Blink](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fBlink.anim)
+
+      
+
+      [matVoidWhale](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fmatVoidWhale.mat)
+
+      
+
+      [matVoidWhaleEyes](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fmatVoidWhaleEyes.mat)
+
+      
+
+      [mdlVoidWhale@Blink](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fmdlVoidWhale%40Blink.prefab)
+
+      
+
+      [mdlVoidWhale@Pitch](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fmdlVoidWhale%40Pitch.prefab)
+
+      
+
+      [mdlVoidWhale@Swim](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fmdlVoidWhale%40Swim.prefab)
+
+      
+
+      [mdlVoidWhale@Yaw](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fmdlVoidWhale%40Yaw.prefab)
+
+      
+
+      [mdlVoidWhaleAvatar](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fmdlVoidWhaleAvatar.asset)
+
+      
+
+      [mdlVoidWhaleBody](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fmdlVoidWhaleBody.asset)
+
+      
+
+      [mdlVoidWhaleEyes](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fmdlVoidWhaleEyes.asset)
+
+      
+
+      [mdlVoidWhaleFins](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fmdlVoidWhaleFins.asset)
+
+      
+
+      [Pitch](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fPitch.anim)
+
+      
+
+      [Swim](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fSwim.anim)
+
+      
+
+      [texMagmaCloud](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2ftexMagmaCloud.png)
+
+      
+
+      [texRampNullifierOffset](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2ftexRampNullifierOffset.png)
+
+      
+
+      [texRampNullifierSmooth](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2ftexRampNullifierSmooth.png)
+
+      
+
+      [texTrimSheetConcreteNormal](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2ftexTrimSheetConcreteNormal.png)
+
+      
+
+      [texVoidWhale](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2ftexVoidWhale.png)
+
+      
+
+      [VoidWhale](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fVoidWhale.prefab)
+
+      
+
+      [Yaw](assetlink://Assets%2fRiskOfRamen%2fAssets%2fContaminationFont%2fVoidWhale%2fYaw.anim)
+
+      
+
       [KnotBelt](assetlink://Assets%2fRiskOfRamen%2fAssets%2fDenkuRope%2fmeshes%2fKnotBelt.fbx)
 
       
 
       [knotrp](assetlink://Assets%2fRiskOfRamen%2fAssets%2fDenkuRope%2fmeshes%2fknotrp.fbx)
+
+      
+
+      [tiara](assetlink://Assets%2fRiskOfRamen%2fAssets%2fGlassTiara%2fmeshes%2ftiara.fbx)
+
+      
+
+      [TiaraFlat](assetlink://Assets%2fRiskOfRamen%2fAssets%2fGlassTiara%2fmeshes%2fTiaraFlat.fbx)
+
+      
+
+      [TiaraFlatShell](assetlink://Assets%2fRiskOfRamen%2fAssets%2fGlassTiara%2fmeshes%2fTiaraFlatShell.fbx)
 
       
 
@@ -359,6 +697,10 @@ MonoBehaviour:
 
       
 
+      [windkeyitem](assetlink://Assets%2fRiskOfRamen%2fAssets%2fWornTurnkey%2fmeshes%2fwindkeyitem.fbx)
+
+      
+
       [WaxIdol](assetlink://Assets%2fRiskOfRamen%2fWaxIdol.asset)
 
       
@@ -383,11 +725,31 @@ MonoBehaviour:
 
       
 
+      [Allocentrism](assetlink://Assets%2fRiskOfRamen%2fAllocentrism.asset)
+
+      
+
+      [GlassTiara](assetlink://Assets%2fRiskOfRamen%2fGlassTiara.asset)
+
+      
+
+      [WornTurnkey](assetlink://Assets%2fRiskOfRamen%2fWornTurnkey.asset)
+
+      
+
+      [StillnessBuff](assetlink://Assets%2fRiskOfRamen%2fStillnessBuff.asset)
+
+      
+
       [HGStandard](assetlink://Assets%2fRiskOfRamen%2fshaders%2fDeferred%2fHGStandard.shader)
 
       
 
       [HGCloudRemap](assetlink://Assets%2fRiskOfRamen%2fshaders%2fFX%2fHGCloudRemap.shader)
+
+      
+
+      [VoidLunarTierDef](assetlink://Assets%2fRiskOfRamen%2fVoidLunarTierDef.asset)
 
       
 
@@ -409,7 +771,7 @@ MonoBehaviour:
 '
   - logLevel: 0
     internalTime:
-      ticks: 639013170751096724
+      ticks: 639033050294459270
     message: '[Pipeline(1 - StageAssetBundles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MSUManifest](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUManifest.asset)
       Creating 1 AssetBundles'
     context:
@@ -778,42 +1140,71 @@ MonoBehaviour:
 '
   - logLevel: 3
     internalTime:
-      ticks: 639013170742779583
+      ticks: 639033050277237238
     message: '[Pipeline(1 - StageAssetBundles)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 639013170742469303
+      ticks: 639033050276966997
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
       Build Completed: ``` ThunderKit/Libraries/RiskOfRamen.dll ```'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 639013170739700170
+      ticks: 639033050274744974
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
       staging ``` ThunderKit/Libraries ``` in ``` ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen
       ```
 
 '
     context:
-    - "Assembly Files\r\nFrom: ThunderKit/Libraries\\RiskOfRamen.pdb\r\n  To: ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen/RiskOfRamen.pdb\r\n\r\nFrom:
+    - "Assembly Files\r\nFrom: ThunderKit/Libraries\\RiskOfRamen.dll.mdb\r\n  To:
+      ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen/RiskOfRamen.dll.mdb\r\n\r\nFrom:
       ThunderKit/Libraries\\RiskOfRamen.dll\r\n  To: ThunderKit/Staging/RiskOfRamen/plugins/RiskOfRamen/RiskOfRamen.dll\r\n\r\n"
+  - logLevel: 1
+    internalTime:
+      ticks: 639033050274464720
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      Assets\RiskOfRamen\WornTurnkeyBodyBehavior.cs(14,37): warning CS0414: The field
+      ''WornTurnkeyBodyBehavior.secondsOfStillness'' is assigned but its value is
+      never used'
+    context:
+    - 'Assets\RiskOfRamen\WornTurnkeyBodyBehavior.cs (14:37)
+
+      [Assets\RiskOfRamen\WornTurnkeyBodyBehavior.cs(14,37):
+      warning CS0414: The field ''WornTurnkeyBodyBehavior.secondsOfStillness'' is
+      assigned but its value is never used](exceptionsource://C:\Users\nickh\RiskOfRamen\Assets\RiskOfRamen\WornTurnkeyBodyBehavior.cs#14)'
+  - logLevel: 1
+    internalTime:
+      ticks: 639033050274194475
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
+      Assets\RiskOfRamen\RiskOfRamenMain.cs(19,31): warning CS0618: ''SecurityAction.RequestMinimum''
+      is obsolete: ''Assembly level declarative security is obsolete and is no longer
+      enforced by the CLR by default. See https://go.microsoft.com/fwlink/?LinkID=155570
+      for more information.'''
+    context:
+    - 'Assets\RiskOfRamen\RiskOfRamenMain.cs (19:31)
+
+      [Assets\RiskOfRamen\RiskOfRamenMain.cs(19,31):
+      warning CS0618: ''SecurityAction.RequestMinimum'' is obsolete: ''Assembly level
+      declarative security is obsolete and is no longer enforced by the CLR by default.
+      See https://go.microsoft.com/fwlink/?LinkID=155570 for more information.''](exceptionsource://C:\Users\nickh\RiskOfRamen\Assets\RiskOfRamen\RiskOfRamenMain.cs#19)'
   - logLevel: 0
     internalTime:
-      ticks: 639013170696772827
+      ticks: 639033050241892269
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RiskOfRamenManifest](assetlink://Assets%2fRiskOfRamen%2fRiskOfRamenManifest.asset)
       Building : ThunderKit/Libraries/RiskOfRamen.dll'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 639013170694645550
+      ticks: 639033050240281209
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MSUManifest](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUManifest.asset)
       Build Completed: ``` ThunderKit/Libraries/MSU.Runtime.dll ```'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 639013170690307065
+      ticks: 639033050236482692
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MSUManifest](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUManifest.asset)
       staging ``` ThunderKit/Libraries ``` in ``` ThunderKit/Builds/MoonstormSharedUtils/2.4.3/plugins
       ```
@@ -825,169 +1216,169 @@ MonoBehaviour:
       ThunderKit/Libraries\\MSU.Runtime.dll\r\n  To: ThunderKit/Builds/MoonstormSharedUtils/2.4.3/plugins/MSU.Runtime.dll\r\n\r\n"
   - logLevel: 0
     internalTime:
-      ticks: 639013170606821714
+      ticks: 639033050190144568
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MSUManifest](assetlink://Packages%2fteammoonstorm-moonstormsharedutils%2fRuntime%2fMSUManifest.asset)
       Building : ThunderKit/Libraries/MSU.Runtime.dll'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170604094235
+      ticks: 639033050187947579
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[ShaderSwapper](assetlink://Packages%2fsmooth_salad-shaderswapper%2fShaderSwapper.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170603813981
+      ticks: 639033050187687338
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[Risk_Of_Options](assetlink://Packages%2frune580-risk_of_options%2fRisk_Of_Options.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170603543729
+      ticks: 639033050187266957
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Skins](assetlink://Packages%2friskofthunder-r2api_skins%2fR2API_Skins.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170603093321
+      ticks: 639033050186986700
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_StringSerializerExtensions](assetlink://Packages%2friskofthunder-r2api_stringserializerextensions%2fR2API_StringSerializerExtensions.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170602783040
+      ticks: 639033050186736473
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Stages](assetlink://Packages%2friskofthunder-r2api_stages%2fR2API_Stages.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170602472766
+      ticks: 639033050186486247
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Networking](assetlink://Packages%2friskofthunder-r2api_networking%2fR2API_Networking.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170601982317
+      ticks: 639033050186045846
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Dot](assetlink://Packages%2friskofthunder-r2api_dot%2fR2API_Dot.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170601672027
+      ticks: 639033050185785610
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_RecalculateStats](assetlink://Packages%2friskofthunder-r2api_recalculatestats%2fR2API_RecalculateStats.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170601311699
+      ticks: 639033050185535383
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Elites](assetlink://Packages%2friskofthunder-r2api_elites%2fR2API_Elites.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170600771214
+      ticks: 639033050185285155
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Director](assetlink://Packages%2friskofthunder-r2api_director%2fR2API_Director.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170600480946
+      ticks: 639033050184774694
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Addressables](assetlink://Packages%2friskofthunder-r2api_addressables%2fR2API_Addressables.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170600010525
+      ticks: 639033050184514454
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_DamageType](assetlink://Packages%2friskofthunder-r2api_damagetype%2fR2API_DamageType.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170599672538
+      ticks: 639033050184264230
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Colors](assetlink://Packages%2friskofthunder-r2api_colors%2fR2API_Colors.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170599382282
+      ticks: 639033050183823826
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_ArtifactCode](assetlink://Packages%2friskofthunder-r2api_artifactcode%2fR2API_ArtifactCode.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170598881824
+      ticks: 639033050183573602
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_ContentManagement](assetlink://Packages%2friskofthunder-r2api_contentmanagement%2fR2API_ContentManagement.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170598571539
+      ticks: 639033050183318331
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[R2API_Core](assetlink://Packages%2friskofthunder-r2api_core%2fR2API_Core.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170598271265
+      ticks: 639033050183068101
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[HookGenPatcher](assetlink://Packages%2friskofthunder-hookgenpatcher%2fHookGenPatcher.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170597790833
+      ticks: 639033050182627701
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[LoadingScreenSpriteFix](assetlink://Packages%2fnebby-loadingscreenspritefix%2fLoadingScreenSpriteFix.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170597473135
+      ticks: 639033050182377472
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[BepInExPack](assetlink://Packages%2fbbepis-bepinexpack%2fBepInExPack.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170596972680
+      ticks: 639033050182117237
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[MiscFixes](assetlink://Packages%2fscore-miscfixes%2fMiscFixes.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170595518298
+      ticks: 639033050181716874
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[SeekersPatcher](assetlink://Packages%2fpseudopulse-seekerspatcher%2fSeekersPatcher.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170595198006
+      ticks: 639033050181436619
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170594897733
+      ticks: 639033050181186391
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[FixPluginTypesSerialization](assetlink://Packages%2friskofthunder-fixplugintypesserialization%2fFixPluginTypesSerialization.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 639013170594566420
+      ticks: 639033050180876112
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 639013170587776305
+      ticks: 639033050175814815
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 639013170587756285
+      ticks: 639033050175794800
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
       Clearing PipelineJob error states'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 639013170587456008
+      ticks: 639033050175424569
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fRiskOfRamen%2fPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
       Execute Pipeline'
     context: []

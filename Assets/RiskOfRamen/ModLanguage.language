@@ -72,8 +72,8 @@ The second figure sighs, and places the brooch in a pouch. As they retreat into 
 		"WAXWISP_BODY_NAME": "Willow",
 
 		"ITEM_GLASSTIARA_NAME": "Glass Tiara",
-		"ITEM_GLASSTIARA_PICKUP": "You hurt enemies that hit you. Gain and lose max health when you earn and spend gold. <style=cIsVoid>Corrupts all Brittle Crowns.</style>",
-		"ITEM_GLASSTIARA_DESC": "Enemies take 2.5% <style=cStack>(+1% per stack)</style> of their <style=cIsHealth>max health</style> as damage when they hit you. When you spend gold, temporarily <style=cIsHealth>reduce your max health</style> by 20% <style=cStack>(+5% per stack)</style> of spent gold. When you earn gold, <style=cIsHealing>increase your max health</style> by 10% <style=cStack>(+10% per stack)</style> of earned gold, capped at its normal value. <style=cIsVoid>Corrupts all Brittle Crowns.</style>",
+		"ITEM_GLASSTIARA_PICKUP": "Gain gold upon entering a stage. Gain and lose max health when you earn and spend gold. <style=cIsVoid>Corrupts all Brittle Crowns.</style>",
+		"ITEM_GLASSTIARA_DESC": "Gain 2 <style=cStack>(+1 per stack)</style> large chests worth of gold upon entering a stage. When you spend gold, temporarily <style=cIsHealth>reduce your max health</style> by 20% <style=cStack>(+5% per stack)</style> of spent gold. When you earn gold, <style=cIsHealing>increase your max health</style> by 10% <style=cStack>(+10% per stack)</style> of earned gold, capped at its normal value. <style=cIsVoid>Corrupts all Brittle Crowns.</style>",
 		"ITEM_GLASSTIARA_LORE": "",
 
 		"ITEM_ALLOCENTRISM_NAME": "Allocentrism",

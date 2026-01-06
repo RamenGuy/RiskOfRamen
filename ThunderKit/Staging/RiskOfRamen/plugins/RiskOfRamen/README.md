@@ -1,6 +1,6 @@
 # Risk Of Ramen 
 A modded expansion for Risk of Rain 2! Contains a few items with more content to come. 
-If you have any suggestions, ideas, or bugs to report, feel free to DM me on Discord at ramenguy221!
+If you have any suggestions, ideas, or bugs to report, join the [discord](https://discord.gg/tjDg4BfCaF)!
 
 ## ITEMS
 | **Icon** | **Name**        | **Description**                                                                    | **Tier** |

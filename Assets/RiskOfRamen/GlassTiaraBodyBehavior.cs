@@ -14,7 +14,6 @@ namespace RiskOfRamen
     {
         uint prevGold = 0;
         public float curseAdd = 0;
-        public float maxHealthAdd = 0;
 
         [ItemDefAssociation(useOnServer = true, useOnClient = false)]
         private static ItemDef GetItemDef()
@@ -24,14 +23,13 @@ namespace RiskOfRamen
 
         private void Start()
         {
-            //wispResummonCooldown = timeBetweenWispRetryResummons;
             prevGold = body.master.money;
         }
 
         private void FixedUpdate()
         {
             int num = stack;
-
+            
             if (curseAdd < 0) { curseAdd = 0; }
 
             if (body.master.money < prevGold)
@@ -46,6 +44,7 @@ namespace RiskOfRamen
 
             prevGold = body.master.money;
             
+
         }
 
         private void OnGoldSpent(uint oldMoney, uint newMoney)
