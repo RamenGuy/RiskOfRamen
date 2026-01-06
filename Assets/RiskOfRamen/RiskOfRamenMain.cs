@@ -175,7 +175,7 @@ namespace RiskOfRamen
 
         private void CharacterMaster_OnServerStageBegin(On.RoR2.CharacterMaster.orig_OnServerStageBegin orig, CharacterMaster self, Stage stage)
         {
-            uint LargeChestCost = (uint)Run.instance.GetDifficultyScaledCost(50);
+            uint LargeChestCost = (uint)Run.instance.GetDifficultyScaledCost(50, Stage.instance.entryDifficultyCoefficient);
             uint GlassTiaraCount = (uint)self.inventory.GetItemCountEffective(RiskOfRamenContent._GlassTiara);
             if (GlassTiaraCount >= 1)
             {
