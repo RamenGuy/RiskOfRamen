@@ -17,5 +17,5 @@ If you have any suggestions, ideas, or bugs to report, join the [discord](https:
 | <img width="128" height="128" alt="glasstiaraicon" src="https://raw.githubusercontent.com/RamenGuy/RiskOfRamen/refs/heads/main/Assets/RiskOfRamen/Assets/GlassTiara/GlassTiaraIcon.png" />  | Glass Tiara    | Gain 2 (+1 per stack) large chests worth of gold upon entering a stage. When you spend gold, temporarily reduce your max health by 20% (+5% per stack) of spent gold. When you earn gold, increase your max health by 10% (+10% per stack) of earned gold, capped at its normal value. Corrupts all Brittle Crowns. | `Void Lunar`  |
 
 ## VOID LUNARS
-Void Lunars are special items that can be obtained by using a Contamination Font - a new interactable that spawns in the Void Locus - to corrupt an applicable Lunar item in your inventory. More Void Lunars are planned.
+Void Lunars can only be obtained by using the Contamination Font - a new interactable that spawns in the Void Locus - to corrupt applicable Lunar items in your inventory. More Void Lunars will be added in future updates.
 
