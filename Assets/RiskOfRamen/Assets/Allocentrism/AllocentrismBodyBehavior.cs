@@ -50,6 +50,7 @@ namespace RiskOfRamen.Assets.Allocentrism
         [ItemDefAssociation(useOnServer = true, useOnClient = false)]
         private static ItemDef GetItemDef()
         {
+            if (RiskOfRamenContent._Allocentrism == null) { return null; }
             return RiskOfRamenContent._Allocentrism;
         }
 

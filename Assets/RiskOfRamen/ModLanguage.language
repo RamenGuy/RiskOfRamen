@@ -123,5 +123,11 @@ Y</style>",
 		"INTERACTABLE_CONTAMINATIONFONT_NAME": "Contamination Font",
 		"INTERACTABLE_CONTAMINATIONFONT_CONTEXT": "<style=cIsVoid>【「?CONTA??MINA?TE??』】</style>",
 		"INTERACTABLE_CONTAMINATIONFONT_PICKERCONTEXT": "Channel Impurity?",
+		"LUNAREXPLODER_BODY_NAME": "Lunar Chimera (Larva)",
+
+		"ITEM_EREMITE_NAME": "Esoteric Eremite",
+		"ITEM_EREMITE_PICKUP": "Enemies have a chance to temporarily ignore you when they spawn... <style=cIsHealth>but</style> those enemies hurt you more. <style=cIsVoid>Corrupts all Light Flux Pauldrons.</style>",
+		"ITEM_EREMITE_DESC": "Upon spawning, enemies have a <style=cIsUtility>25% chance</style> <style=cStack>(+5% per stack)</style> to be incapable of targeting you for <style=cIsUtility>5 seconds</style> <style=cIsUtility>(+5 seconds per stack)</style>. Enemies that are affected by this deal <style=cIsHealth>200% damage</style> <style=cStack>(+50% per stack)</style>. <style=cIsVoid>Corrupts all Light Flux Pauldrons.</style>",
+		"ITEM_EREMITE_LORE": "",
 	}
 }

@@ -18,7 +18,8 @@ namespace RiskOfRamen
 
         [ItemDefAssociation(useOnServer = true, useOnClient = false)]
         private static ItemDef GetItemDef()
-        {
+        {   
+            if (RiskOfRamenContent._WaxIdol == null) { return null; }
             return RiskOfRamenContent._WaxIdol;
         }
 
@@ -35,52 +36,61 @@ namespace RiskOfRamen
             {
                 return;
             }
-            int deployableCount = bodyMaster.GetDeployableCount(DeployableSlot.EngiTurret);
-            //int deployableCount = 2;
-            if (deployableCount >= num)
+            if (RiskOfRamenConfig.spawnWaxWisp.Value)
             {
-                return;
-            }
-            wispResummonCooldown -= Time.fixedDeltaTime;
-            if (wispResummonCooldown <= 0f)
-            {
-                DirectorSpawnRequest directorSpawnRequest = new DirectorSpawnRequest(RiskOfRamenContent._cscWaxWisp, new DirectorPlacementRule
+                int deployableCount = bodyMaster.GetDeployableCount(RiskOfRamenContent.WaxWispSlot);
+                //int deployableCount = 2;
+                if (deployableCount >= num)
                 {
-                    placementMode = DirectorPlacementRule.PlacementMode.Approximate,
-                    minDistance = 3f,
-                    maxDistance = 40f,
-                    spawnOnTarget = base.transform
-                }, RoR2Application.rng);
-                directorSpawnRequest.summonerBodyObject = base.gameObject;
-                directorSpawnRequest.onSpawnedServer = OnWispSpawned;
-                DirectorCore.instance.TrySpawnObject(directorSpawnRequest);
-                if (deployableCount < num)
-                {
-                    wispResummonCooldown = timeBetweenWispRetryResummons;
+                    return;
                 }
-                else
+                wispResummonCooldown -= Time.fixedDeltaTime;
+                if (wispResummonCooldown <= 0f)
                 {
-                    wispResummonCooldown = timeBetweenWispResummons;
-                }
-            }
-            void OnWispSpawned(SpawnCard.SpawnResult spawnResult)
-            {
-                GameObject spawnedInstance = spawnResult.spawnedInstance;
-                if ((bool)spawnedInstance)
-                {
-                    CharacterMaster component = spawnedInstance.GetComponent<CharacterMaster>();
-                    if ((bool)component)
+                    DirectorSpawnRequest directorSpawnRequest = new DirectorSpawnRequest(RiskOfRamenContent._cscWaxWisp, new DirectorPlacementRule
                     {
-                        component.inventory.GiveItemPermanent(RoR2Content.Items.BoostDamage, 30);
-                        component.inventory.GiveItemPermanent(RoR2Content.Items.BoostHp, 10);
-                        Deployable component2 = component.GetComponent<Deployable>();
-                        if ((bool)component2)
+                        placementMode = DirectorPlacementRule.PlacementMode.Approximate,
+                        minDistance = 3f,
+                        maxDistance = 40f,
+                        spawnOnTarget = base.transform
+                    }, RoR2Application.rng);
+                    directorSpawnRequest.summonerBodyObject = base.gameObject;
+                    directorSpawnRequest.onSpawnedServer = OnWispSpawned;
+                    DirectorCore.instance.TrySpawnObject(directorSpawnRequest);
+                    if (deployableCount < num)
+                    {
+                        wispResummonCooldown = timeBetweenWispRetryResummons;
+                    }
+                    else
+                    {
+                        wispResummonCooldown = timeBetweenWispResummons;
+                    }
+                }
+                void OnWispSpawned(SpawnCard.SpawnResult spawnResult)
+                {
+                    GameObject spawnedInstance = spawnResult.spawnedInstance;
+                    if ((bool)spawnedInstance)
+                    {
+                        CharacterMaster component = spawnedInstance.GetComponent<CharacterMaster>();
+                        if ((bool)component)
                         {
-                            bodyMaster.AddDeployable(component2, DeployableSlot.EngiTurret);
+                            component.inventory.GiveItemPermanent(RoR2Content.Items.BoostDamage, 30);
+                            component.inventory.GiveItemPermanent(RoR2Content.Items.BoostHp, 10);
+                            Deployable component2 = component.GetComponent<Deployable>();
+                            if ((bool)component2)
+                            {
+                                bodyMaster.AddDeployable(component2, RiskOfRamenContent.WaxWispSlot);
+                            }
                         }
                     }
                 }
             }
         }
+        public static int GetMaxProjectiles(Inventory inventory)
+        {
+            if (inventory.GetItemCountEffective(RiskOfRamenContent._WaxIdol) >= 1) { return 1; };
+            return 0;
+        }
+
     }
 }

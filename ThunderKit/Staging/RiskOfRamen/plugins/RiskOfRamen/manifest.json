@@ -1,9 +1,9 @@
 {
     "name": "RiskOfRamen",
     "author": "Ramen",
-    "version_number": "1.1.0",
+    "version_number": "1.1.2",
     "website_url": "",
-    "description": "A modded expansion for Risk of Rain 2! Contains a few items with more content to come.",
+    "description": "A modded expansion for Risk of Rain 2! Contains some helpful items and a new take on Void Lunars.",
     "dependencies": [
         "bbepis-BepInExPack-5.4.2121",
         "Nebby-LoadingScreenSpriteFix-2.0.1",

@@ -27,6 +27,16 @@ namespace RiskOfRamen
     [BepInDependency(RecalculateStatsAPI.PluginGUID)]
     [BepInDependency("Nebby1999.LoadingScreenFix", BepInDependency.DependencyFlags.HardDependency)]
     //[BepInDependency("com.TeamMoonstorm.MSU", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.bepis.r2api", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.bepis.r2api.content_management", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.bepis.r2api.items", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.bepis.r2api.language", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.bepis.r2api.prefab", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.bepis.r2api.recalculatestats", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.bepis.r2api.director", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.bepis.r2api.orb", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.bepis.r2api.networking", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("com.bepis.r2api.deployable", BepInDependency.DependencyFlags.HardDependency)]
 
     #endregion
     [BepInPlugin(GUID, MODNAME, VERSION)]
@@ -34,7 +44,7 @@ namespace RiskOfRamen
     {
         public const string GUID = "com.Ramen.RiskOfRamen";
         public const string MODNAME = "Risk Of Ramen";
-        public const string VERSION = "1.1.0";  
+        public const string VERSION = "1.1.2";  
 
         public static PluginInfo pluginInfo { get; private set; }
         public static RiskOfRamenMain instance { get; private set; }
@@ -51,14 +61,19 @@ namespace RiskOfRamen
         {
             instance = this;
             pluginInfo = Info;
+            RiskOfRamenConfig.CreateConfig(Config);
             new RiskOfRamenContent();
             RecalculateStatsAPI.GetStatCoefficients += RecalculateStatsAPI_GetStatCoefficients;
             SceneDirector.onPostPopulateSceneServer += SceneDirector_onPostPopulatesceneServer;
-
+            
             LoadingScreenFix.LoadingScreenFix.AddSpriteAnimations(GetLoadingScreenBundle());
             CostTypeCatalog.modHelper.getAdditionalEntries += ModHelper_getAdditionalEntries;
 
             On.RoR2.CharacterMaster.OnServerStageBegin += CharacterMaster_OnServerStageBegin;
+
+
+            
+
         }
 
 
@@ -159,7 +174,7 @@ namespace RiskOfRamen
 
         private static void SceneDirector_onPostPopulatesceneServer(SceneDirector sceneDirector) 
         {
-            if (SceneCatalog.currentSceneDef.baseSceneName == "voidstage")
+            if (SceneCatalog.currentSceneDef.baseSceneName == "voidstage" && RiskOfRamenConfig.enableVoidLunars.Value)
             {
                 DirectorCore.instance.TrySpawnObject(
                 new DirectorSpawnRequest

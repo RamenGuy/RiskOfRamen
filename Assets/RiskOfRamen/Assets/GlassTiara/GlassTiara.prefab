@@ -45,12 +45,12 @@ MonoBehaviour:
   m_Script: {fileID: -1864444436, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  focusPointTransform: {fileID: 0}
-  cameraPositionTransform: {fileID: 0}
+  focusPointTransform: {fileID: 1474436556066317643}
+  cameraPositionTransform: {fileID: 1474436556066317643}
   modelRotation: {x: 0, y: 0, z: 0, w: 1}
   modelPositionOffset: {x: 0, y: 0, z: 0}
   minDistance: 1
-  maxDistance: 2
+  maxDistance: 3
   triggerOnLogbook:
     m_PersistentCalls:
       m_Calls: []

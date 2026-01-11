@@ -33,3 +33,17 @@ MonoBehaviour:
     _hexRepresentation: f201f9522b7898947bae7ddbde4b0c1d
   - k_templateName: ComponentInspectorEnableToggle
     _hexRepresentation: d8821e738f95f48498530303e90d440d
+  - k_templateName: ItemDisplayDictionaryEditorWindow
+    _hexRepresentation: 7a7b3bfc4e2696f47a664730f95fe948
+  - k_templateName: ItemDisplayDictionary_KeyAssetDisplayPrefabsElement
+    _hexRepresentation: 36b34c0ca6e547140bbf93f7cbbb72fc
+  - k_templateName: NamedItemDisplayRuleSetEditorWindow
+    _hexRepresentation: cfadae2a6b65f0d46b9c17003bbb9854
+  - k_templateName: NamedItemDisplayRuleSet_TargetRuleSet
+    _hexRepresentation: 7d5bb14553d35d24e8daf6582dae92c4
+  - k_templateName: NamedItemDisplayRuleSet_RuleGroupSelector
+    _hexRepresentation: ff6b3f93fa151e74a9968b2025d67b66
+  - k_templateName: NamedItemDisplayRuleSet_KeyAssetRuleSelector
+    _hexRepresentation: 46539f6597c458e4eb940e53c53d1996
+  - k_templateName: NamedItemDisplayRuleSet_RuleEditor
+    _hexRepresentation: ace7e55604036e641b001a591c821a3a

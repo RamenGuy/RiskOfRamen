@@ -11,6 +11,8 @@ using RoR2.UI;
 using UnityEngine.UIElements;
 using RoR2.Projectile;
 using RiskOfRamen.Assets.Allocentrism;
+using BepInEx.Configuration;
+using RoR2BepInExPack.GameAssetPaths;
 //using MSU;
 
 namespace RiskOfRamen
@@ -27,10 +29,9 @@ namespace RiskOfRamen
         public static ItemDef _DenkuRope;
         public static ItemDef _StainedBelt;
         public static ItemDef _WornTurnkey;
-
-
         public static ItemDef _GlassTiara;
         public static ItemDef _Allocentrism;
+        public static ItemDef _EsotericEremite;
         public static ItemTierDef _VoidLunarTier;
 
         public static GameObject _ContaminationFont;
@@ -47,6 +48,9 @@ namespace RiskOfRamen
         public static EffectDef _AllocentrismExplosion;
 
         public static DeployableSlot AllocentrismBomb;
+        public static DeployableSlot WaxWispSlot;
+
+        public static ExpansionDef _expansionDef;
 
         public static AssetBundle _assetBundle;
 
@@ -67,6 +71,46 @@ namespace RiskOfRamen
             //Write code here to initialize your mod post assetbundle load
             _assetBundle = asyncOperation.assetBundle;
 
+            RiskOfRamenMain.LogInfo("Loading assets...");
+            LoadAssets();
+
+            RiskOfRamenMain.LogInfo("Adding content...");
+            AddContent();
+
+            RiskOfRamenMain.LogInfo("Swapping stubbed shaders...");
+            SwapAllShaders();
+
+            RiskOfRamenMain.LogInfo("Registering deployable slots...");
+            AllocentrismBomb = DeployableAPI.RegisterDeployableSlot((self, deployableCountMultiplier) =>
+            {
+                if (self)
+                {
+                    return AllocentrismBodyBehavior.GetMaxProjectiles(self.inventory);
+                }
+                return 1;
+            });
+
+            WaxWispSlot = DeployableAPI.RegisterDeployableSlot((self, deployableCountMultiplier) =>
+            {
+                if (self)
+                {
+                    return WaxIdolBodyBehavior.GetMaxProjectiles(self.inventory);
+                }
+                return 1;
+            });
+
+            RiskOfRamenMain.LogInfo("Populating Void Lunar lists...");
+            _corruptibleLunars = PopulateCorruptibleLunars();
+
+            RiskOfRamenMain.LogInfo("Creating item configs...");
+            RiskOfRamenConfig.CreateItemConfigs(RiskOfRamenContentPack.itemDefs);
+
+
+        }
+
+
+        private static void LoadAssets()
+        {
             _WaxIdol = _assetBundle.LoadAsset<ItemDef>("WaxIdol");
             _ObsidianCard = _assetBundle.LoadAsset<ItemDef>("ObsidianCard");
             _DenkuRope = _assetBundle.LoadAsset<ItemDef>("DenkuRope");
@@ -74,8 +118,8 @@ namespace RiskOfRamen
             _WornTurnkey = _assetBundle.LoadAsset<ItemDef>("WornTurnkey");
             _GlassTiara = _assetBundle.LoadAsset<ItemDef>("GlassTiara");
             _Allocentrism = _assetBundle.LoadAsset<ItemDef>("Allocentrism");
-
-            _VoidLunarTier = _assetBundle.LoadAsset<ItemTierDef>("VoidLunarTierDef");
+            _EsotericEremite = _assetBundle.LoadAsset<ItemDef>("EsotericEremite");
+            _VoidLunarTier = _assetBundle.LoadAsset<ItemTierDef>("VoidLunarTierDefRamen");
 
             _WaxWispBody = _assetBundle.LoadAsset<GameObject>("WaxWispBody");
             _WaxWispMaster = _assetBundle.LoadAsset<GameObject>("WaxWispMaster");
@@ -90,49 +134,66 @@ namespace RiskOfRamen
             _AllocentrismGhost = _assetBundle.LoadAsset<GameObject>("AllocentrismBombProjectileGhost");
             _AllocentrismExplosion = new EffectDef(_assetBundle.LoadAsset<GameObject>("ExplosionAllocentrism"));
 
-            var expansionDef = _assetBundle.LoadAsset<ExpansionDef>("RiskOfRamenExpansion");
+            _expansionDef = _assetBundle.LoadAsset<ExpansionDef>("RiskOfRamenExpansion");
+        }
 
-
-            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _WaxIdol });
-            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _ObsidianCard }); 
+        private static void AddContent()
+        {
+            /*RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _WaxIdol });
+            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _ObsidianCard });
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _DenkuRope });
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _StainedBelt });
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _WornTurnkey });
 
             RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _GlassTiara });
+            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _EsotericEremite });
+            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _Allocentrism });*/
+            TryAddItem(_WaxIdol);
+            TryAddItem(_ObsidianCard);
+            TryAddItem(_DenkuRope);
+            TryAddItem(_StainedBelt);
+            TryAddItem(_WornTurnkey);
+            TryAddItem(_GlassTiara);
+            TryAddItem(_EsotericEremite);
+            TryAddItem(_Allocentrism);
 
-            RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { _Allocentrism });
-            RiskOfRamenContentPack.itemTierDefs.Add(new ItemTierDef[] { _VoidLunarTier }); 
+            RiskOfRamenContentPack.itemTierDefs.Add(new ItemTierDef[] { _VoidLunarTier });
 
             RiskOfRamenContentPack.bodyPrefabs.Add(new GameObject[] { _WaxWispBody });
             RiskOfRamenContentPack.masterPrefabs.Add(new GameObject[] { _WaxWispMaster });
 
             RiskOfRamenContentPack.buffDefs.Add(new BuffDef[] { _stillnessBuff });
-            RiskOfRamenContentPack.networkedObjectPrefabs.Add(new GameObject[] { _ContaminationFont });
-            
-            RiskOfRamenContentPack.expansionDefs.Add(new ExpansionDef[] { expansionDef });
+            RiskOfRamenContentPack.networkedObjectPrefabs.Add(new GameObject[]  { _ContaminationFont });
+
+            RiskOfRamenContentPack.expansionDefs.Add(new ExpansionDef[] { _expansionDef });
             RiskOfRamenContentPack.effectDefs.Add(new EffectDef[] { _AllocentrismExplosion });
 
-            SwapAllShaders();
 
-            var AllocentrismVoid = CreateVoidPair(_Allocentrism, Addressables.LoadAssetAsync<ItemDef>("RoR2/DLC1/LunarSun/LunarSun.asset").WaitForCompletion());
-            
-            RiskOfRamenContentPack.itemRelationshipProviders.Add(new ItemRelationshipProvider[] { AllocentrismVoid });
-
-            var GlassTiaraVoid = CreateVoidPair(_GlassTiara, Addressables.LoadAssetAsync<ItemDef>("RoR2/Base/GoldOnHit/GoldOnHit.asset").WaitForCompletion());
-
-            RiskOfRamenContentPack.itemRelationshipProviders.Add(new ItemRelationshipProvider[] { GlassTiaraVoid });
-
-            AllocentrismBomb = DeployableAPI.RegisterDeployableSlot((self, deployableCountMultiplier) =>
+            if (RiskOfRamenConfig.enableItem(_Allocentrism).Value)
             {
-                if (self)
-                {
-                    return AllocentrismBodyBehavior.GetMaxProjectiles(self.inventory);
-                }
-                return 1;
-            });
+                var AllocentrismVoid = CreateVoidPair(_Allocentrism, Addressables.LoadAssetAsync<ItemDef>("RoR2/DLC1/LunarSun/LunarSun.asset").WaitForCompletion());
+                RiskOfRamenContentPack.itemRelationshipProviders.Add(new ItemRelationshipProvider[] { AllocentrismVoid });
+            }
+            if (RiskOfRamenConfig.enableItem(_GlassTiara).Value)
+            {
+                var GlassTiaraVoid = CreateVoidPair(_GlassTiara, Addressables.LoadAssetAsync<ItemDef>("RoR2/Base/GoldOnHit/GoldOnHit.asset").WaitForCompletion());
 
-            _corruptibleLunars = PopulateCorruptibleLunars();
+                RiskOfRamenContentPack.itemRelationshipProviders.Add(new ItemRelationshipProvider[] { GlassTiaraVoid });
+            }
+            if (RiskOfRamenConfig.enableItem(_EsotericEremite).Value)
+            {
+                var EsotericEremiteVoid = CreateVoidPair(_EsotericEremite, Addressables.LoadAssetAsync<ItemDef>("RoR2/DLC1/HalfAttackSpeedHalfCooldowns/HalfAttackSpeedHalfCooldowns.asset").WaitForCompletion());
+
+                RiskOfRamenContentPack.itemRelationshipProviders.Add(new ItemRelationshipProvider[] { EsotericEremiteVoid });
+            }
+        }
+
+        private static void TryAddItem(ItemDef item)
+        {
+            if (RiskOfRamenConfig.getConfig().Bind<bool>("Items", $"Enable {Language.GetString(item.nameToken)}", true, $"Whether or not {Language.GetString(item.nameToken)} should appear in-game.").Value)
+            {
+                RiskOfRamenContentPack.itemDefs.Add(new ItemDef[] { item });
+            }
         }
 
         private static ItemRelationshipProvider CreateVoidPair(ItemDef corrupted, ItemDef normal)
@@ -165,6 +226,11 @@ namespace RiskOfRamen
                 {
                     itemDef1 = Addressables.LoadAssetAsync<ItemDef>("RoR2/Base/GoldOnHit/GoldOnHit.asset").WaitForCompletion(),
                     itemDef2 = _GlassTiara,
+                },
+                new ItemDef.Pair
+                {
+                    itemDef1 = Addressables.LoadAssetAsync<ItemDef>("RoR2/DLC1/HalfAttackSpeedHalfCooldowns/HalfAttackSpeedHalfCooldowns.asset").WaitForCompletion(),
+                    itemDef2 = _EsotericEremite,
                 }
             };
         }
@@ -198,7 +264,6 @@ namespace RiskOfRamen
 
                 if (replacementShader != null)
                 {
-                    RiskOfRamenMain.LogInfo("Swapped shader " + material.shader.name + " with " + shaderName);
                     material.shader = replacementShader;
                 } 
                 else

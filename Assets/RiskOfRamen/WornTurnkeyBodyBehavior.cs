@@ -18,6 +18,8 @@ namespace RiskOfRamen
         [ItemDefAssociation(useOnServer = true, useOnClient = false)]
         private static ItemDef GetItemDef()
         {
+            if (RiskOfRamenContent._WornTurnkey == null) { return null; }
+
             return RiskOfRamenContent._WornTurnkey;
         }
 

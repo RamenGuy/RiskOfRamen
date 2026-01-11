@@ -123,5 +123,11 @@ Y</style>",
 		"INTERACTABLE_CONTAMINATIONFONT_NAME": "Contamination Font",
 		"INTERACTABLE_CONTAMINATIONFONT_CONTEXT": "<style=cIsVoid>【「?CONTA??MINA?TE??』】</style>",
 		"INTERACTABLE_CONTAMINATIONFONT_PICKERCONTEXT": "Channel Impurity?",
+		"LUNAREXPLODER_BODY_NAME": "Lunar Chimera (Larva)",
+
+		"ITEM_EREMITE_NAME": "Esoteric Eremite",
+		"ITEM_EREMITE_PICKUP": "TBD. <style=cIsVoid>Corrupts all Light Flux Pauldrons.</style>",
+		"ITEM_EREMITE_DESC": "TBD. <style=cIsVoid>Corrupts all Light Flux Pauldrons.</style>",
+		"ITEM_EREMITE_LORE": "",
 	}
 }

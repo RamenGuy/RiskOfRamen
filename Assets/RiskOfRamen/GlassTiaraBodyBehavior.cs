@@ -18,6 +18,7 @@ namespace RiskOfRamen
         [ItemDefAssociation(useOnServer = true, useOnClient = false)]
         private static ItemDef GetItemDef()
         {
+            if (RiskOfRamenContent._GlassTiara == null) { return null; }
             return RiskOfRamenContent._GlassTiara;
         }
 
