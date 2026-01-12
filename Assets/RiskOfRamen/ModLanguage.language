@@ -33,7 +33,7 @@ Notes:\n\n
 > Despite this, fractures and structural irregularities suggest that the glass itself was indeed naturally formed\n
 > Further samples requested, this is cool stuff\n\n
 
-Addendum: Yes, Trapp, I know obsidian isn't a mineral, but we don't have a volcanic glass analysis table.",
+Addendum: Yes, Trapp, I know obsidian isn't a mineral, but we don't have a volcanic glass analysis table.\n<style=cMono>End Of File</style>",
 
                 "ITEM_DENKUROPE_NAME": "Denku Rope Coil",
 		"ITEM_DENKUROPE_PICKUP": "Your 'Critical Strikes' deal an additional 10% damage.",
@@ -50,7 +50,8 @@ Notes:\n\n
 > Pausing to disinfect and treat\n
 > Resuming analysis\n
 > Bandage lacerated from contact with the strand, closer examination and testing reveals that it cuts very easily when under tension\n
-> Ending analysis, protective equipment needed for further testing",
+> Ending analysis, protective equipment needed for further testing\n
+<style=cMono>End Of File</style>",
 
 		"ITEM_STAINEDBELT_NAME": "Stained Belt",
 		"ITEM_STAINEDBELT_PICKUP": "Gain 'Critical Strike' chance when you have barrier.",
@@ -127,7 +128,31 @@ Y</style>",
 
 		"ITEM_EREMITE_NAME": "Esoteric Eremite",
 		"ITEM_EREMITE_PICKUP": "Enemies have a chance to temporarily ignore you when they spawn... <style=cIsHealth>but</style> those enemies hurt you more. <style=cIsVoid>Corrupts all Light Flux Pauldrons.</style>",
-		"ITEM_EREMITE_DESC": "Upon spawning, enemies have a <style=cIsUtility>25% chance</style> <style=cStack>(+5% per stack)</style> to be incapable of targeting you for <style=cIsUtility>5 seconds</style> <style=cIsUtility>(+5 seconds per stack)</style>. Enemies that are affected by this deal <style=cIsHealth>200% damage</style> <style=cStack>(+50% per stack)</style>. <style=cIsVoid>Corrupts all Light Flux Pauldrons.</style>",
-		"ITEM_EREMITE_LORE": "",
+		"ITEM_EREMITE_DESC": "Upon spawning, enemies have a <style=cIsUtility>25% chance</style> <style=cStack>(+5% per stack)</style> to be incapable of targeting you for <style=cIsUtility>10 seconds</style> <style=cStack>(+5 seconds per stack)</style>. Enemies that are affected by this deal <style=cIsHealth>200% damage</style>. <style=cIsVoid>Corrupts all Light Flux Pauldrons.</style>",
+		"ITEM_EREMITE_LORE": "<style=cMono>Lab Dissection Analysis File</style>\n\n
+Subject: Unknown Crab-Like Organism\n
+Technician: A. Jacobs\n
+Table Spec: BioSaf with spectroscopic hood\n
+Notes:\n\n
+
+> I can't help but take a minute to stare at the specimen's shell\n
+> Its texture is like nothing I've ever seen\n
+> Marcus lost a finger trying to extricate the organism from its shell, so all we've done so far are superficial screenings. I'm going to try and chip a piece off\n
+> Manual strikes with diamond chisel appear to have no effect. Attaching it to the automatic arm for more force\n
+> Sample successfuly removed. It cracked deeper than I would have liked, and appears to have exposed the upper body of the organism\n
+> <style=cMono>//--AUTO-TRANSCRIPTION FAILED --//</style>\n
+> JESUS\n
+> <style=cMono>//--AUTO-TRANSCRIPTION FAILED --//</style>\n
+> Holy- ugh. I managed to trap it in the lab. The organism- it- it like- it extended an appendage out of the hole and... ||||. It tore the lab table to little scraps. My arm's cut all to hell. I don't know what the hell security's gonna do about that thing. I can still hear it... unfolding, from behind the blast doors. I- I need to get to the medbay or I'm gonna bleed out.\n
+<style=cMono>End Of File</style>",
+
+		"ITEM_CHITINOUSCHISEL_NAME": "Chitinous Chisel",
+		"ITEM_CHITINOUSCHISEL_PICKUP": "Items from Shrines of Chance may be rarer... <style=cIsHealth>but</style> you have only one chance. <style=cIsVoid>Corrupts all Defiant Gouges</style>.",
+		"ITEM_CHITINOUSCHISEL_DESC": "Items obtained from Shrines of Chance have a <style=cIsUtility>25% chance</style> to have their rarity upgraded <style=cStack>(+25% per stack)</style>. Shrines of Chance are destroyed on use. <style=cIsVoid>Corrupts all Defiant Gouges</style>.",
+
+		"ITEM_PARASITICCLAM_NAME": "Parasitic Clam",
+		"ITEM_PARASITICCLAM_PICKUP": "Nullify base regeneration. Gain stacking buffs to attack and movement speed upon getting hit. <style=cIsVoid>Corrupts all Stone Flux Pauldrons.</style>",
+		"ITEM_PARASITICCLAM_DESC": "Nullify <style=cIsHealing>base health regeneration</style>. Upon being hit, gain a 75% <style=cStack>(+25% per stack)</style> boost to <style=cIsUtility>movement and attack speed</style> as a stacking buff. <style=cIsVoid>Corrupts all Stone Flux Pauldrons.</style>",
+		"ITEM_PARASITICCLAM_LORE": "",
 	}
 }

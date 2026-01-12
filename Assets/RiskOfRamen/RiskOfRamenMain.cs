@@ -70,10 +70,9 @@ namespace RiskOfRamen
             CostTypeCatalog.modHelper.getAdditionalEntries += ModHelper_getAdditionalEntries;
 
             On.RoR2.CharacterMaster.OnServerStageBegin += CharacterMaster_OnServerStageBegin;
-
-
-            
-
+            SpawnCard.onSpawnedServerGlobal += SpawnCard_onSpawnedServerGlobal;
+            On.RoR2.CharacterBody.GetVisibilityLevel_CharacterBody += CharacterBody_GetVisibilityLevel_CharacterBody;
+            On.RoR2.CharacterBody.OnBuffFinalStackLost += CharacterBody_OnBuffFinalStackLost;
         }
 
 
@@ -112,6 +111,9 @@ namespace RiskOfRamen
             var onFireBuffDef = Addressables.LoadAssetAsync<BuffDef>("RoR2/Base/Common/bdOnFire.asset").WaitForCompletion();
             var strongerBurnBuffDef = Addressables.LoadAssetAsync<BuffDef>("RoR2/Base/Common/bdStrongerBurn.asset").WaitForCompletion();
             var stillnessBuffDef = RiskOfRamenContent._stillnessBuff;
+            var hermitDebuffDef = RiskOfRamenContent._hermitDebuff;
+            var hermitBuffDef = RiskOfRamenContent._hermitBuff;
+            var clamBuffDef = RiskOfRamenContent._parasiticClamBuff;
 
             if (!self.inventory)
             {
@@ -123,7 +125,7 @@ namespace RiskOfRamen
             int waxIdolCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._WaxIdol);
             int dentedBuckleCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._StainedBelt);
             int wornTurnkeyCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._WornTurnkey);
-            int allocentrismCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._Allocentrism);
+            int parasiticClamCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._ParasiticClam);
             int glassTiaraCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._GlassTiara);
 
             if (denkuRopeCount >= 1)
@@ -146,9 +148,9 @@ namespace RiskOfRamen
                 // Add (barrier/max health) * 0.25 per stack to crit chance
                 args.critAdd += RamenUtils.GetBarrierPercentage(self) * (0.25f * dentedBuckleCount);
             }
-            if (allocentrismCount >= 1)
+            if (parasiticClamCount >= 1)
             {
-
+                args.baseRegenAdd -= self.baseRegen;
             }
 
 
@@ -163,6 +165,15 @@ namespace RiskOfRamen
                 args.critAdd += stillnessBoost;
                 args.armorTotalMult *= 1f + stillnessBoost;
             }
+            if (self.HasBuff(hermitBuffDef))
+            {
+                args.damageTotalMult *= 2;
+            }
+            if (self.HasBuff(clamBuffDef))
+            {
+                args.attackSpeedMultAdd += .50f + (.25f * self.GetBuffCount(clamBuffDef));
+                args.moveSpeedMultAdd += .50f + (.25f * self.GetBuffCount(clamBuffDef));
+            }
 
             if (glassTiaraCount >= 1)
             {
@@ -172,6 +183,52 @@ namespace RiskOfRamen
             }
         }
 
+        private void CharacterBody_OnBuffFinalStackLost(On.RoR2.CharacterBody.orig_OnBuffFinalStackLost orig, CharacterBody self, BuffDef buffDef)
+        {
+            if (buffDef == RiskOfRamenContent._hermitDebuff)
+            {
+                self.AddBuff(RiskOfRamenContent._hermitBuff);
+            }
+        }
+
+
+        private VisibilityLevel CharacterBody_GetVisibilityLevel_CharacterBody(On.RoR2.CharacterBody.orig_GetVisibilityLevel_CharacterBody orig, CharacterBody self, CharacterBody observer)
+        {
+            if (observer.HasBuff(RiskOfRamenContent._hermitDebuff))
+            {
+                return VisibilityLevel.Untargetable;
+            }
+            return VisibilityLevel.Revealed;
+        }
+
+        private static void SpawnCard_onSpawnedServerGlobal(SpawnCard.SpawnResult spawnResult)
+        {
+            if (RiskOfRamenConfig.enableItem(RiskOfRamenContent._EsotericEremite).Value)
+            {
+                int eremiteCount = 0;
+                List<CharacterMaster> playersWithEremite = new List<CharacterMaster>();
+                foreach (PlayerCharacterMasterController playerCharacterMasterController in PlayerCharacterMasterController.instances)
+                {
+                    if (playerCharacterMasterController.master.inventory.GetItemCountEffective(RiskOfRamenContent._EsotericEremite) >= 1)
+                    {
+                        playersWithEremite.Add(playerCharacterMasterController.master);
+                    }
+                    eremiteCount += playerCharacterMasterController.master.inventory.GetItemCountEffective(RiskOfRamenContent._EsotericEremite);
+                    
+                }
+                if (eremiteCount > 0)
+                {
+
+                    if (Util.CheckRoll(20f + (5f * eremiteCount)))
+                    {
+                        if (spawnResult.spawnedInstance.GetComponent<CharacterMaster>() != null)
+                        {
+                            spawnResult.spawnedInstance.GetComponent<CharacterMaster>().GetBody().AddTimedBuff(RiskOfRamenContent._hermitDebuff, 5 + (5 * eremiteCount));
+                        }
+                    }
+                }
+            }
+        }
         private static void SceneDirector_onPostPopulatesceneServer(SceneDirector sceneDirector) 
         {
             if (SceneCatalog.currentSceneDef.baseSceneName == "voidstage" && RiskOfRamenConfig.enableVoidLunars.Value)

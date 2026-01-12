@@ -1,5 +1,6 @@
 # 1.1.3
 * ACTUALLY added Github repo link this time
+* Added configuration options
 * Added Glass Tiara lore
 * Added Parasitic Clam
 * Added Esoteric Eremite

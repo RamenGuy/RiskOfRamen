@@ -32,6 +32,8 @@ namespace RiskOfRamen
         public static ItemDef _GlassTiara;
         public static ItemDef _Allocentrism;
         public static ItemDef _EsotericEremite;
+        public static ItemDef _ParasiticClam;
+        public static ItemDef _ChitinousChisel;
         public static ItemTierDef _VoidLunarTier;
 
         public static GameObject _ContaminationFont;
@@ -42,6 +44,9 @@ namespace RiskOfRamen
         public static CharacterSpawnCard _cscWaxWisp;
 
         public static BuffDef _stillnessBuff;
+        public static BuffDef _hermitDebuff;
+        public static BuffDef _hermitBuff;
+        public static BuffDef _parasiticClamBuff;
 
         public static GameObject _AllocentrismBomb;
         public static GameObject _AllocentrismGhost;
@@ -119,8 +124,9 @@ namespace RiskOfRamen
             _GlassTiara = _assetBundle.LoadAsset<ItemDef>("GlassTiara");
             _Allocentrism = _assetBundle.LoadAsset<ItemDef>("Allocentrism");
             _EsotericEremite = _assetBundle.LoadAsset<ItemDef>("EsotericEremite");
+            _ParasiticClam = _assetBundle.LoadAsset<ItemDef>("ParasiticClam");
+            _ChitinousChisel = _assetBundle.LoadAsset<ItemDef>("ChitinousChisel");
             _VoidLunarTier = _assetBundle.LoadAsset<ItemTierDef>("VoidLunarTierDefRamen");
-
             _WaxWispBody = _assetBundle.LoadAsset<GameObject>("WaxWispBody");
             _WaxWispMaster = _assetBundle.LoadAsset<GameObject>("WaxWispMaster");
             _cscWaxWisp = _assetBundle.LoadAsset<CharacterSpawnCard>("cscWaxWisp");
@@ -129,6 +135,9 @@ namespace RiskOfRamen
             _iscContaminationFont = _assetBundle.LoadAsset<InteractableSpawnCard>("iscContaminationFont");
 
             _stillnessBuff = _assetBundle.LoadAsset<BuffDef>("StillnessBuff");
+            _hermitDebuff = _assetBundle.LoadAsset<BuffDef>("HermitDebuff");
+            _hermitBuff = _assetBundle.LoadAsset<BuffDef>("HermitBuff");
+            _parasiticClamBuff = _assetBundle.LoadAsset<BuffDef>("ParasiticClamBuff");
 
             _AllocentrismBomb = _assetBundle.LoadAsset<GameObject>("AllocentrismBombProjectile");
             _AllocentrismGhost = _assetBundle.LoadAsset<GameObject>("AllocentrismBombProjectileGhost");
@@ -155,6 +164,8 @@ namespace RiskOfRamen
             TryAddItem(_WornTurnkey);
             TryAddItem(_GlassTiara);
             TryAddItem(_EsotericEremite);
+            TryAddItem(_ParasiticClam);
+            TryAddItem(_ChitinousChisel);
             TryAddItem(_Allocentrism);
 
             RiskOfRamenContentPack.itemTierDefs.Add(new ItemTierDef[] { _VoidLunarTier });
@@ -163,6 +174,9 @@ namespace RiskOfRamen
             RiskOfRamenContentPack.masterPrefabs.Add(new GameObject[] { _WaxWispMaster });
 
             RiskOfRamenContentPack.buffDefs.Add(new BuffDef[] { _stillnessBuff });
+            RiskOfRamenContentPack.buffDefs.Add(new BuffDef[] { _hermitDebuff });
+            RiskOfRamenContentPack.buffDefs.Add(new BuffDef[] { _hermitBuff });
+            RiskOfRamenContentPack.buffDefs.Add(new BuffDef[] { _parasiticClamBuff });
             RiskOfRamenContentPack.networkedObjectPrefabs.Add(new GameObject[]  { _ContaminationFont });
 
             RiskOfRamenContentPack.expansionDefs.Add(new ExpansionDef[] { _expansionDef });
@@ -185,6 +199,18 @@ namespace RiskOfRamen
                 var EsotericEremiteVoid = CreateVoidPair(_EsotericEremite, Addressables.LoadAssetAsync<ItemDef>("RoR2/DLC1/HalfAttackSpeedHalfCooldowns/HalfAttackSpeedHalfCooldowns.asset").WaitForCompletion());
 
                 RiskOfRamenContentPack.itemRelationshipProviders.Add(new ItemRelationshipProvider[] { EsotericEremiteVoid });
+            }
+            if (RiskOfRamenConfig.enableItem(_ParasiticClam).Value)
+            {
+                var ParasiticClamVoid = CreateVoidPair(_ParasiticClam, Addressables.LoadAssetAsync<ItemDef>("RoR2/DLC1/HalfSpeedDoubleHealth/HalfSpeedDoubleHealth.asset").WaitForCompletion());
+
+                RiskOfRamenContentPack.itemRelationshipProviders.Add(new ItemRelationshipProvider[] { ParasiticClamVoid });
+            }
+            if (RiskOfRamenConfig.enableItem(_ChitinousChisel).Value)
+            {
+                var ChitinousChiselVoid = CreateVoidPair(_ChitinousChisel, Addressables.LoadAssetAsync<ItemDef>("RoR2/Base/MonstersOnShrineUse/MonstersOnShrineUse.asset").WaitForCompletion());
+
+                RiskOfRamenContentPack.itemRelationshipProviders.Add(new ItemRelationshipProvider[] { ChitinousChiselVoid });
             }
         }
 
@@ -231,7 +257,17 @@ namespace RiskOfRamen
                 {
                     itemDef1 = Addressables.LoadAssetAsync<ItemDef>("RoR2/DLC1/HalfAttackSpeedHalfCooldowns/HalfAttackSpeedHalfCooldowns.asset").WaitForCompletion(),
                     itemDef2 = _EsotericEremite,
-                }
+                },
+                new ItemDef.Pair
+                {
+                    itemDef1 = Addressables.LoadAssetAsync<ItemDef>("RoR2/Base/MonstersOnShrineUse/MonstersOnShrineUse.asset").WaitForCompletion(),
+                    itemDef2 = _ChitinousChisel,
+                },
+                new ItemDef.Pair
+                {
+                    itemDef1 = Addressables.LoadAssetAsync<ItemDef>("RoR2/DLC1/HalfSpeedDoubleHealth/HalfSpeedDoubleHealth.asset").WaitForCompletion(),
+                    itemDef2 = _ParasiticClam,
+                },
             };
         }
         public static ItemDef TryGetPairForLunar(ItemDef lunar)
