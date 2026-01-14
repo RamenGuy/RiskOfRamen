@@ -111,10 +111,9 @@ namespace RiskOfRamen
         }
         private static void RecalculateStatsAPI_GetStatCoefficients(CharacterBody self, RecalculateStatsAPI.StatHookEventArgs args)
         {
-            var onFireBuffDef = Addressables.LoadAssetAsync<BuffDef>("RoR2/Base/Common/bdOnFire.asset").WaitForCompletion();
-            var strongerBurnBuffDef = Addressables.LoadAssetAsync<BuffDef>("RoR2/Base/Common/bdStrongerBurn.asset").WaitForCompletion();
+            var onFireBuffDef = RoR2Content.Buffs.OnFire;
+            var strongerBurnBuffDef = DLC1Content.Buffs.StrongerBurn;
             var stillnessBuffDef = RiskOfRamenContent._stillnessBuff;
-            var hermitDebuffDef = RiskOfRamenContent._hermitDebuff;
             var hermitBuffDef = RiskOfRamenContent._hermitBuff;
             var clamBuffDef = RiskOfRamenContent._parasiticClamBuff;
 
@@ -123,23 +122,19 @@ namespace RiskOfRamen
                 return;
             }
 
-            int denkuRopeCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._DenkuRope);
-            int obsidianCardCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._ObsidianCard);
-            int waxIdolCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._WaxIdol);
-            int dentedBuckleCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._StainedBelt);
-            int wornTurnkeyCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._WornTurnkey);
-            int parasiticClamCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._ParasiticClam);
-            int glassTiaraCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._GlassTiara);
-            int chitinousChiselCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._ChitinousChisel);
-
+            int denkuRopeCount = RamenUtils.SafeGetEffectiveItemCount(self.inventory, RiskOfRamenContent._DenkuRope);
             if (denkuRopeCount >= 1)
             {
                 args.critDamageMultAdd += 0.1f * denkuRopeCount;                
             }
+
+            int obsidianCardCount = RamenUtils.SafeGetEffectiveItemCount(self.inventory, RiskOfRamenContent._ObsidianCard);
             if (obsidianCardCount >= 1)
             {
                 args.barrierDecayMult -= 0.25f + (0.1f * obsidianCardCount);
             }
+
+            int waxIdolCount = RamenUtils.SafeGetEffectiveItemCount(self.inventory, RiskOfRamenContent._WaxIdol);
             if (waxIdolCount >= 1)
             {
                 if (self.HasBuff(onFireBuffDef) || self.HasBuff(strongerBurnBuffDef))
@@ -147,14 +142,23 @@ namespace RiskOfRamen
                     args.armorAdd += 40 + (10 * waxIdolCount);
                 }
             }
+
+            int dentedBuckleCount = RamenUtils.SafeGetEffectiveItemCount(self.inventory, RiskOfRamenContent._StainedBelt);
             if (dentedBuckleCount >= 1)
             {
                 // Add (barrier/max health) * 0.25 per stack to crit chance
                 args.critAdd += RamenUtils.GetBarrierPercentage(self) * (0.25f * dentedBuckleCount);
             }
+
+            int parasiticClamCount = RamenUtils.SafeGetEffectiveItemCount(self.inventory, RiskOfRamenContent._ParasiticClam);
             if (parasiticClamCount >= 1)
             {
                 args.baseRegenAdd -= self.baseRegen;
+            }
+            if (self.HasBuff(clamBuffDef))
+            {
+                args.attackSpeedMultAdd += .10f + (.05f * self.GetBuffCount(clamBuffDef));
+                args.moveSpeedMultAdd += .10f + (.05f * self.GetBuffCount(clamBuffDef));
             }
 
 
@@ -169,22 +173,32 @@ namespace RiskOfRamen
                 args.critAdd += stillnessBoost;
                 args.armorTotalMult *= 1f + stillnessBoost;
             }
+
+
             if (self.HasBuff(hermitBuffDef))
             {
                 args.damageTotalMult *= 2;
             }
-            if (self.HasBuff(clamBuffDef))
-            {
-                args.attackSpeedMultAdd += .10f + (.05f * self.GetBuffCount(clamBuffDef));
-                args.moveSpeedMultAdd += .10f + (.05f * self.GetBuffCount(clamBuffDef));
-            }
 
+
+            int glassTiaraCount = RamenUtils.SafeGetEffectiveItemCount(self.inventory, RiskOfRamenContent._GlassTiara);
             if (glassTiaraCount >= 1)
             {
                 GlassTiaraBodyBehavior tiaraBehavior = self.GetComponent<GlassTiaraBodyBehavior>();
                 args.baseCurseAdd += tiaraBehavior.curseAdd / self.baseMaxHealth;
                 //args.baseCurseAdd += tiaraBehavior.curseAdd * self.maxHealth * 0.01f;
             }
+
+            int kiFruitCount = RamenUtils.SafeGetEffectiveItemCount(self.inventory, RiskOfRamenContent._KiFruit);
+            if (kiFruitCount >= 1)
+            {
+                KiFruitBodyBehavior kiFruitBodyBehavior = self.GetComponent<KiFruitBodyBehavior>();
+                args.armorAdd -= kiFruitBodyBehavior.armorReduction;
+
+
+            }
+
+            int chitinousChiselCount = RamenUtils.SafeGetEffectiveItemCount(self.inventory, RiskOfRamenContent._ChitinousChisel);
             if (chitinousChiselCount >= 1)
             {
                 args.luckAdd += chitinousChiselCount;
@@ -195,7 +209,7 @@ namespace RiskOfRamen
         {
             if (context.purchaseInteraction.isShrine)
             {
-                if (context.activatorInventory.GetItemCountEffective(RiskOfRamenContent._ChitinousChisel) > 0)
+                if (RamenUtils.SafeGetEffectiveItemCount(context.activatorInventory, RiskOfRamenContent._ChitinousChisel) > 0)
                 {
                     List<ItemIndex> corruptibleItems = RamenUtils.GetCorruptibleItemsInInventory(context.activatorInventory);
                     LogDebug(corruptibleItems);
@@ -235,11 +249,11 @@ namespace RiskOfRamen
                 List<CharacterMaster> playersWithEremite = new List<CharacterMaster>();
                 foreach (PlayerCharacterMasterController playerCharacterMasterController in PlayerCharacterMasterController.instances)
                 {
-                    if (playerCharacterMasterController.master.inventory.GetItemCountEffective(RiskOfRamenContent._EsotericEremite) >= 1)
+                    if (RamenUtils.SafeGetEffectiveItemCount(playerCharacterMasterController.master.inventory, RiskOfRamenContent._EsotericEremite) >= 1)
                     {
                         playersWithEremite.Add(playerCharacterMasterController.master);
                     }
-                    eremiteCount += playerCharacterMasterController.master.inventory.GetItemCountEffective(RiskOfRamenContent._EsotericEremite);
+                    eremiteCount += RamenUtils.SafeGetEffectiveItemCount(playerCharacterMasterController.master.inventory, RiskOfRamenContent._EsotericEremite);
                     
                 }
                 if (eremiteCount > 0)
@@ -274,7 +288,7 @@ namespace RiskOfRamen
         private void CharacterMaster_OnServerStageBegin(On.RoR2.CharacterMaster.orig_OnServerStageBegin orig, CharacterMaster self, Stage stage)
         {
             uint LargeChestCost = (uint)Run.instance.GetDifficultyScaledCost(50, Stage.instance.entryDifficultyCoefficient);
-            uint GlassTiaraCount = (uint)self.inventory.GetItemCountEffective(RiskOfRamenContent._GlassTiara);
+            uint GlassTiaraCount = (uint)RamenUtils.SafeGetEffectiveItemCount(self.inventory, RiskOfRamenContent._GlassTiara);
             if (GlassTiaraCount >= 1)
             {
                 self.GiveMoney(LargeChestCost * (GlassTiaraCount + 1));
@@ -319,7 +333,7 @@ namespace RiskOfRamen
                 List<ItemIndex> itemIndices = new List<ItemIndex>();
                 foreach (ItemDef.Pair pair in pairs)
                 {
-                    if (inventory.GetItemCountPermanent(pair.itemDef1) >= 1)
+                    if (RamenUtils.SafeGetPermaItemCount(inventory, pair.itemDef1) >= 1)
                     {
                         itemIndices.Add(pair.itemDef1.itemIndex);
                     }

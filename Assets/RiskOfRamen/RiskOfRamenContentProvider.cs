@@ -34,6 +34,7 @@ namespace RiskOfRamen
         public static ItemDef _EsotericEremite;
         public static ItemDef _ParasiticClam;
         public static ItemDef _ChitinousChisel;
+        public static ItemDef _KiFruit;
         public static ItemTierDef _VoidLunarTier;
 
         public static GameObject _ContaminationFont;
@@ -126,6 +127,7 @@ namespace RiskOfRamen
             _EsotericEremite = _assetBundle.LoadAsset<ItemDef>("EsotericEremite");
             _ParasiticClam = _assetBundle.LoadAsset<ItemDef>("ParasiticClam");
             _ChitinousChisel = _assetBundle.LoadAsset<ItemDef>("ChitinousChisel");
+            _KiFruit = _assetBundle.LoadAsset<ItemDef>("KiFruit");
             _VoidLunarTier = _assetBundle.LoadAsset<ItemTierDef>("VoidLunarTierDefRamen");
             _WaxWispBody = _assetBundle.LoadAsset<GameObject>("WaxWispBody");
             _WaxWispMaster = _assetBundle.LoadAsset<GameObject>("WaxWispMaster");
@@ -167,6 +169,7 @@ namespace RiskOfRamen
             TryAddItem(_ParasiticClam);
             TryAddItem(_ChitinousChisel);
             TryAddItem(_Allocentrism);
+            TryAddItem(_KiFruit);
 
             RiskOfRamenContentPack.itemTierDefs.Add(new ItemTierDef[] { _VoidLunarTier });
 

@@ -51,7 +51,7 @@ namespace RiskOfRamen.Assets.Allocentrism
         [ItemDefAssociation(useOnServer = true, useOnClient = false)]
         private static ItemDef GetItemDef()
         {
-            if (RiskOfRamenContent._Allocentrism == null) { return null; }
+            if (RiskOfRamenConfig.enableItem(RiskOfRamenContent._Allocentrism).Value == false) { return null; }
             return RiskOfRamenContent._Allocentrism;
         }
 
@@ -180,7 +180,7 @@ namespace RiskOfRamen.Assets.Allocentrism
                 };
                 for (int i = 0; i < 4 + stack; i++)
                 {
-                    float rocketDamage = base.body.damage * 3;
+                    float rocketDamage = damageReport.damageInfo.damage * 3;
 
                     ProcChainMask procChainMask = default(ProcChainMask);
 

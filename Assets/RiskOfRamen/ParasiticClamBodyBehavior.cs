@@ -13,8 +13,8 @@ namespace RiskOfRamen
 
         [ItemDefAssociation(useOnServer = true, useOnClient = false)]
         private static ItemDef GetItemDef()
-        {   
-            if (RiskOfRamenContent._ParasiticClam == null) { return null; }
+        {
+            if (RiskOfRamenConfig.enableItem(RiskOfRamenContent._ParasiticClam).Value == false) { return null; }
             return RiskOfRamenContent._ParasiticClam;
         }
 

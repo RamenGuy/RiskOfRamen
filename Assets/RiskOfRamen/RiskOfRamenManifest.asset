@@ -59,6 +59,7 @@ MonoBehaviour:
     - {fileID: 11400000, guid: 642caa7a162ae514688f0439166fd38c, type: 2}
     - {fileID: 11400000, guid: c4ebd6ecb9c69c845bf49bf9c33e906a, type: 2}
     - {fileID: 11400000, guid: 99fe9e6485d2faf41b23561bf07d4d23, type: 2}
+    - {fileID: 11400000, guid: a1cfbaefb6551c64dbebbcb57042316d, type: 2}
   - assetBundleName: RiskOfRamenSSA
     assets:
     - {fileID: 102900000, guid: 4ae9b7419eb85784fae4f4a0742281b8, type: 3}
@@ -132,4 +133,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StagingPaths:
   - <ManifestPluginStaging>
-  url: 
+  url: https://github.com/RamenGuy/RiskOfRamen

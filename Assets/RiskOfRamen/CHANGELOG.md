@@ -1,10 +1,10 @@
 # 1.1.3
-* ACTUALLY added Github repo link this time
 * Added configuration options
 * Added Glass Tiara lore
 * Added Parasitic Clam
 * Added Esoteric Eremite
 * Added Chitinous Chisel
+* Added Ki-Fruit
 * Reworked Allocentrism
 # 1.1.2
 * Fixed an incompatibility with Bubbet's Items

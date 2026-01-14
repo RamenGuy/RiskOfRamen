@@ -279,7 +279,7 @@ MonoBehaviour:
   lavaCooldown: 0.2
   shieldBrokeSinceDangerCheck: 0
   rootMotionInMainState: 0
-  mainRootSpeed: 0
+  mainRootSpeed: 1
   baseMaxHealth: 480
   baseRegen: 0
   baseMaxShield: 0

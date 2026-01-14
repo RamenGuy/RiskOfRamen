@@ -69,5 +69,30 @@ namespace RiskOfRamen
             return corruptible; 
         }
 
+        public static int SafeGetEffectiveItemCount(Inventory inventory, ItemDef item)
+        {
+            if (RiskOfRamenConfig.enableItem(item).Value)
+            {
+                return inventory.GetItemCountEffective(item);
+            }
+            return 0;
+        }
+        public static int SafeGetTempItemCount(Inventory inventory, ItemDef item)
+        {
+            if (RiskOfRamenConfig.enableItem(item).Value)
+            {
+                return inventory.GetItemCountTemp(item);
+            }
+            return 0;
+        }
+
+        public static int SafeGetPermaItemCount(Inventory inventory, ItemDef item)
+        {
+            if (RiskOfRamenConfig.enableItem(item).Value)
+            {
+                return inventory.GetItemCountPermanent(item);
+            }
+            return 0;
+        }
     }
 }

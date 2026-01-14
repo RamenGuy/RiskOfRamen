@@ -18,8 +18,8 @@ namespace RiskOfRamen
 
         [ItemDefAssociation(useOnServer = true, useOnClient = false)]
         private static ItemDef GetItemDef()
-        {   
-            if (RiskOfRamenContent._WaxIdol == null) { return null; }
+        {
+            if (RiskOfRamenConfig.enableItem(RiskOfRamenContent._WaxIdol).Value == false) { return null; }
             return RiskOfRamenContent._WaxIdol;
         }
 

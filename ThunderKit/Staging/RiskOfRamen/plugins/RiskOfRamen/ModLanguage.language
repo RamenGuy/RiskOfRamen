@@ -79,7 +79,7 @@ The second figure sighs, and places the brooch in a pouch. As they retreat into 
 
 		"ITEM_ALLOCENTRISM_NAME": "Allocentrism",
 		"ITEM_ALLOCENTRISM_PICKUP": "Killed enemies fire missiles. <style=cIsVoid>Every minute, subsume a non-Void item into Allocentrism.</style>",
-		"ITEM_ALLOCENTRISM_DESC": "Upon killing an enemy, fire 5 <style=cStack>(+1 per stack)</style> homing missiles from that enemy for <style=cIsDamage>10% TOTAL damage</style>. Every <style=cIsUtility>30</style> seconds, a random non-Void item is <style=cIsVoid>subsumed</style> by this item. <style=cIsVoid>Corrupts all Egocentrisms.</style>",
+		"ITEM_ALLOCENTRISM_DESC": "Upon killing an enemy, fire 5 <style=cStack>(+1 per stack)</style> homing missiles from that enemy for <style=cIsDamage>300% TOTAL damage</style>. Every <style=cIsUtility>30</style> seconds, a random non-Void item is <style=cIsVoid>subsumed</style> by this item. <style=cIsVoid>Corrupts all Egocentrisms.</style>",
 		"ITEM_ALLOCENTRISM_LORE": "...I can't hear anyone.\n\n
 Everywhere I turn my gaze I see them. I've seen everyone.\n\n
 Those that don't exist anymore. Those that won't exist for millenia.\n\n
@@ -143,16 +143,39 @@ Notes:\n\n
 > <style=cMono>//--AUTO-TRANSCRIPTION FAILED --//</style>\n
 > JESUS\n
 > <style=cMono>//--AUTO-TRANSCRIPTION FAILED --//</style>\n
-> Holy- ugh. I managed to trap it in the lab. The organism- it- it like- it extended an appendage out of the hole and... ||||. It tore the lab table to little scraps. My arm's cut all to hell. I don't know what the hell security's gonna do about that thing. I can still hear it... unfolding, from behind the blast doors. I- I need to get to the medbay or I'm gonna bleed out.\n
+> Holy- ugh. I managed to trap it in the lab. The organism- it- it like- it extended an appendage out of the hole and... ||||. It tore the lab table to little scraps. My arm's cut all to hell. I don't know what the hell security's gonna do about that thing. I can still hear it... unfolding, from behind the blast doors. I- I need to get to the medbay or I'm gonna bleed out\n
 <style=cMono>End Of File</style>",
 
 		"ITEM_CHITINOUSCHISEL_NAME": "Chitinous Chisel",
 		"ITEM_CHITINOUSCHISEL_PICKUP": "You are lucky... <style=cIsHealth>but</style> <style=cIsVoid>corrupt</style> a random item on using a Shrine. <style=cIsVoid>Corrupts all Defiant Gouges</style>.",
 		"ITEM_CHITINOUSCHISEL_DESC": "Gain <style=cIsUtility>+1</style> <style=cStack>(+1 per stack)</style> luck. <style=cIsVoid>Corrupt</style> a random item when you use a Shrine. <style=cIsVoid>Corrupts all Defiant Gouges</style>.",
+		"ITEM_CHITINOUSCHISEL_LORE": "<style=cMono>Lab Dissection Analysis File</style>\n\n
+Subject: Severed Quasi-crustacean Claw\n
+Technician: G. Leung\n
+Table Spec: Modified BioSaf with isolation cover\n
+Notes:\n\n
+
+> We really gotta take better safety precautions with these samples\n
+> At the advice of Jacobs, I've fitted the table with a dead man's switch that'll lock down the lab in case something goes wrong\n
+> Initial scratch test against diamond places the sample above Mohs 10\n
+> I'm going to attempt to use the sample to scratch a series of materials\n
+> <style=cMono>//--AUTO-TRANSCRIPTION FAILED --//</style>\n
+> |||| me. That 'scratch' is at least a quarter of an inch deep into a solid basalt slab.\n
+> There is a slight tingle against my right thigh. I'm scared to l\n
+> Huh\n
+> The change that was in my pocket is unrecognizable. It's taken on a silver color with a violet sheen, and the designs on each face resemble no known currency. The coins themselves are vibrating\n
+> Ending analysis. Wherever the haz crews found this ||||, they need to put it back\n\n
+
+<style=cMono>End Of File</style>",
 
 		"ITEM_PARASITICCLAM_NAME": "Parasitic Clam",
 		"ITEM_PARASITICCLAM_PICKUP": "Nullify base regeneration. Gain stacking buffs to attack and movement speed upon getting hit. <style=cIsVoid>Corrupts all Stone Flux Pauldrons.</style>",
 		"ITEM_PARASITICCLAM_DESC": "Nullify <style=cIsHealing>base health regeneration</style>. Upon being hit, gain a 15% <style=cStack>(+5% per stack)</style> boost to <style=cIsUtility>movement and attack speed</style> as a buff. <style=cIsVoid>Corrupts all Stone Flux Pauldrons.</style>",
 		"ITEM_PARASITICCLAM_LORE": "",
+
+		"ITEM_KIFRUIT_NAME": "Ki-Fruit",
+		"ITEM_KIFRUIT_PICKUP": "You are immune to Cripple… <style=cIsHealth>but</style> your armor is weak.",
+		"ITEM_KIFRUIT_DESC": "Gain immunity to <style=cIsUtility>Cripple</style>. When you take damage greater than <style=cIsHealing>10% of your health</style>, you <style=cIsHealth>permanently lose 1 armor</style>.",
+		"ITEM_KIFRUIT_LORE": "The fruit. Those were always your favorites to throw in.\n\nI'd watch. Thorp! The ki-fruit would be swallowed up.\n\nI always thought that the veins of the fruit should have been swallowed separately. Thorp!\n\nMaybe that's why I kept throwing worms in."
 	}
 }
