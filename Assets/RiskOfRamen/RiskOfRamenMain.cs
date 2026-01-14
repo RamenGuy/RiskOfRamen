@@ -15,6 +15,7 @@ using System;
 using System.Security;
 using System.Security.Permissions;
 using UnityEngine.Networking;
+using RoR2.Items;
 
 [assembly: SecurityPermission(SecurityAction.RequestMinimum, SkipVerification = true)]
         
@@ -65,7 +66,8 @@ namespace RiskOfRamen
             new RiskOfRamenContent();
             RecalculateStatsAPI.GetStatCoefficients += RecalculateStatsAPI_GetStatCoefficients;
             SceneDirector.onPostPopulateSceneServer += SceneDirector_onPostPopulatesceneServer;
-            
+            PurchaseInteraction.onPurchaseGlobalServer += PurchaseInteraction_onPurchaseGlobalServer;
+
             LoadingScreenFix.LoadingScreenFix.AddSpriteAnimations(GetLoadingScreenBundle());
             CostTypeCatalog.modHelper.getAdditionalEntries += ModHelper_getAdditionalEntries;
 
@@ -73,6 +75,7 @@ namespace RiskOfRamen
             SpawnCard.onSpawnedServerGlobal += SpawnCard_onSpawnedServerGlobal;
             On.RoR2.CharacterBody.GetVisibilityLevel_CharacterBody += CharacterBody_GetVisibilityLevel_CharacterBody;
             On.RoR2.CharacterBody.OnBuffFinalStackLost += CharacterBody_OnBuffFinalStackLost;
+            
         }
 
 
@@ -127,6 +130,7 @@ namespace RiskOfRamen
             int wornTurnkeyCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._WornTurnkey);
             int parasiticClamCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._ParasiticClam);
             int glassTiaraCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._GlassTiara);
+            int chitinousChiselCount = self.inventory.GetItemCountEffective(RiskOfRamenContent._ChitinousChisel);
 
             if (denkuRopeCount >= 1)
             {
@@ -171,8 +175,8 @@ namespace RiskOfRamen
             }
             if (self.HasBuff(clamBuffDef))
             {
-                args.attackSpeedMultAdd += .50f + (.25f * self.GetBuffCount(clamBuffDef));
-                args.moveSpeedMultAdd += .50f + (.25f * self.GetBuffCount(clamBuffDef));
+                args.attackSpeedMultAdd += .10f + (.05f * self.GetBuffCount(clamBuffDef));
+                args.moveSpeedMultAdd += .10f + (.05f * self.GetBuffCount(clamBuffDef));
             }
 
             if (glassTiaraCount >= 1)
@@ -181,7 +185,29 @@ namespace RiskOfRamen
                 args.baseCurseAdd += tiaraBehavior.curseAdd / self.baseMaxHealth;
                 //args.baseCurseAdd += tiaraBehavior.curseAdd * self.maxHealth * 0.01f;
             }
+            if (chitinousChiselCount >= 1)
+            {
+                args.luckAdd += chitinousChiselCount;
+            }
         }
+
+        private void PurchaseInteraction_onPurchaseGlobalServer(CostTypeDef.PayCostContext context, CostTypeDef.PayCostResults results)
+        {
+            if (context.purchaseInteraction.isShrine)
+            {
+                if (context.activatorInventory.GetItemCountEffective(RiskOfRamenContent._ChitinousChisel) > 0)
+                {
+                    List<ItemIndex> corruptibleItems = RamenUtils.GetCorruptibleItemsInInventory(context.activatorInventory);
+                    LogDebug(corruptibleItems);
+                    if (corruptibleItems.Count() > 0)
+                    {
+                        ItemIndex toCorrupt = Run.instance.treasureRng.NextElementUniform<ItemIndex>(corruptibleItems);
+                        ContagiousItemManager.TryForceReplacement(context.activatorInventory, toCorrupt);
+                    }
+                }
+            }
+        }
+
 
         private void CharacterBody_OnBuffFinalStackLost(On.RoR2.CharacterBody.orig_OnBuffFinalStackLost orig, CharacterBody self, BuffDef buffDef)
         {
@@ -260,12 +286,6 @@ namespace RiskOfRamen
             return AssetBundle.LoadFromFile(loadingScreenBundleDir);
         }
 
-      
-        public static bool IsAllocentrismDeployableLimited(CharacterMaster self, int maxDeployables)
-        {
-            return (self.GetDeployableCount(DeployableSlot.LunarSunBomb) >= maxDeployables);
-        }
-
 
         public static Inventory.ItemTransformation GetTransformationForSpecificItemPairCost(ItemIndex itemIndex, ItemDef.Pair[] pairs, int cost)
         {
@@ -289,24 +309,7 @@ namespace RiskOfRamen
             result.transformationType = ItemTransformationTypeIndex.None;
             return result;
         }
-        public static ItemIndex chooseRandomItemIndex(Inventory inventory, ItemDef.Pair[] pairs)
-        {
-            ItemIndex randomIndexChosen = 0;
-            List<ItemIndex> itemIndices = new List<ItemIndex>();
-            foreach (ItemDef.Pair pair in pairs)
-            {
-                if (inventory.GetItemCountPermanent(pair.itemDef1) >= 1)
-                {
-                    itemIndices.Add(pair.itemDef1.itemIndex);
-                }
-            }
-            if (itemIndices.Count > 0)
-            {
-                randomIndexChosen = Run.instance.treasureRng.NextElementUniform<ItemIndex>(itemIndices);
-                return randomIndexChosen;
-            }
-            else { return ItemIndex.None; }
-        }
+       
 
         public static CostTypeDef.PayCostDelegate GetSpecificItemPayCost(ItemDef.Pair[] pairs)
         {
@@ -339,7 +342,7 @@ namespace RiskOfRamen
             {
                 Inventory inventory2 = context.activator.GetComponent<CharacterBody>().AsValidOrNull()?.inventory;
                
-                return (bool)inventory2 && GetTransformationForSpecificItemPairCost(chooseRandomItemIndex(inventory2, pairs), pairs, context.cost).CanTake(inventory2).HasValue;
+                return (bool)inventory2 && GetTransformationForSpecificItemPairCost(RamenUtils.chooseRandomItemIndex(inventory2, pairs), pairs, context.cost).CanTake(inventory2).HasValue;
             };
         }
 

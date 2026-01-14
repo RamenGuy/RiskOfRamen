@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 3815066422
+CRC: 2174173735
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d23fb6052e88ddab4bc126b3b90b6db5
+    Hash: 1e9d3f2557ba4ef3b085bc084fd9bfcd
   TypeTreeHash:
     serializedVersion: 2
-    Hash: b507c3feaf594fb62a8db3db243bce85
+    Hash: b2db39f998dcd7159330c99e7ff15b7d
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -28,6 +28,8 @@ ClassTypes:
 - Class: 54
   Script: {instanceID: 0}
 - Class: 64
+  Script: {instanceID: 0}
+- Class: 65
   Script: {instanceID: 0}
 - Class: 74
   Script: {instanceID: 0}
@@ -74,6 +76,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: -1811796171, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
+  Script: {fileID: -132178706, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: 1357070253, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 422384671, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
@@ -97,6 +101,8 @@ ClassTypes:
   Script: {fileID: -578974823, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 662316482, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1431018688, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -265070313, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -142,6 +148,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: -1578512655, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
+  Script: {fileID: 1389097793, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: -1699741063, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -1864444436, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
@@ -158,6 +166,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 80205854, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
+  Script: {fileID: -1848696948, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: -1460103574, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1790887305, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
@@ -167,6 +177,12 @@ ClassTypes:
   Script: {fileID: -317677761, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -270136354, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1819008361, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1952984350, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1839950351, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 717380117, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -414,6 +430,7 @@ Assets:
 - Assets/RiskOfRamen/Assets/materials/matAllocentrismDisplay.mat
 - Assets/RiskOfRamen/Assets/textures/texRampNullifier.png
 - Assets/RiskOfRamen/Assets/textures/texRampVoidRaidCrabTripleBeam.png
+- Assets/RiskOfRamen/Assets/ParasiticClam/ParasiticClamBuffIcon.png
 - Assets/RiskOfRamen/Assets/WornTurnkey/WornTurnkeyDisplay.prefab
 - Assets/RiskOfRamen/Assets/VoidLunar/matVoidLunarPulseGlow.mat
 - Assets/RiskOfRamen/Assets/WaxWisp/mdlWaxWisp.prefab
@@ -425,6 +442,7 @@ Assets:
 - Assets/RiskOfRamen/Assets/textures/texRampWisp.png
 - Assets/RiskOfRamen/Assets/materials/matGlassTiaraFinal.mat
 - Assets/RiskOfRamen/Assets/WaxIdol/meshes/WaxIdolModel.fbx
+- Assets/RiskOfRamen/Assets/ChitinousChisel/iddChitinousChisel.asset
 - Assets/RiskOfRamen/Assets/materials/matGlassTiaraDistortion.mat
 - Assets/RiskOfRamen/Assets/materials/matContaminationGloop.mat
 - Assets/RiskOfRamen/Assets/Allocentrism/AllocentrismIcon.png
@@ -441,6 +459,7 @@ Assets:
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/Pitch.anim
 - Assets/RiskOfRamen/Assets/ContaminationFont/meshes/GRAH.fbx
 - Assets/RiskOfRamen/Assets/WornTurnkey/iddWornTurnkey.asset
+- Assets/RiskOfRamen/Assets/Allocentrism/AllocentrismBombGhost.prefab
 - Assets/RiskOfRamen/Assets/textures/texGalaxy1Mask.png
 - Assets/RiskOfRamen/Assets/materials/matRope.mat
 - Assets/RiskOfRamen/Assets/StainedBelt/iddStainedBelt.asset
@@ -450,6 +469,7 @@ Assets:
 - Assets/RiskOfRamen/Assets/ContaminationFont/DCCSContaminationFont.asset
 - Assets/RiskOfRamen/Assets/textures/texSilver.jpg
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/VoidWhale.prefab
+- Assets/RiskOfRamen/Assets/Allocentrism/AllocentrismBomb.prefab
 - Assets/RiskOfRamen/Assets/materials/matGlassTiaraShell.mat
 - Assets/RiskOfRamen/Assets/textures/texUIAnimateHeaderGradientInverted.png
 - Assets/RiskOfRamen/Assets/EsotericEremite/meshes/Esorem Shell 2.fbx

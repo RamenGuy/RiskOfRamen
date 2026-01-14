@@ -39,7 +39,7 @@ namespace RiskOfRamen.Assets.Allocentrism
                 }
             }
         }   
-
+        /*
         private void AcquireOwner(ProjectileControllerTrigger controller)
         {
             CharacterBody component = controller.owner.GetComponent<CharacterBody>();
@@ -48,7 +48,7 @@ namespace RiskOfRamen.Assets.Allocentrism
                 ProjectileTargetOrbiter component2 = GetComponent<ProjectileTargetOrbiter>();
                 component.GetComponent<AllocentrismBodyBehavior>().InitializeOrbiter(component2, this, target);
             }
-        }
+        }*/
 
         public void Detonate()
         {
@@ -57,6 +57,7 @@ namespace RiskOfRamen.Assets.Allocentrism
                 explosion.Detonate();
             }
         }
+
         private void DeployToOwner()
         {
             GameObject owner = base.GetComponent<ProjectileControllerTrigger>().owner;

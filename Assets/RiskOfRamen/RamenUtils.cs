@@ -14,7 +14,7 @@ using System;
 //using MSU;
 using System.Security;
 using System.Security.Permissions;
-
+using RoR2.Items;
 
 namespace RiskOfRamen
 {
@@ -35,6 +35,38 @@ namespace RiskOfRamen
         internal static Color GetItemColor(ItemDef item)
         {
             return ColorCatalog.GetColor(item._itemTierDef.colorIndex);
+        }
+
+        public static ItemIndex chooseRandomItemIndex(Inventory inventory, ItemDef.Pair[] pairs)
+        {
+            ItemIndex randomIndexChosen = 0;
+            List<ItemIndex> itemIndices = new List<ItemIndex>();
+            foreach (ItemDef.Pair pair in pairs)
+            {
+                if (inventory.GetItemCountPermanent(pair.itemDef1) >= 1)
+                {
+                    itemIndices.Add(pair.itemDef1.itemIndex);
+                }
+            }
+            if (itemIndices.Count > 0)
+            {
+                randomIndexChosen = Run.instance.treasureRng.NextElementUniform<ItemIndex>(itemIndices);
+                return randomIndexChosen;
+            }
+            else { return ItemIndex.None; }
+        }
+
+        public static List<ItemIndex> GetCorruptibleItemsInInventory(Inventory inventory)
+        {
+            List<ItemIndex> corruptible = new List<ItemIndex>();
+            foreach (ItemIndex itemIndex in inventory.itemAcquisitionOrder) 
+            {
+                if (ContagiousItemManager.GetTransformedItemIndex(itemIndex) != ItemIndex.None)
+                {
+                    corruptible.Add(itemIndex);
+                }
+            }
+            return corruptible; 
         }
 
     }

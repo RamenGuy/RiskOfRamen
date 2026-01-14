@@ -4,6 +4,8 @@
 * Added Glass Tiara lore
 * Added Parasitic Clam
 * Added Esoteric Eremite
+* Added Chitinous Chisel
+* Reworked Allocentrism
 # 1.1.2
 * Fixed an incompatibility with Bubbet's Items
 * Added Github repo link to manifest

@@ -139,7 +139,7 @@ namespace RiskOfRamen
             _hermitBuff = _assetBundle.LoadAsset<BuffDef>("HermitBuff");
             _parasiticClamBuff = _assetBundle.LoadAsset<BuffDef>("ParasiticClamBuff");
 
-            _AllocentrismBomb = _assetBundle.LoadAsset<GameObject>("AllocentrismBombProjectile");
+            _AllocentrismBomb = _assetBundle.LoadAsset<GameObject>("AllocentrismBomb");
             _AllocentrismGhost = _assetBundle.LoadAsset<GameObject>("AllocentrismBombProjectileGhost");
             _AllocentrismExplosion = new EffectDef(_assetBundle.LoadAsset<GameObject>("ExplosionAllocentrism"));
 

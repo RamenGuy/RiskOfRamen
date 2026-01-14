@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1474436556066317643}
   - component: {fileID: -220451834869723674}
+  - component: {fileID: 6493971602916803592}
   m_Layer: 0
   m_Name: GlassTiara
   m_TagString: Untagged
@@ -54,6 +55,30 @@ MonoBehaviour:
   triggerOnLogbook:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &6493971602916803592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2716387736672623733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1479993534, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rendererInfos:
+  - renderer: {fileID: 8257197873827606289}
+    defaultMaterialAddress:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+    defaultMaterial: {fileID: 2100000, guid: fed04d4604ea6c44a974fbdf1d9db0bd, type: 2}
+    defaultShadowCastingMode: 0
+    ignoreOverlays: 0
+    hideOnDeath: 0
+    ignoresMaterialOverrides: 0
+  hideOnDeathObjects: []
 --- !u!1001 &7302270232787710869
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -130,5 +155,10 @@ PrefabInstance:
 --- !u!4 &7123667026983588990 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 03e529f1f37833a48afd24e61a36b0eb, type: 3}
+  m_PrefabInstance: {fileID: 7302270232787710869}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &8257197873827606289 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: -7511558181221131132, guid: 03e529f1f37833a48afd24e61a36b0eb, type: 3}
   m_PrefabInstance: {fileID: 7302270232787710869}
   m_PrefabAsset: {fileID: 0}

@@ -9,10 +9,11 @@ using UnityEngine.Networking;
 using RoR2.Projectile;
 using System;
 using System.Linq;
+using UnityEngine.UIElements;
 
 namespace RiskOfRamen.Assets.Allocentrism
 {
-    public class AllocentrismBodyBehavior : BaseItemBodyBehavior, IOnDamageDealtServerReceiver
+    public class AllocentrismBodyBehavior : BaseItemBodyBehavior, IOnKilledOtherServerReceiver
     {
         private const float secondsPerTransform = 60f;
 
@@ -56,7 +57,7 @@ namespace RiskOfRamen.Assets.Allocentrism
 
         public static int GetMaxProjectiles(Inventory inventory)
         {
-            return 4 + (1 * inventory.GetItemCountEffective(RiskOfRamenContent._Allocentrism));
+            return 15 + inventory.GetItemCountEffective(RiskOfRamenContent._Allocentrism);
         }
 
 
@@ -125,7 +126,7 @@ namespace RiskOfRamen.Assets.Allocentrism
                 }*/
             }
             transformTimer += Time.fixedDeltaTime;
-            if (transformTimer > 60f)
+            if (transformTimer > 30f)
             {
                 transformTimer = 0f;
                 TransformItem();
@@ -157,9 +158,9 @@ namespace RiskOfRamen.Assets.Allocentrism
             return ItemIndex.None;
         }
 
-       
 
-        void IOnDamageDealtServerReceiver.OnDamageDealtServer(DamageReport damageReport)
+
+        void IOnKilledOtherServerReceiver.OnKilledOtherServer(RoR2.DamageReport damageReport)
         {
             if (!damageReport.victimBody) { return; }
             if (!damageReport.attackerMaster.IsDeployableLimited(RiskOfRamenContent.AllocentrismBomb))
@@ -173,17 +174,19 @@ namespace RiskOfRamen.Assets.Allocentrism
                     damageColorIndex = DamageColorIndex.Item,
                     force = 0f,
                     owner = gameObject,
-                    position = damageReport.victimBody.corePosition + (damageReport.victimBody.corePosition - damageReport.victimBody.footPosition),
+                    position = damageReport.victimBody.corePosition,
                     rotation = Quaternion.identity,
-                    target = damageReport.victim.gameObject,
 
                 };
-                GameObject projectile = ProjectileManager.instance.FireProjectileImmediateServer(fireProjectileInfo);
-                ProjectileTargetOrbiter orbiter = projectile.GetComponent<ProjectileTargetOrbiter>();
-                AllocentrismBombController controller = projectile.GetComponent<AllocentrismBombController>();
-                Transform target = projectile.GetComponent<ProjectileTargetComponent>().target;
-                InitializeOrbiter(orbiter, controller, target);
-                RiskOfRamenMain.LogDebug($"Allocentrism bomb fired at {damageReport.victim.name}");
+                for (int i = 0; i < 4 + stack; i++)
+                {
+                    float rocketDamage = base.body.damage * 3;
+
+                    ProcChainMask procChainMask = default(ProcChainMask);
+
+                    MissileUtils.FireMissile(damageReport.victimBody.corePosition, base.body, procChainMask, null, rocketDamage, base.body.RollCrit(), projectilePrefab, DamageColorIndex.Item, false);
+                }
+                RiskOfRamenMain.LogDebug($"Allocentrism missiles fired at {damageReport.victim.name}");
             }
         }
     }

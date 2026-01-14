@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: ParasiticClamBuff
   m_EditorClassIdentifier: 
   iconPath: 
-  iconSprite: {fileID: 0}
+  iconSprite: {fileID: 21300000, guid: ef0dd35fd40851b4cb34a3bd3395eb95, type: 3}
   buffColor: {r: 0.5794232, g: 0.010715515, b: 0.8113208, a: 1}
   canStack: 1
   eliteDef: {fileID: 0}

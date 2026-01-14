@@ -78,8 +78,8 @@ The second figure sighs, and places the brooch in a pouch. As they retreat into 
 		"ITEM_GLASSTIARA_LORE": "",
 
 		"ITEM_ALLOCENTRISM_NAME": "Allocentrism",
-		"ITEM_ALLOCENTRISM_PICKUP": "Hitting enemies gives them orbiting bombs. <style=cIsVoid>Every minute, subsume a non-Void item into Allocentrism.</style>",
-		"ITEM_ALLOCENTRISM_DESC": "On hitting an enemy, that enemy gains an <style=cIsUtility>orbiting bomb</style> that detonates on other enemies for <style=cIsDamage>10% TOTAL damage</style>. You can have up to <style=cIsUtility>5 bombs</style> <style=cStack>(+1 per stack)</style> active at once. Every <style=cIsUtility>60</style> seconds, a random non-Void item is <style=cIsVoid>subsumed</style> by this item. <style=cIsVoid>Corrupts all Egocentrisms.</style>",
+		"ITEM_ALLOCENTRISM_PICKUP": "Killed enemies fire missiles. <style=cIsVoid>Every minute, subsume a non-Void item into Allocentrism.</style>",
+		"ITEM_ALLOCENTRISM_DESC": "Upon killing an enemy, fire 5 <style=cStack>(+1 per stack)</style> homing missiles from that enemy for <style=cIsDamage>10% TOTAL damage</style>. Every <style=cIsUtility>30</style> seconds, a random non-Void item is <style=cIsVoid>subsumed</style> by this item. <style=cIsVoid>Corrupts all Egocentrisms.</style>",
 		"ITEM_ALLOCENTRISM_LORE": "...I can't hear anyone.\n\n
 Everywhere I turn my gaze I see them. I've seen everyone.\n\n
 Those that don't exist anymore. Those that won't exist for millenia.\n\n
@@ -147,12 +147,12 @@ Notes:\n\n
 <style=cMono>End Of File</style>",
 
 		"ITEM_CHITINOUSCHISEL_NAME": "Chitinous Chisel",
-		"ITEM_CHITINOUSCHISEL_PICKUP": "Items from Shrines of Chance may be rarer... <style=cIsHealth>but</style> you have only one chance. <style=cIsVoid>Corrupts all Defiant Gouges</style>.",
-		"ITEM_CHITINOUSCHISEL_DESC": "Items obtained from Shrines of Chance have a <style=cIsUtility>25% chance</style> to have their rarity upgraded <style=cStack>(+25% per stack)</style>. Shrines of Chance are destroyed on use. <style=cIsVoid>Corrupts all Defiant Gouges</style>.",
+		"ITEM_CHITINOUSCHISEL_PICKUP": "You are lucky... <style=cIsHealth>but</style> <style=cIsVoid>corrupt</style> a random item on using a Shrine. <style=cIsVoid>Corrupts all Defiant Gouges</style>.",
+		"ITEM_CHITINOUSCHISEL_DESC": "Gain <style=cIsUtility>+1</style> <style=cStack>(+1 per stack)</style> luck. <style=cIsVoid>Corrupt</style> a random item when you use a Shrine. <style=cIsVoid>Corrupts all Defiant Gouges</style>.",
 
 		"ITEM_PARASITICCLAM_NAME": "Parasitic Clam",
 		"ITEM_PARASITICCLAM_PICKUP": "Nullify base regeneration. Gain stacking buffs to attack and movement speed upon getting hit. <style=cIsVoid>Corrupts all Stone Flux Pauldrons.</style>",
-		"ITEM_PARASITICCLAM_DESC": "Nullify <style=cIsHealing>base health regeneration</style>. Upon being hit, gain a 75% <style=cStack>(+25% per stack)</style> boost to <style=cIsUtility>movement and attack speed</style> as a stacking buff. <style=cIsVoid>Corrupts all Stone Flux Pauldrons.</style>",
+		"ITEM_PARASITICCLAM_DESC": "Nullify <style=cIsHealing>base health regeneration</style>. Upon being hit, gain a 15% <style=cStack>(+5% per stack)</style> boost to <style=cIsUtility>movement and attack speed</style> as a buff. <style=cIsVoid>Corrupts all Stone Flux Pauldrons.</style>",
 		"ITEM_PARASITICCLAM_LORE": "",
 	}
 }

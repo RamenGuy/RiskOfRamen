@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 38834914490877891}
   - component: {fileID: 5006846338384280799}
   - component: {fileID: 3222988241300245741}
+  - component: {fileID: 2535812370453934872}
   m_Layer: 0
   m_Name: ParasiticClamDisplay
   m_TagString: Untagged
@@ -156,6 +157,50 @@ MonoBehaviour:
   m_ReferenceObject: {fileID: 0}
   m_DistanceToObject: 20
   neverOptimize: 0
+--- !u!114 &2535812370453934872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5965505910426734307}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1479993534, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rendererInfos:
+  - renderer: {fileID: 5503826470065028318}
+    defaultMaterialAddress:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+    defaultMaterial: {fileID: 2100000, guid: d73a8331f01bc3543b2482e835bb8dd7, type: 2}
+    defaultShadowCastingMode: 0
+    ignoreOverlays: 0
+    hideOnDeath: 0
+    ignoresMaterialOverrides: 0
+  - renderer: {fileID: 4009856660075144609}
+    defaultMaterialAddress:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+    defaultMaterial: {fileID: 2100000, guid: 19289cf9bdde01344b2ae172b447518b, type: 2}
+    defaultShadowCastingMode: 0
+    ignoreOverlays: 0
+    hideOnDeath: 0
+    ignoresMaterialOverrides: 0
+  - renderer: {fileID: 1903374935573919503}
+    defaultMaterialAddress:
+      m_AssetGUID: 
+      m_SubObjectName: 
+      m_SubObjectType: 
+    defaultMaterial: {fileID: 2100000, guid: 4c05a5c532180b049a1974dd09dc8896, type: 2}
+    defaultShadowCastingMode: 0
+    ignoreOverlays: 0
+    hideOnDeath: 0
+    ignoresMaterialOverrides: 0
+  hideOnDeathObjects: []
 --- !u!1001 &5691876316256738676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -305,9 +350,24 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a91bf8605ae9e146bb58ef7fed98fb0, type: 3}
+--- !u!137 &1903374935573919503 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 6095549738645645947, guid: 0a91bf8605ae9e146bb58ef7fed98fb0, type: 3}
+  m_PrefabInstance: {fileID: 5691876316256738676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &4009856660075144609 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 8743813690021804245, guid: 0a91bf8605ae9e146bb58ef7fed98fb0, type: 3}
+  m_PrefabInstance: {fileID: 5691876316256738676}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5293737438723472031 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 0a91bf8605ae9e146bb58ef7fed98fb0, type: 3}
+  m_PrefabInstance: {fileID: 5691876316256738676}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &5503826470065028318 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 188058655708357034, guid: 0a91bf8605ae9e146bb58ef7fed98fb0, type: 3}
   m_PrefabInstance: {fileID: 5691876316256738676}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &7593326073476261350 stripped
