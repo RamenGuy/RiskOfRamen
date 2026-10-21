@@ -18,11 +18,17 @@ MonoBehaviour:
   Name: RiskOfRamen
   Description: A modded expansion for Risk of Rain 2! Contains some helpful items
     and a new take on Void Lunars.
-  Version: 1.1.2
+  Version: 1.1.3
   Dependencies:
   - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}
   - {fileID: 11400000, guid: f36042a759878ca23fab51eb17dc0ec2, type: 2}
   - {fileID: 11400000, guid: 5ceb1d8ed3af40d4d806e9756b403649, type: 2}
+  - {fileID: 11400000, guid: 19f404b4f1d413a691a8b0edda7faba9, type: 2}
+  - {fileID: 11400000, guid: 5dc519f222b2e46c8d94feaf51a37eba, type: 2}
+  - {fileID: 11400000, guid: 1f1d261aeee91427ddd08b6378ec4e5a, type: 2}
+  - {fileID: 11400000, guid: 184f0fdf3edcd6bad171410f4e0fd947, type: 2}
+  - {fileID: 11400000, guid: 014c4e162aebc6b9c7c87be504a1bd10, type: 2}
+  - {fileID: 11400000, guid: 98480314448d120c05e373472456e52b, type: 2}
 --- !u!114 &-5403490828950784648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -60,9 +66,15 @@ MonoBehaviour:
     - {fileID: 11400000, guid: c4ebd6ecb9c69c845bf49bf9c33e906a, type: 2}
     - {fileID: 11400000, guid: 99fe9e6485d2faf41b23561bf07d4d23, type: 2}
     - {fileID: 11400000, guid: a1cfbaefb6551c64dbebbcb57042316d, type: 2}
+    - {fileID: 11400000, guid: 3aced61acdee1694c9a995ae606f901d, type: 2}
+    - {fileID: 2100000, guid: f97405d8f6216544394855570e41328a, type: 2}
+    - {fileID: 11400000, guid: d32af386a259d1c4fbbdce5ccf227ceb, type: 2}
   - assetBundleName: RiskOfRamenSSA
     assets:
     - {fileID: 102900000, guid: 4ae9b7419eb85784fae4f4a0742281b8, type: 3}
+  - assetBundleName: RiskOfRamenScenes
+    assets:
+    - {fileID: 102900000, guid: 824148baa1b3adc4d81096109d391b61, type: 3}
 --- !u!114 &-5263405602381860277
 MonoBehaviour:
   m_ObjectHideFlags: 0

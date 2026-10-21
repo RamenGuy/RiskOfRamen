@@ -13,6 +13,8 @@ using RoR2.Projectile;
 using RiskOfRamen.Assets.Allocentrism;
 using BepInEx.Configuration;
 using RoR2BepInExPack.GameAssetPaths;
+using RoR2.EntitlementManagement;
+using RoR2.Editor.Inspectors;
 //using MSU;
 
 namespace RiskOfRamen
@@ -35,10 +37,14 @@ namespace RiskOfRamen
         public static ItemDef _ParasiticClam;
         public static ItemDef _ChitinousChisel;
         public static ItemDef _KiFruit;
+        public static ItemDef _PenroseChoker;
+        public static ItemDefInspector _WarpedOptical
         public static ItemTierDef _VoidLunarTier;
 
         public static GameObject _ContaminationFont;
         public static InteractableSpawnCard _iscContaminationFont;
+
+        public static SceneDef _emberKissedShore;
 
         public static GameObject _WaxWispBody;
         public static GameObject _WaxWispMaster;
@@ -59,6 +65,7 @@ namespace RiskOfRamen
         public static ExpansionDef _expansionDef;
 
         public static AssetBundle _assetBundle;
+        public static AssetBundle _sceneBundle;
 
         public static ItemDef.Pair[] _corruptibleLunars;
 
@@ -73,9 +80,17 @@ namespace RiskOfRamen
                 args.ReportProgress(asyncOperation.progress);
                 yield return null;
             }
-
             //Write code here to initialize your mod post assetbundle load
             _assetBundle = asyncOperation.assetBundle;
+
+            asyncOperation = AssetBundle.LoadFromFileAsync(RiskOfRamenMain.sceneBundleDir);
+            while (!asyncOperation.isDone)
+            {
+                args.ReportProgress(asyncOperation.progress);
+                yield return null;
+            }
+            _sceneBundle = asyncOperation.assetBundle;
+
 
             RiskOfRamenMain.LogInfo("Loading assets...");
             LoadAssets();
@@ -93,8 +108,10 @@ namespace RiskOfRamen
                 {
                     return AllocentrismBodyBehavior.GetMaxProjectiles(self.inventory);
                 }
+                
                 return 1;
             });
+            
 
             WaxWispSlot = DeployableAPI.RegisterDeployableSlot((self, deployableCountMultiplier) =>
             {
@@ -128,13 +145,17 @@ namespace RiskOfRamen
             _ParasiticClam = _assetBundle.LoadAsset<ItemDef>("ParasiticClam");
             _ChitinousChisel = _assetBundle.LoadAsset<ItemDef>("ChitinousChisel");
             _KiFruit = _assetBundle.LoadAsset<ItemDef>("KiFruit");
+            _PenroseChoker = _assetBundle.LoadAsset<ItemDef>("PenroseChoker");
+            _WarpedOptical = _assetBundle.LoadAsset<ItemDef>("WarpedOptical");
+
             _VoidLunarTier = _assetBundle.LoadAsset<ItemTierDef>("VoidLunarTierDefRamen");
             _WaxWispBody = _assetBundle.LoadAsset<GameObject>("WaxWispBody");
             _WaxWispMaster = _assetBundle.LoadAsset<GameObject>("WaxWispMaster");
             _cscWaxWisp = _assetBundle.LoadAsset<CharacterSpawnCard>("cscWaxWisp");
-
             _ContaminationFont = _assetBundle.LoadAsset<GameObject>("ContaminationFontInteractable");
             _iscContaminationFont = _assetBundle.LoadAsset<InteractableSpawnCard>("iscContaminationFont");
+
+            // _emberKissedShore = _assetBundle.LoadAsset<SceneDef>("riskoframen_EmberkissedShore");
 
             _stillnessBuff = _assetBundle.LoadAsset<BuffDef>("StillnessBuff");
             _hermitDebuff = _assetBundle.LoadAsset<BuffDef>("HermitDebuff");
@@ -170,12 +191,13 @@ namespace RiskOfRamen
             TryAddItem(_ChitinousChisel);
             TryAddItem(_Allocentrism);
             TryAddItem(_KiFruit);
+            TryAddItem(_PenroseChoker);
+            TryAddItem(_WarpedOptical);
 
             RiskOfRamenContentPack.itemTierDefs.Add(new ItemTierDef[] { _VoidLunarTier });
 
             RiskOfRamenContentPack.bodyPrefabs.Add(new GameObject[] { _WaxWispBody });
             RiskOfRamenContentPack.masterPrefabs.Add(new GameObject[] { _WaxWispMaster });
-
             RiskOfRamenContentPack.buffDefs.Add(new BuffDef[] { _stillnessBuff });
             RiskOfRamenContentPack.buffDefs.Add(new BuffDef[] { _hermitDebuff });
             RiskOfRamenContentPack.buffDefs.Add(new BuffDef[] { _hermitBuff });
@@ -184,6 +206,7 @@ namespace RiskOfRamen
 
             RiskOfRamenContentPack.expansionDefs.Add(new ExpansionDef[] { _expansionDef });
             RiskOfRamenContentPack.effectDefs.Add(new EffectDef[] { _AllocentrismExplosion });
+            // RiskOfRamenContentPack.sceneDefs.Add(new SceneDef[] { _emberKissedShore });
 
 
             if (RiskOfRamenConfig.enableItem(_Allocentrism).Value)
@@ -289,8 +312,10 @@ namespace RiskOfRamen
         {
             foreach (var material in _assetBundle.LoadAllAssets<Material>())
             {
+                RiskOfRamenMain.LogDebug("Trying to swap shader for " + material.name);
                 TrySwapShader(material);
             }
+
         }
 
         internal static void TrySwapShader(Material material)
@@ -304,6 +329,7 @@ namespace RiskOfRamen
                 if (replacementShader != null)
                 {
                     material.shader = replacementShader;
+                    //RiskOfRamenMain.LogDebug("Swapped shader " + material.name + "!");
                 } 
                 else
                 {

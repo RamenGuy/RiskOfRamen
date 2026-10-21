@@ -176,6 +176,16 @@ Notes:\n\n
 		"ITEM_KIFRUIT_NAME": "Ki-Fruit",
 		"ITEM_KIFRUIT_PICKUP": "You are immune to Cripple… <style=cIsHealth>but</style> your armor is weak.",
 		"ITEM_KIFRUIT_DESC": "Gain immunity to <style=cIsUtility>Cripple</style>. When you take damage greater than <style=cIsHealing>10% of your health</style>, you <style=cIsHealth>permanently lose 1 armor</style>.",
-		"ITEM_KIFRUIT_LORE": "The fruit. Those were always your favorites to throw in.\n\nI'd watch. Thorp! The ki-fruit would be swallowed up.\n\nI always thought that the veins of the fruit should have been swallowed separately. Thorp!\n\nMaybe that's why I kept throwing worms in."
+		"ITEM_KIFRUIT_LORE": "The fruit. Those were always your favorites to throw in.\n\nI'd watch. Thorp! The ki-fruit would be swallowed up.\n\nI always thought that the veins of the fruit should have been swallowed separately. Thorp!\n\nMaybe that's why I kept throwing worms in.",
+
+		"ITEM_PENROSE_NAME": "Penrose Choker",
+		"ITEM_PENROSE_PICKUP": "",
+		"ITEM_PENROSE_DESC": "",
+		"ITEM_PENROSE_LORE": "",
+
+		"STAGE_EMBER_NAME": "Emberkissed Shore",
+		"STAGE_EMBER_SUBTITLE": "Low Tide, Hot Sand",
+		"STAGE_EMBER_SEER": "You dream of dry plants and low waters.", 
+		"STAGE_EMBER_LORE": "",
 	}
 }

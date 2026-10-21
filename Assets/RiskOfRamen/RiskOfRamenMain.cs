@@ -45,14 +45,15 @@ namespace RiskOfRamen
     {
         public const string GUID = "com.Ramen.RiskOfRamen";
         public const string MODNAME = "Risk Of Ramen";
-        public const string VERSION = "1.1.2";  
+        public const string VERSION = "1.1.3";  
 
         public static PluginInfo pluginInfo { get; private set; }
         public static RiskOfRamenMain instance { get; private set; }
         internal static AssetBundle assetBundle { get; private set; }
         internal static string assetBundleDir => System.IO.Path.Combine(System.IO.Path.GetDirectoryName(pluginInfo.Location), "riskoframenassets");
-
         internal static string loadingScreenBundleDir => System.IO.Path.Combine(System.IO.Path.GetDirectoryName(pluginInfo.Location), "riskoframenssa");
+        internal static string sceneBundleDir => System.IO.Path.Combine(System.IO.Path.GetDirectoryName(pluginInfo.Location), "riskoframenscenes");
+
 
         public static CostTypeDef corruptibleLunar;
         public static CostTypeIndex corruptibleLunarIndex;
@@ -225,10 +226,12 @@ namespace RiskOfRamen
 
         private void CharacterBody_OnBuffFinalStackLost(On.RoR2.CharacterBody.orig_OnBuffFinalStackLost orig, CharacterBody self, BuffDef buffDef)
         {
+
             if (buffDef == RiskOfRamenContent._hermitDebuff)
             {
                 self.AddBuff(RiskOfRamenContent._hermitBuff);
             }
+            orig(self, buffDef);
         }
 
 
@@ -238,7 +241,8 @@ namespace RiskOfRamen
             {
                 return VisibilityLevel.Untargetable;
             }
-            return VisibilityLevel.Revealed;
+            return orig(self, observer);
+
         }
 
         private static void SpawnCard_onSpawnedServerGlobal(SpawnCard.SpawnResult spawnResult)
@@ -293,11 +297,17 @@ namespace RiskOfRamen
             {
                 self.GiveMoney(LargeChestCost * (GlassTiaraCount + 1));
             }
+            orig(self, stage);
         }
 
         internal static AssetBundle GetLoadingScreenBundle()
         {
             return AssetBundle.LoadFromFile(loadingScreenBundleDir);
+        }
+
+        internal static AssetBundle GetSceneBundle()
+        {
+            return AssetBundle.LoadFromFile(sceneBundleDir);
         }
 
 

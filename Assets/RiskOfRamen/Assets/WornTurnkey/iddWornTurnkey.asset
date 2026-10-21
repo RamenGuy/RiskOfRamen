@@ -178,3 +178,21 @@ MonoBehaviour:
       localAngles: {x: 3.437072, y: 1.194382, z: 80.25913}
       localScale: {x: 0.2, y: 0.2, z: 0.2}
       limbMask: 0
+  - idrsName: idrsAcolyte
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Chest
+      localPos: {x: -0.00805279, y: 0.01795208, z: -0.2484501}
+      localAngles: {x: 349.7871, y: 260.4446, z: 96.69675}
+      localScale: {x: 0.4, y: 0.4, z: 0.4}
+      limbMask: 0
+  - idrsName: idrsEnforcer2
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Chest
+      localPos: {x: 0, y: 0.4086562, z: -0.24938}
+      localAngles: {x: 329.8398, y: 0, z: 0}
+      localScale: {x: 0.2, y: 0.2, z: 0.2}
+      limbMask: 0

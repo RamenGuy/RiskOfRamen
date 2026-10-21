@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2174173735
+CRC: 1564331087
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 1e9d3f2557ba4ef3b085bc084fd9bfcd
+    Hash: 0141350263018ff0e38b95114e4595c5
   TypeTreeHash:
     serializedVersion: 2
-    Hash: b2db39f998dcd7159330c99e7ff15b7d
+    Hash: 4c4d3533d4d9884d11dd457ab21495c0
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -33,6 +33,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 74
   Script: {instanceID: 0}
+- Class: 89
+  Script: {instanceID: 0}
 - Class: 90
   Script: {instanceID: 0}
 - Class: 91
@@ -48,13 +50,15 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 1143142494, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
-  Script: {fileID: 1220875036, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-- Class: 114
   Script: {fileID: 1297580292, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1431018688, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 2145403350, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 370243918, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1389097793, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1788389205, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -102,8 +106,6 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 662316482, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
-  Script: {fileID: 1431018688, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-- Class: 114
   Script: {fileID: -265070313, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -104859921, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
@@ -148,8 +150,6 @@ ClassTypes:
 - Class: 114
   Script: {fileID: -1578512655, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
-  Script: {fileID: 1389097793, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-- Class: 114
   Script: {fileID: -1699741063, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -1864444436, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
@@ -181,6 +181,8 @@ ClassTypes:
   Script: {fileID: -1819008361, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1952984350, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1220875036, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1839950351, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -307,17 +309,24 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: com.unity.multiplayer-hlapi.Runtime
   ClassName: UnityEngine.Networking.NetworkSceneId
 Assets:
+- Assets/RiskOfRamen/Assets/terrain/texLTTerrainDiffuseMainB_opt.png
 - Assets/RiskOfRamen/Assets/WornTurnkey/WornTurnkeyIcon.png
 - Assets/RiskOfRamen/Assets/WaxWisp/DevotedLemurianMaster.prefab
 - Assets/RiskOfRamen/Assets/WaxWisp/WispMaster.prefab
 - Assets/RiskOfRamen/Assets/Allocentrism/DisplayAllocentrismNeck.prefab
 - Assets/RiskOfRamen/Assets/materials/matAlloProj.mat
 - Assets/RiskOfRamen/Assets/GlassTiara/iddGlassTiara.asset
+- Assets/RiskOfRamen/Assets/terrain/matSkyboxEmbershore.mat
+- Assets/RiskOfRamen/Assets/KiFruit/KiFruitIcon.png
 - Assets/RiskOfRamen/Assets/VoidLunar/matTracerVoidLunar.mat
+- Assets/RiskOfRamen/Assets/terrain/texTerrainDirt.png
 - Assets/RiskOfRamen/Assets/ObsidianCard/obsidiancard_icon.png
-- Assets/RiskOfRamen/Assets/textures/texCloudCaustic2.png
+- Assets/RiskOfRamen/Assets/terrain/texMSSandNormal.png
 - Assets/RiskOfRamen/Assets/ContaminationFont/meshes/POOL.fbx
+- Assets/RiskOfRamen/Assets/textures/texCloudCaustic2.png
 - Assets/RiskOfRamen/Assets/ContaminationFont/meshes/POOLER.fbx
+- Assets/RiskOfRamen/Assets/terrain/mdlEmberkissedShoreTerrain.prefab
+- Assets/RiskOfRamen/PenroseChoker.asset
 - Assets/RiskOfRamen/Assets/textures/texCloudDifferenceBW2.png
 - Assets/RiskOfRamen/Assets/ObsidianCard/iddObsidianCard.asset
 - Assets/RiskOfRamen/Assets/WaxIdol/WaxIdol.prefab
@@ -326,30 +335,40 @@ Assets:
 - Assets/RiskOfRamen/Assets/Allocentrism/meshes/AlloHead.fbx
 - Assets/RiskOfRamen/Assets/materials/matVoidWax.mat
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/mdlVoidWhale@Pitch.prefab
+- Assets/RiskOfRamen/Assets/terrain/texLTTerrainDiffuseRed_opt.png
 - Assets/RiskOfRamen/Assets/ParasiticClam/iddParasiticClam.asset
 - Assets/RiskOfRamen/Assets/materials/matVoidSparklyEremite.mat
+- Assets/RiskOfRamen/Assets/terrain/EmberkissedShoreTerrain.prefab
 - Assets/RiskOfRamen/Assets/textures/texRampPortalVoid.png
 - Assets/RiskOfRamen/Assets/DenkuRope/denkurope_icon.png
 - Assets/RiskOfRamen/Assets/textures/texGlassTiaraFresnel.png
 - Assets/RiskOfRamen/Assets/textures/texNormalStrange1.png
 - Assets/RiskOfRamen/Assets/ObsidianCard/meshes/CurvedPlane.fbx
-- Assets/RiskOfRamen/Assets/textures/texVoidGrass.png
+- Assets/RiskOfRamen/Assets/terrain/skyboxFoggyFull.png
 - Assets/RiskOfRamen/Assets/materials/matStainedSilver.mat
+- Assets/RiskOfRamen/Assets/terrain/texLTTerrainDiffuseRed.png
+- Assets/RiskOfRamen/Assets/textures/texVoidGrass.png
 - Assets/RiskOfRamen/Assets/StainedBelt/meshes/one.fbx
-- Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/Swim.anim
+- Assets/RiskOfRamen/Assets/terrain/texTerrainRock1.png
 - Assets/RiskOfRamen/Assets/textures/texTrimsheetVoidMetalNormal.png
+- Assets/RiskOfRamen/Assets/WaxIdol/meshes/WaxIdol.fbx
 - Assets/RiskOfRamen/Assets/Allocentrism/AllocentrismBombProjectileGhost.prefab
-- Assets/RiskOfRamen/Assets/DogWhistle/meshes/yeahg.fbx
+- Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/Swim.anim
+- Assets/RiskOfRamen/Assets/materials/matPenrosePendant.mat
 - Assets/RiskOfRamen/Assets/ObsidianCard/ObsidianCard.prefab
+- Assets/RiskOfRamen/Assets/DogWhistle/meshes/yeahg.fbx
 - Assets/RiskOfRamen/Assets/DogWhistle/DogWhistle.prefab
+- Assets/RiskOfRamen/Assets/KiFruit/meshes/kifruitApplied.fbx
 - Assets/RiskOfRamen/Assets/materials/matWaxWispFire.mat
 - Assets/RiskOfRamen/Assets/VoidLunar/texRampTritone.png
 - Assets/RiskOfRamen/Assets/DogWhistle/meshes/Esorem Shell 2.fbx
 - Assets/RiskOfRamen/Assets/Allocentrism/meshes/Untitled.fbx
 - Assets/RiskOfRamen/Assets/materials/matAlloTracer.mat
-- Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/mdlVoidWhale@Yaw.prefab
+- Assets/RiskOfRamen/Assets/textures/texRampLightning.png
 - Assets/RiskOfRamen/Assets/WaxWisp/WaxWispBody.prefab
+- Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/mdlVoidWhale@Yaw.prefab
 - Assets/RiskOfRamen/Assets/materials/matVoidPlug.mat
+- Assets/RiskOfRamen/Assets/terrain/terrain.fbx
 - Assets/RiskOfRamen/Assets/textures/texSimpleTriangle.png
 - Assets/RiskOfRamen/Assets/BuffIcons/StillnessIcon.png
 - Assets/RiskOfRamen/Allocentrism.asset
@@ -367,19 +386,22 @@ Assets:
 - Assets/RiskOfRamen/Assets/Allocentrism/DisplayAllocentrismHead.prefab
 - Assets/RiskOfRamen/Assets/materials/matLunarEmissive.mat
 - Assets/RiskOfRamen/Assets/materials/matVoidSparkly.mat
-- Assets/RiskOfRamen/Assets/VoidLunar/texOmniShockwave1Mask.png
+- Assets/RiskOfRamen/Assets/terrain/Materials/texGLMudDiffuse.mat
+- Assets/RiskOfRamen/Assets/terrain/texGLRockSide.png
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/matVoidWhale.mat
 - Assets/RiskOfRamen/WornTurnkey.asset
-- Assets/RiskOfRamen/Assets/GlassTiara/meshes/tiara.fbx
+- Assets/RiskOfRamen/Assets/VoidLunar/texOmniShockwave1Mask.png
 - Assets/RiskOfRamen/Assets/textures/texRampGlassTiaraColor.png
 - Assets/RiskOfRamen/Assets/DenkuRope/DenkuRopeDisplay.prefab
+- Assets/RiskOfRamen/Assets/GlassTiara/meshes/tiara.fbx
 - Assets/RiskOfRamen/Assets/ParasiticClam/meshes/razorclam2.fbx
 - Assets/RiskOfRamen/Assets/textures/texCloudDifferenceBW1.png
 - Assets/RiskOfRamen/Assets/materials/matEremiteEyeGlow.mat
+- Assets/RiskOfRamen/Assets/PenroseChoker/PenroseChoker.prefab
 - Assets/RiskOfRamen/Assets/DogWhistle/meshes/Esorem Shell 1.fbx
-- Assets/RiskOfRamen/Assets/DogWhistle/meshes/Esorem Shell.fbx
 - Assets/RiskOfRamen/Assets/textures/texRampAlloBomb.png
 - Assets/RiskOfRamen/Assets/materials/matWindKey.mat
+- Assets/RiskOfRamen/Assets/DogWhistle/meshes/Esorem Shell.fbx
 - Assets/RiskOfRamen/Assets/materials/matAlloProjBackdrop.mat
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/matVoidWhaleEyes.mat
 - Assets/RiskOfRamen/Assets/EsotericEremite/meshes/Untitled.fbx
@@ -391,22 +413,27 @@ Assets:
 - Assets/RiskOfRamen/Assets/VoidLunar/donut1Mesh.asset
 - Assets/RiskOfRamen/Assets/StainedBelt/meshes/two.fbx
 - Assets/RiskOfRamen/Assets/VoidLunar/HighlightTier1Item.prefab
+- Assets/RiskOfRamen/Assets/terrain/texLTTempleDiffuseSand.png
 - Assets/RiskOfRamen/Assets/ChitinousChisel/ChitinousChisel.prefab
 - Assets/RiskOfRamen/Assets/materials/matContaminationFont.mat
 - Assets/RiskOfRamen/Assets/textures/texRope.png
 - Assets/RiskOfRamen/Assets/textures/texObsidian.jpg
+- Assets/RiskOfRamen/Assets/textures/texWoodBark.png
 - Assets/RiskOfRamen/Assets/materials/matObsidian.mat
 - Assets/RiskOfRamen/Assets/textures/texGlowPaintMask.png
 - Assets/RiskOfRamen/Assets/textures/texBronze.jpg
 - Assets/RiskOfRamen/Assets/GlassTiara/meshes/TiaraFlatShell.fbx
-- Assets/RiskOfRamen/Assets/StainedBelt/meshes/beltdisplay.fbx
+- Assets/RiskOfRamen/Assets/materials/matKiFruitPeel.mat
 - Assets/RiskOfRamen/Assets/textures/texRampTimeCrystalReverse.png
 - Assets/RiskOfRamen/Assets/textures/texMapWindKey.png
-- Assets/RiskOfRamen/Assets/textures/texRampTwotoneWhite.png
+- Assets/RiskOfRamen/Assets/terrain/texDCRockSide.png
 - Assets/RiskOfRamen/shaders/FX/HGCloudRemap.shader
+- Assets/RiskOfRamen/Assets/textures/texRampTwotoneWhite.png
 - Assets/RiskOfRamen/Assets/WaxWisp/meshes/WispMask.fbx
+- Assets/RiskOfRamen/Assets/StainedBelt/meshes/beltdisplay.fbx
 - Assets/RiskOfRamen/ChitinousChisel.asset
 - Assets/RiskOfRamen/Assets/EsotericEremite/EsotericEremiteDisplay.prefab
+- Assets/RiskOfRamen/Assets/terrain/texGLMudDiffuse.png
 - Assets/RiskOfRamen/Assets/textures/texTrimsheetVoidMetalDiffuse.png
 - Assets/RiskOfRamen/Assets/materials/matSilver.mat
 - Assets/RiskOfRamen/Assets/ChitinousChisel/ChitinousChiselIcon.png
@@ -414,53 +441,72 @@ Assets:
 - Assets/RiskOfRamen/Assets/VoidLunar/texVoidLunarBGIcon.png
 - Assets/RiskOfRamen/ParasiticClamBuff.asset
 - Assets/RiskOfRamen/ObsidianCard.asset
-- Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/texRampNullifierSmooth.png
+- Assets/RiskOfRamen/Assets/textures/texPenroseBand.png
+- Assets/RiskOfRamen/Assets/textures/texTrimsheetMoonNormal.png
 - Assets/RiskOfRamen/Assets/ParasiticClam/ParasiticClamPickup.prefab
-- Assets/RiskOfRamen/EsotericEremite.asset
+- Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/texRampNullifierSmooth.png
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/mdlVoidWhale@Blink.prefab
+- Assets/RiskOfRamen/EsotericEremite.asset
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/Yaw.anim
+- Assets/RiskOfRamen/shaders/Deferred/HGTriplanarTerrainBlend.shader
+- Assets/RiskOfRamen/Assets/PenroseChoker/meshes/penrose2.fbx
+- Assets/RiskOfRamen/Assets/textures/texKiFruitSkinNormal2.png
 - Assets/RiskOfRamen/Assets/WaxWisp/WaxWispIcon.png
 - Assets/RiskOfRamen/Assets/WaxIdol/wax_icon.png
 - Assets/RiskOfRamen/Assets/textures/texObsidianNormal.jpg
 - Assets/RiskOfRamen/Assets/materials/matAlloExplosionRing.mat
-- Assets/RiskOfRamen/shaders/Deferred/HGStandard.shader
+- Assets/RiskOfRamen/Assets/terrain/texLTTerrainDiffuseMain.png
 - Assets/RiskOfRamen/Assets/materials/matGlassTiara.mat
 - Assets/RiskOfRamen/Assets/textures/texBehemothTileMask.png
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/texVoidWhale.png
 - Assets/RiskOfRamen/Assets/materials/matAllocentrismDisplay.mat
+- Assets/RiskOfRamen/shaders/Deferred/HGStandard.shader
 - Assets/RiskOfRamen/Assets/textures/texRampNullifier.png
+- Assets/RiskOfRamen/Assets/terrain/texBlackbeachDirt.png
 - Assets/RiskOfRamen/Assets/textures/texRampVoidRaidCrabTripleBeam.png
 - Assets/RiskOfRamen/Assets/ParasiticClam/ParasiticClamBuffIcon.png
-- Assets/RiskOfRamen/Assets/WornTurnkey/WornTurnkeyDisplay.prefab
+- Assets/RiskOfRamen/Assets/terrain/texTerrainRock2.png
 - Assets/RiskOfRamen/Assets/VoidLunar/matVoidLunarPulseGlow.mat
+- Assets/RiskOfRamen/Assets/textures/texTrimsheetMoonDiffuse.png
 - Assets/RiskOfRamen/Assets/WaxWisp/mdlWaxWisp.prefab
-- Assets/RiskOfRamen/Assets/DogWhistle/meshes/orb.fbx
 - Assets/RiskOfRamen/Assets/materials/matLeatherBelt.mat
+- Assets/RiskOfRamen/Assets/WornTurnkey/WornTurnkeyDisplay.prefab
 - Assets/RiskOfRamen/Assets/VoidLunar/texRampTritone3.png
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/mdlVoidWhaleEyes.asset
 - Assets/RiskOfRamen/Assets/StainedBelt/StainedBeltIcon.png
+- Assets/RiskOfRamen/Assets/terrain/texWhiteSandSimple.png
+- Assets/RiskOfRamen/Assets/DogWhistle/meshes/orb.fbx
 - Assets/RiskOfRamen/Assets/textures/texRampWisp.png
+- Assets/RiskOfRamen/Assets/KiFruit/meshes/Kifruit2Applied.fbx
 - Assets/RiskOfRamen/Assets/materials/matGlassTiaraFinal.mat
+- Assets/RiskOfRamen/Assets/terrain/texMSSandDiffuse.png
+- Assets/RiskOfRamen/Assets/textures/texTrimsheetMoonSplat.png
 - Assets/RiskOfRamen/Assets/WaxIdol/meshes/WaxIdolModel.fbx
 - Assets/RiskOfRamen/Assets/ChitinousChisel/iddChitinousChisel.asset
+- Assets/RiskOfRamen/Assets/terrain/matEmbershoreTerrain.mat
 - Assets/RiskOfRamen/Assets/materials/matGlassTiaraDistortion.mat
 - Assets/RiskOfRamen/Assets/materials/matContaminationGloop.mat
 - Assets/RiskOfRamen/Assets/Allocentrism/AllocentrismIcon.png
 - Assets/RiskOfRamen/Assets/textures/texTrimsheetVoidMetalHeightNormal.png
+- Assets/RiskOfRamen/Assets/terrain/texLTTerrainNormal.png
+- Assets/RiskOfRamen/Assets/textures/texKiFruitSkinNormal1.png
 - Assets/RiskOfRamen/HermitBuff.asset
 - Assets/RiskOfRamen/Assets/textures/texRampGloop.png
 - Assets/RiskOfRamen/Assets/Allocentrism/Allocentrism.prefab
 - Assets/RiskOfRamen/Assets/textures/texMapWindKeyPink.png
+- Assets/RiskOfRamen/Assets/PenroseChoker/meshes/PenroseBand.fbx
 - Assets/RiskOfRamen/Assets/materials/matWax.mat
 - Assets/RiskOfRamen/Assets/WaxWisp/WaxWispMaster.prefab
 - Assets/RiskOfRamen/DenkuRope.asset
+- Assets/RiskOfRamen/Assets/textures/texMoonLichen.png
 - Assets/RiskOfRamen/Assets/EsotericEremite/iddEsotericEremite.asset
 - Assets/RiskOfRamen/Assets/DenkuRope/meshes/knotrp.fbx
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/Pitch.anim
 - Assets/RiskOfRamen/Assets/ContaminationFont/meshes/GRAH.fbx
-- Assets/RiskOfRamen/Assets/WornTurnkey/iddWornTurnkey.asset
+- Assets/RiskOfRamen/Assets/materials/matLunarWood.mat
 - Assets/RiskOfRamen/Assets/Allocentrism/AllocentrismBombGhost.prefab
 - Assets/RiskOfRamen/Assets/textures/texGalaxy1Mask.png
+- Assets/RiskOfRamen/Assets/WornTurnkey/iddWornTurnkey.asset
 - Assets/RiskOfRamen/Assets/materials/matRope.mat
 - Assets/RiskOfRamen/Assets/StainedBelt/iddStainedBelt.asset
 - Assets/RiskOfRamen/Assets/EsotericEremite/meshes/orb.fbx
@@ -477,25 +523,29 @@ Assets:
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/animVoidWhale.controller
 - Assets/RiskOfRamen/Assets/ContaminationFont/iscContaminationFont.asset
 - Assets/RiskOfRamen/Assets/Allocentrism/ExplosionAllocentrism.prefab
-- Assets/RiskOfRamen/Assets/WornTurnkey/WornTurnkey.prefab
+- Assets/RiskOfRamen/Assets/PenroseChoker/PenroseChokerIcon.png
 - Assets/RiskOfRamen/Assets/materials/matWaxWispMask.mat
-- Assets/RiskOfRamen/RiskOfRamenExpansion.asset
+- Assets/RiskOfRamen/Assets/WornTurnkey/WornTurnkey.prefab
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/Blink.anim
 - Assets/RiskOfRamen/Assets/GlassTiara/GlassTiara.prefab
 - Assets/RiskOfRamen/Assets/materials/matVoidMetal.mat
+- Assets/RiskOfRamen/RiskOfRamenExpansion.asset
 - Assets/RiskOfRamen/Assets/textures/texBronzeNormal.jpg
 - Assets/RiskOfRamen/Assets/expIconDisabled.png
 - Assets/RiskOfRamen/Assets/ParasiticClam/ParasiticClamDisplayCaptain.prefab
+- Assets/RiskOfRamen/Assets/terrain/texSand1Simple.png
 - Assets/RiskOfRamen/Assets/DenkuRope/meshes/KnotBelt.fbx
 - Assets/RiskOfRamen/Assets/ParasiticClam/meshes/razorclamdisplay.fbx
-- Assets/RiskOfRamen/cscWaxWisp.asset
+- Assets/RiskOfRamen/Assets/textures/texKiFruitSkinNormal.png
 - Assets/RiskOfRamen/Assets/textures/texRopeNormal.png
 - Assets/RiskOfRamen/Assets/WaxWisp/WispBody 1.prefab
-- Assets/RiskOfRamen/Assets/DogWhistle/meshes/leg thing.fbx
 - Assets/RiskOfRamen/Assets/materials/matEremiteShell.mat
 - Assets/RiskOfRamen/Assets/textures/texCloudWaterRipples.png
+- Assets/RiskOfRamen/Assets/DogWhistle/meshes/leg thing.fbx
 - Assets/RiskOfRamen/Assets/materials/matAlloExplosionEmissive.mat
 - Assets/RiskOfRamen/Assets/textures/texTrimSheetConcreteDiffuse.png
+- Assets/RiskOfRamen/Assets/terrain/texLTTerrainDiffuseMain_opt.png
+- Assets/RiskOfRamen/cscWaxWisp.asset
 - Assets/RiskOfRamen/Assets/textures/texAlphaGradient3Mask.png
 - Assets/RiskOfRamen/Assets/EsotericEremite/EsotericEremiteIcon.png
 - Assets/RiskOfRamen/Assets/VoidLunar/VoidLunarOrb.prefab
@@ -509,20 +559,29 @@ Assets:
 - Assets/RiskOfRamen/Assets/Allocentrism/meshes/Allocentrism.fbx
 - Assets/RiskOfRamen/Assets/ParasiticClam/ParasiticClamIcon.png
 - Assets/RiskOfRamen/Assets/materials/matGlass.mat
-- Assets/RiskOfRamen/Assets/EsotericEremite/meshes/yeahg.fbx
+- Assets/RiskOfRamen/Assets/textures/texPenrosePendant.png
 - Assets/RiskOfRamen/WaxIdol.asset
 - Assets/RiskOfRamen/Assets/Allocentrism/idrsAllocentrism.asset
 - Assets/RiskOfRamen/Assets/materials/matContaminationPool.mat
-- Assets/RiskOfRamen/Assets/StainedBelt/StainedBeltDisplay.prefab
+- Assets/RiskOfRamen/Assets/KiFruit/KiFruit.prefab
 - Assets/RiskOfRamen/Assets/textures/texCloudCrackedIceInverted.png
 - Assets/RiskOfRamen/Assets/expIcon.png
 - Assets/RiskOfRamen/Assets/textures/texNormalWindKey.png
-- Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/texTrimSheetConcreteNormal.png
+- Assets/RiskOfRamen/Assets/StainedBelt/StainedBeltDisplay.prefab
+- Assets/RiskOfRamen/Assets/textures/texKiFruitSkin.png
+- Assets/RiskOfRamen/Assets/terrain/texBlackbeachBasicRockTop.png
+- Assets/RiskOfRamen/Assets/EsotericEremite/meshes/yeahg.fbx
 - Assets/RiskOfRamen/ParasiticClam.asset
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/mdlVoidWhaleAvatar.asset
-- Assets/RiskOfRamen/Assets/StainedBelt/meshes/BeltStrap.fbx
+- Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/texTrimSheetConcreteNormal.png
+- Assets/RiskOfRamen/Assets/materials/matLunarStone.mat
+- Assets/RiskOfRamen/Assets/terrain/texBlackbeachBasicRockSide.png
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/texMagmaCloud.png
+- Assets/RiskOfRamen/Assets/StainedBelt/meshes/BeltStrap.fbx
 - Assets/RiskOfRamen/Assets/Allocentrism/meshes/AlloCollar.fbx
+- Assets/RiskOfRamen/KiFruit.asset
+- Assets/RiskOfRamen/Assets/terrain/texTerrainMoss.png
+- Assets/RiskOfRamen/Assets/textures/texPenrosePendantNormal.png
 - Assets/RiskOfRamen/Assets/DogWhistle/meshes/Eyes.fbx
 - Assets/RiskOfRamen/GlassTiara.asset
 - Assets/RiskOfRamen/Assets/materials/matGlassTiaraInside.mat
@@ -531,6 +590,7 @@ Assets:
 - Assets/RiskOfRamen/Assets/EsotericEremite/EsotericEremite.prefab
 - Assets/RiskOfRamen/StillnessBuff.asset
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/texRampNullifierOffset.png
+- Assets/RiskOfRamen/Assets/materials/matPenroseBand.mat
 - Assets/RiskOfRamen/Assets/textures/texNullifierSky2.png
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/mdlVoidWhaleBody.asset
 - Assets/RiskOfRamen/Assets/ChitinousChisel/meshes/CrabCLawFinal.fbx

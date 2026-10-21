@@ -178,3 +178,21 @@ MonoBehaviour:
       localAngles: {x: 0, y: 0, z: 0}
       localScale: {x: 0.1, y: 0.1, z: 0.1}
       limbMask: 0
+  - idrsName: idrsAcolyte
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Head
+      localPos: {x: -0.3276538, y: 0.1594941, z: 0}
+      localAngles: {x: 270, y: 90, z: 0}
+      localScale: {x: 0.1, y: 0.1, z: 0.1}
+      limbMask: 0
+  - idrsName: idrsEnforcer2
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Head
+      localPos: {x: -0.1759742, y: -0.0005659312, z: 0.0001090094}
+      localAngles: {x: 270, y: 90, z: 0}
+      localScale: {x: 0.1, y: 0.1, z: 0.1}
+      limbMask: 0

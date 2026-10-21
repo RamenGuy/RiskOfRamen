@@ -178,3 +178,21 @@ MonoBehaviour:
       localAngles: {x: 353.2069, y: 174.0919, z: 337.7101}
       localScale: {x: 0.6, y: 0.6, z: 0.6}
       limbMask: 0
+  - idrsName: idrsEnforcer2
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: MuzzleGunGrenade
+      localPos: {x: 0.009465738, y: 0.06859601, z: 0.4586276}
+      localAngles: {x: 271.66, y: 180, z: 180}
+      localScale: {x: 0.6, y: 0.6, z: 0.6}
+      limbMask: 0
+  - idrsName: idrsAcolyte
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Chestrope1
+      localPos: {x: -0.1449404, y: -0.31522, z: 0.007867218}
+      localAngles: {x: 314.4943, y: 322.2017, z: 0}
+      localScale: {x: 0.4, y: 0.4, z: 0.4}
+      limbMask: 0

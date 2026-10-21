@@ -165,7 +165,7 @@ MonoBehaviour:
     - ruleType: 0
       displayPrefabIndex: 0
       childName: LowerArmL
-      localPos: {x: 0.02178536, y: 0.2724873, z: 0.2724873}
+      localPos: {x: 0.03026341, y: 0.2675238, z: 0.01673502}
       localAngles: {x: 0, y: 0, z: 0}
       localScale: {x: 0.2, y: 0.2, z: 0.2}
       limbMask: 0
@@ -173,8 +173,26 @@ MonoBehaviour:
     rules:
     - ruleType: 0
       displayPrefabIndex: 0
-      childName: Chest
+      childName: Stomach
       localPos: {x: -0.1594654, y: -0.002608605, z: -0.01762883}
       localAngles: {x: 278.9067, y: 110.8942, z: 329.9986}
       localScale: {x: 0.36, y: 0.36, z: 0.3}
+      limbMask: 0
+  - idrsName: idrsEnforcer2
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Stomach
+      localPos: {x: 0, y: 0, z: 0}
+      localAngles: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.22, y: 0.22, z: 0.24}
+      limbMask: 0
+  - idrsName: idrsAcolyte
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Stomach
+      localPos: {x: 0.01069267, y: 0.01571636, z: -0.0007439628}
+      localAngles: {x: 346.565, y: 0, z: 0}
+      localScale: {x: 0.19, y: 0.19, z: 0.16}
       limbMask: 0

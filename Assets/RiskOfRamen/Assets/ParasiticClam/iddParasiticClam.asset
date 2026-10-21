@@ -179,3 +179,21 @@ MonoBehaviour:
       localAngles: {x: 60.10741, y: 310.829, z: 97.72595}
       localScale: {x: 0.15, y: 0.15, z: 0.15}
       limbMask: 0
+  - idrsName: idrsAcolyte
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: UpperArmR
+      localPos: {x: 0.1407388, y: 0, z: 0.03814709}
+      localAngles: {x: 0, y: 0, z: 0}
+      localScale: {x: 0.15, y: 0.15, z: 0.15}
+      limbMask: 0
+  - idrsName: idrsEnforcer2
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: UpperArmL
+      localPos: {x: -0.13121, y: -0.01324625, z: -0.08071034}
+      localAngles: {x: 2.173196, y: 198.8996, z: 175.4262}
+      localScale: {x: 0.15, y: 0.15, z: 0.15}
+      limbMask: 0

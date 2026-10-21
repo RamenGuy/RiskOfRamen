@@ -178,3 +178,21 @@ MonoBehaviour:
       localAngles: {x: 289.6861, y: 263.019, z: 183.7915}
       localScale: {x: 0.25, y: 0.25, z: 0.25}
       limbMask: 0
+  - idrsName: idrsEnforcer2
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: PauldronL
+      localPos: {x: -0.05916014, y: -0.01687096, z: 0.1446435}
+      localAngles: {x: 23.87908, y: 0, z: 0}
+      localScale: {x: 0.16, y: 0.16, z: 0.16}
+      limbMask: 0
+  - idrsName: idrsAcolyte
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: WeaponBot
+      localPos: {x: -0.2337869, y: 0.00378061, z: 0.0175533}
+      localAngles: {x: 0, y: 0, z: 87.48283}
+      localScale: {x: 0.1, y: 0.1, z: 0.1}
+      limbMask: 0

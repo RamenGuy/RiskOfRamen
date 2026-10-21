@@ -51,7 +51,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08f74610dc9ac9d4dac443c315f5685d, type: 3}
   m_Name: Ensure RoR2 Thunderstore Source
   m_EditorClassIdentifier: 
-  enabled: 1
+  enabled: 0
 --- !u!114 &-5172931210816237928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -82,7 +82,7 @@ MonoBehaviour:
   m_Name: Import Project Settings
   m_EditorClassIdentifier: 
   enabled: 1
-  IncludedSettings: 0
+  IncludedSettings: -1
 --- !u!114 &-2834765533243528919
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -95,7 +95,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6a6266570ba40d41bad5cf59676ab77, type: 3}
   m_Name: Install RoR2MultiplayerHLAPI
   m_EditorClassIdentifier: 
-  enabled: 1
+  enabled: 0
 --- !u!114 &-1656614471456902094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121,7 +121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97bb77dba34b1c479007d1b6759ff6e, type: 3}
   m_Name: Install Dependencies
   m_EditorClassIdentifier: 
-  enabled: 1
+  enabled: 0
 --- !u!114 &-1209702259015799138
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,7 +169,7 @@ MonoBehaviour:
   - {fileID: 5567553681476878003}
   - {fileID: 2538978347381640440}
   - {fileID: 1351788712366657327}
-  configurationIndex: -1
+  configurationIndex: 21
   totalImportExtensionCount: 21
 --- !u!114 &1351788712366657327
 MonoBehaviour:
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f4761da1836bc043a94000ffe25bf40, type: 3}
   m_Name: Install RoR2 Editor Kit
   m_EditorClassIdentifier: 
-  enabled: 1
+  enabled: 0
 --- !u!114 &5117867610231866002
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -265,7 +265,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 892ee265a9c0b884c8c9c36e42a802c6, type: 3}
   m_Name: Install BepInEx
   m_EditorClassIdentifier: 
-  enabled: 1
+  enabled: 0
 --- !u!114 &5567553681476878003
 MonoBehaviour:
   m_ObjectHideFlags: 0

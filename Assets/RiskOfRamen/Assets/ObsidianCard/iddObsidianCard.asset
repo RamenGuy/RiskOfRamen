@@ -178,3 +178,21 @@ MonoBehaviour:
       localAngles: {x: 19.47016, y: 352.5666, z: 173.5212}
       localScale: {x: 0.25, y: 0.25, z: 0.25}
       limbMask: 0
+  - idrsName: idrsAcolyte
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: Stomach
+      localPos: {x: -0.04344033, y: 0.03912456, z: 0.1468644}
+      localAngles: {x: 345.3344, y: 325.8571, z: 106.1474}
+      localScale: {x: 0.25, y: 0.25, z: 0.25}
+      limbMask: 0
+  - idrsName: idrsEnforcer2
+    rules:
+    - ruleType: 0
+      displayPrefabIndex: 0
+      childName: CalfL
+      localPos: {x: 0.1386015, y: -0.0145393, z: -0.06683825}
+      localAngles: {x: 358.1594, y: 340.4099, z: 84.84288}
+      localScale: {x: 0.17, y: 0.17, z: 0.17}
+      limbMask: 0

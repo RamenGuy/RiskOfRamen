@@ -1,7 +1,9 @@
-# 1.1.3
-* ACTUALLY added Github repo link this time
-* Added configuration options
+# 1.1.4
 * Added Glass Tiara lore
+* Added Parasitic Clam lore
+* Added Penrose Choker
+# 1.1.3
+* Added configuration options
 * Added Parasitic Clam
 * Added Esoteric Eremite
 * Added Chitinous Chisel
