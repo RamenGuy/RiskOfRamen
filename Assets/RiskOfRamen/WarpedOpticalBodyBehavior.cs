@@ -8,14 +8,14 @@ using RoR2.Items;
 namespace RiskOfRamen
 {
 
-    public class ParasiticClamBodyBehavior : BaseItemBodyBehavior, IOnTakeDamageServerReceiver
+    public class WarpedOpticalBodyBehavior : BaseItemBodyBehavior, IOnTakeDamageServerReceiver
     {
 
         [ItemDefAssociation(useOnServer = true, useOnClient = false)]
         private static ItemDef GetItemDef()
         {
-            if (RiskOfRamenConfig.enableItem(RiskOfRamenContent._ParasiticClam).Value == false) { return null; }
-            return RiskOfRamenContent._ParasiticClam;
+            if (RiskOfRamenConfig.enableItem(RiskOfRamenContent._WarpedOptical).Value == false) { return null; }
+            return RiskOfRamenContent._WarpedOptical;
         }
 
         public void OnTakeDamageServer(DamageReport damageReport)
