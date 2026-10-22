@@ -8,7 +8,7 @@ using RoR2.Items;
 namespace RiskOfRamen
 {
 
-    public class WarpedOpticalBodyBehavior : BaseItemBodyBehavior, IOnTakeDamageServerReceiver
+    public class WarpedOpticalBodyBehavior : BaseItemBodyBehavior, IOnDamageDealtServerReceiver
     {
 
         [ItemDefAssociation(useOnServer = true, useOnClient = false)]
@@ -18,12 +18,9 @@ namespace RiskOfRamen
             return RiskOfRamenContent._WarpedOptical;
         }
 
-        public void OnTakeDamageServer(DamageReport damageReport)
+        public void OnDamageDealtServer(DamageReport damageReport)
         {
-            if (damageReport.attackerBody != null)
-            {
-                damageReport.victimBody.AddTimedBuff(RiskOfRamenContent._parasiticClamBuff, 10, 10);
-            }
+            
         }
     }
 }

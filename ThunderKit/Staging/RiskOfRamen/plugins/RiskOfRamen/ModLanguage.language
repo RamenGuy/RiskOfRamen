@@ -183,6 +183,11 @@ Notes:\n\n
 		"ITEM_PENROSE_DESC": "",
 		"ITEM_PENROSE_LORE": "",
 
+		"ITEM_WARPEDOPTICAL_NAME": "Warped Optical Component",
+		"ITEM_WARPEDOPTICAL_PICKUP": "",
+		"ITEM_WARPEDOPTICAL_DESC": "",
+		"ITEM_WARPEDOPTICAL_LORE": "",
+
 		"STAGE_EMBER_NAME": "Emberkissed Shore",
 		"STAGE_EMBER_SUBTITLE": "Low Tide, Hot Sand",
 		"STAGE_EMBER_SEER": "You dream of dry plants and low waters.", 

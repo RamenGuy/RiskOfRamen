@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 945208001
+CRC: 3281696273
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -7,8 +7,8 @@ AssetBundleManifest:
       Dependencies:
         Dependency_0: runtimemsuassetbundle
     Info_1:
-      Name: riskoframenssa
+      Name: runtimemsuassetbundle
       Dependencies: {}
     Info_2:
-      Name: runtimemsuassetbundle
+      Name: riskoframenssa
       Dependencies: {}

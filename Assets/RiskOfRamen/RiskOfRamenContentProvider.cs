@@ -14,7 +14,6 @@ using RiskOfRamen.Assets.Allocentrism;
 using BepInEx.Configuration;
 using RoR2BepInExPack.GameAssetPaths;
 using RoR2.EntitlementManagement;
-using RoR2.Editor.Inspectors;
 //using MSU;
 
 namespace RiskOfRamen
@@ -38,7 +37,7 @@ namespace RiskOfRamen
         public static ItemDef _ChitinousChisel;
         public static ItemDef _KiFruit;
         public static ItemDef _PenroseChoker;
-        public static ItemDefInspector _WarpedOptical
+        public static ItemDef _WarpedOptical;
         public static ItemTierDef _VoidLunarTier;
 
         public static GameObject _ContaminationFont;

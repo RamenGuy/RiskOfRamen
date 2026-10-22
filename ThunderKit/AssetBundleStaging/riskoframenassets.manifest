@@ -1,12 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1564331087
+CRC: 398248525
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0141350263018ff0e38b95114e4595c5
+    Hash: dd9d9108b0b597b9e8d8d7541de24797
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 4c4d3533d4d9884d11dd457ab21495c0
+    Hash: 248e4065eabb96ed70b38b74ca4ed192
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: dd9d9108b0b597b9e8d8d7541de24797
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -49,6 +52,8 @@ ClassTypes:
   Script: {fileID: 1029549127, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1143142494, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1220875036, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1297580292, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -182,8 +187,6 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 1952984350, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
-  Script: {fileID: 1220875036, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-- Class: 114
   Script: {fileID: 1839950351, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 717380117, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
@@ -275,6 +278,8 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: RoR2
   ClassName: RoR2.PlaySoundOnEvent/PlaySoundEvent
 - AssemblyName: RoR2
+  ClassName: RoR2.PurchaseAvailabilityEvent
+- AssemblyName: RoR2
   ClassName: RoR2.PurchaseEvent
 - AssemblyName: RoR2
   ClassName: RoR2.Run/FixedTimeStamp
@@ -284,6 +289,10 @@ SerializeReferenceClassIdentifiers:
   ClassName: RoR2.SerializablePickupIndex
 - AssemblyName: RoR2
   ClassName: RoR2.SkillLocator/PassiveSkill
+- AssemblyName: RoR2
+  ClassName: RoR2.VFXAttributes/VFXIntensity
+- AssemblyName: RoR2
+  ClassName: RoR2.VFXAttributes/VFXPriority
 - AssemblyName: RoR2
   ClassName: Wave
 - AssemblyName: Unity.Addressables
@@ -296,6 +305,8 @@ SerializeReferenceClassIdentifiers:
   ClassName: UnityEngine.AddressableAssets.AssetReferenceT`1[UnityEngine.Material]
 - AssemblyName: Unity.Addressables
   ClassName: UnityEngine.AddressableAssets.AssetReferenceT`1[UnityEngine.RuntimeAnimatorController]
+- AssemblyName: Unity.Addressables
+  ClassName: UnityEngine.AddressableAssets.AssetReferenceT`1[UnityEngine.Sprite]
 - AssemblyName: UnityEngine.CoreModule
   ClassName: UnityEngine.Events.ArgumentCache
 - AssemblyName: UnityEngine.CoreModule
@@ -351,12 +362,13 @@ Assets:
 - Assets/RiskOfRamen/Assets/StainedBelt/meshes/one.fbx
 - Assets/RiskOfRamen/Assets/terrain/texTerrainRock1.png
 - Assets/RiskOfRamen/Assets/textures/texTrimsheetVoidMetalNormal.png
-- Assets/RiskOfRamen/Assets/WaxIdol/meshes/WaxIdol.fbx
+- Assets/RiskOfRamen/Assets/WarpedOptical/meshes/optic.fbx
 - Assets/RiskOfRamen/Assets/Allocentrism/AllocentrismBombProjectileGhost.prefab
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/Swim.anim
 - Assets/RiskOfRamen/Assets/materials/matPenrosePendant.mat
 - Assets/RiskOfRamen/Assets/ObsidianCard/ObsidianCard.prefab
 - Assets/RiskOfRamen/Assets/DogWhistle/meshes/yeahg.fbx
+- Assets/RiskOfRamen/Assets/WaxIdol/meshes/WaxIdol.fbx
 - Assets/RiskOfRamen/Assets/DogWhistle/DogWhistle.prefab
 - Assets/RiskOfRamen/Assets/KiFruit/meshes/kifruitApplied.fbx
 - Assets/RiskOfRamen/Assets/materials/matWaxWispFire.mat
@@ -464,6 +476,7 @@ Assets:
 - Assets/RiskOfRamen/Assets/textures/texRampNullifier.png
 - Assets/RiskOfRamen/Assets/terrain/texBlackbeachDirt.png
 - Assets/RiskOfRamen/Assets/textures/texRampVoidRaidCrabTripleBeam.png
+- Assets/RiskOfRamen/Assets/textures/texWarpedOptical.png
 - Assets/RiskOfRamen/Assets/ParasiticClam/ParasiticClamBuffIcon.png
 - Assets/RiskOfRamen/Assets/terrain/texTerrainRock2.png
 - Assets/RiskOfRamen/Assets/VoidLunar/matVoidLunarPulseGlow.mat
@@ -506,14 +519,18 @@ Assets:
 - Assets/RiskOfRamen/Assets/materials/matLunarWood.mat
 - Assets/RiskOfRamen/Assets/Allocentrism/AllocentrismBombGhost.prefab
 - Assets/RiskOfRamen/Assets/textures/texGalaxy1Mask.png
+- Assets/RiskOfRamen/Assets/textures/texWarpedOpticalNormal.png
 - Assets/RiskOfRamen/Assets/WornTurnkey/iddWornTurnkey.asset
 - Assets/RiskOfRamen/Assets/materials/matRope.mat
 - Assets/RiskOfRamen/Assets/StainedBelt/iddStainedBelt.asset
 - Assets/RiskOfRamen/Assets/EsotericEremite/meshes/orb.fbx
-- Assets/RiskOfRamen/Assets/WornTurnkey/meshes/windkeyitem.fbx
+- Assets/RiskOfRamen/Assets/materials/matWarpedOptical.mat
+- Assets/RiskOfRamen/Assets/WarpedOptical/iddWarpedOptical.asset
 - Assets/RiskOfRamen/Assets/ContaminationFont/meshes/ContFont2.fbx
 - Assets/RiskOfRamen/Assets/ContaminationFont/DCCSContaminationFont.asset
 - Assets/RiskOfRamen/Assets/textures/texSilver.jpg
+- Assets/RiskOfRamen/WarpedOptical.asset
+- Assets/RiskOfRamen/Assets/WornTurnkey/meshes/windkeyitem.fbx
 - Assets/RiskOfRamen/Assets/ContaminationFont/VoidWhale/VoidWhale.prefab
 - Assets/RiskOfRamen/Assets/Allocentrism/AllocentrismBomb.prefab
 - Assets/RiskOfRamen/Assets/materials/matGlassTiaraShell.mat
@@ -582,8 +599,10 @@ Assets:
 - Assets/RiskOfRamen/KiFruit.asset
 - Assets/RiskOfRamen/Assets/terrain/texTerrainMoss.png
 - Assets/RiskOfRamen/Assets/textures/texPenrosePendantNormal.png
+- Assets/RiskOfRamen/Assets/WarpedOptical/WarpedOptical.prefab
 - Assets/RiskOfRamen/Assets/DogWhistle/meshes/Eyes.fbx
 - Assets/RiskOfRamen/GlassTiara.asset
+- Assets/RiskOfRamen/Assets/WarpedOptical/warpedoptical_icon.png
 - Assets/RiskOfRamen/Assets/materials/matGlassTiaraInside.mat
 - Assets/RiskOfRamen/Assets/EsotericEremite/meshes/Eyes.fbx
 - Assets/RiskOfRamen/Assets/WaxIdol/iddWaxIdol.asset

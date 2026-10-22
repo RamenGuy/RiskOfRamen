@@ -3,9 +3,10 @@
     "com.passivepicasso.thunderkit": "file:C:/Users/nickh/Downloads/ThunderKit-9.1.4/ThunderKit-9.1.4",
     "com.unity.2d.sprite": "1.0.0",
     "com.unity.assetbundlebrowser": "https://github.com/Unity-Technologies/AssetBundles-Browser.git",
-    "com.unity.collab-proxy": "2.2.0",
+    "com.unity.burst": "1.8.21",
+    "com.unity.collab-proxy": "2.5.2",
     "com.unity.feature.development": "1.0.1",
-    "com.unity.ide.rider": "3.0.26",
+    "com.unity.ide.rider": "3.0.31",
     "com.unity.ide.visualstudio": "2.0.22",
     "com.unity.ide.vscode": "1.2.5",
     "com.unity.multiplayer-hlapi": "https://github.com/risk-of-thunder/UnityMultiplayerHLAPI.git#1.1.1",
@@ -14,7 +15,7 @@
     "com.unity.textmeshpro": "3.0.6",
     "com.unity.timeline": "1.6.5",
     "com.unity.ugui": "1.0.0",
-    "com.unity.visualscripting": "1.9.1",
+    "com.unity.visualscripting": "1.9.4",
     "jace-locationsofprecipitation": "https://github.com/JaceDaDorito/jace-locationsofprecipitation.git",
     "riskofthunder-ror2editorkit": "https://github.com/risk-of-thunder/RoR2EditorKit.git#5.6.0",
     "riskofthunder-ror2importextensions": "file:C:/Users/nickh/Downloads/RoR2ImportExtensions-1.7.1/RoR2ImportExtensions-1.7.1",
@@ -49,7 +50,6 @@
     "com.unity.modules.video": "1.0.0",
     "com.unity.modules.vr": "1.0.0",
     "com.unity.modules.wind": "1.0.0",
-    "com.unity.modules.xr": "1.0.0",
-    "com.unity.burst": "1.8.21"
+    "com.unity.modules.xr": "1.0.0"
   }
 }
